@@ -3,9 +3,8 @@ Template Name: AppGrids
 Author: GrayGrids
 */
 
-
 /*===========================
-    01.COMMON css 
+    01.COMMON css
 ===========================*/
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Sen:wght@400;700;800&display=swap");
 html {
@@ -16,7 +15,7 @@ body {
   font-family: "Sen", sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #5E678C;
+  color: #5e678c;
   overflow-x: hidden;
 }
 
@@ -40,7 +39,7 @@ button:focus,
 }
 
 a:hover {
-  color: #4E6EF1;
+  color: #4e6ef1;
 }
 
 a {
@@ -76,7 +75,7 @@ h5,
 h6 {
   font-weight: 700;
   margin: 0px;
-  color: #1D2A5D;
+  color: #1d2a5d;
 }
 
 h1 a,
@@ -168,9 +167,9 @@ p {
   color: #fff;
   cursor: pointer;
   z-index: 5;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   border: none;
-  background: #4E6EF1;
+  background: #4e6ef1;
   overflow: hidden;
 }
 
@@ -179,9 +178,9 @@ p {
 }
 
 .main-btn.border-btn {
-  border: 2px solid #4E6EF1;
+  border: 2px solid #4e6ef1;
   background: transparent;
-  color: #1D2A5D;
+  color: #1d2a5d;
 }
 
 .btn-hover {
@@ -190,7 +189,7 @@ p {
 }
 
 .btn-hover::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0%;
   height: 0%;
@@ -211,7 +210,7 @@ p {
 .scroll-top {
   width: 45px;
   height: 45px;
-  background: #4E6EF1;
+  background: #4e6ef1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,10 +288,16 @@ p {
   position: absolute;
   width: 100%;
   height: 100%;
-  animation: ytp-spinner-easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  animation: ytp-spinner-easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite
+    both;
 }
 
-.preloader .loader .ytp-spinner .ytp-spinner-container .ytp-spinner-rotator .ytp-spinner-left {
+.preloader
+  .loader
+  .ytp-spinner
+  .ytp-spinner-container
+  .ytp-spinner-rotator
+  .ytp-spinner-left {
   position: absolute;
   top: 0;
   left: 0;
@@ -301,7 +306,12 @@ p {
   right: 50%;
 }
 
-.preloader .loader .ytp-spinner .ytp-spinner-container .ytp-spinner-rotator .ytp-spinner-right {
+.preloader
+  .loader
+  .ytp-spinner
+  .ytp-spinner-container
+  .ytp-spinner-rotator
+  .ytp-spinner-right {
   position: absolute;
   top: 0;
   right: 0;
@@ -317,7 +327,7 @@ p {
   height: 100%;
   border-style: solid;
   /* Spinner Color */
-  border-color: #4E6EF1 #4E6EF1 #ddd;
+  border-color: #4e6ef1 #4e6ef1 #ddd;
   border-radius: 50%;
   border-width: 6px;
 }
@@ -326,7 +336,8 @@ p {
   left: 0;
   right: -100%;
   border-right-color: #ddd;
-  animation: ytp-spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  animation: ytp-spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite
+    both;
 }
 
 .preloader .loader .ytp-spinner-right .ytp-spinner-circle {
@@ -1116,7 +1127,7 @@ p {
 }
 
 /*===========================
-    02.HEADER css 
+    02.HEADER css
 ===========================*/
 /*===== NAVBAR =====*/
 .navbar-area {
@@ -1154,11 +1165,11 @@ p {
 }
 
 .sticky .navbar .navbar-nav .nav-item a {
-  color: #1D2A5D;
+  color: #1d2a5d;
 }
 
 .sticky .navbar .navbar-toggler .toggler-icon {
-  background: #1D2A5D;
+  background: #1d2a5d;
 }
 
 .navbar {
@@ -1201,7 +1212,7 @@ p {
 .navbar-toggler .toggler-icon {
   width: 30px;
   height: 2px;
-  background-color: #1D2A5D;
+  background-color: #1d2a5d;
   display: block;
   margin: 5px 0;
   position: relative;
@@ -1256,7 +1267,7 @@ p {
 .navbar-nav .nav-item a {
   font-size: 18px;
   font-weight: 400;
-  color: #5E678C;
+  color: #5e678c;
   transition: all 0.3s ease-out 0s;
   padding: 10px 0;
   position: relative;
@@ -1266,7 +1277,7 @@ p {
   .navbar-nav .nav-item a {
     display: inline-block;
     padding: 6px 0px;
-    color: #5E678C;
+    color: #5e678c;
   }
 }
 
@@ -1274,16 +1285,17 @@ p {
   .navbar-nav .nav-item a {
     display: inline-block;
     padding: 6px 0px;
-    color: #5E678C;
+    color: #5e678c;
   }
 }
 
-.navbar-nav .nav-item a::after, .navbar-nav .nav-item a::before {
-  content: '';
+.navbar-nav .nav-item a::after,
+.navbar-nav .nav-item a::before {
+  content: "";
   position: absolute;
   bottom: 0;
   height: 2px;
-  background: #4E6EF1;
+  background: #4e6ef1;
   z-index: -1;
   opacity: 0;
   border-radius: 10px;
@@ -1300,22 +1312,32 @@ p {
   right: 0;
 }
 
-.navbar-nav .nav-item a:hover, .navbar-nav .nav-item a.active {
-  color: #4E6EF1;
+.navbar-nav .nav-item a:hover,
+.navbar-nav .nav-item a.active {
+  color: #4e6ef1;
 }
 
-.navbar-nav .nav-item a:hover::after, .navbar-nav .nav-item a:hover::before, .navbar-nav .nav-item a.active::after, .navbar-nav .nav-item a.active::before {
+.navbar-nav .nav-item a:hover::after,
+.navbar-nav .nav-item a:hover::before,
+.navbar-nav .nav-item a.active::after,
+.navbar-nav .nav-item a.active::before {
   opacity: 1;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .navbar-nav .nav-item a:hover::after, .navbar-nav .nav-item a:hover::before, .navbar-nav .nav-item a.active::after, .navbar-nav .nav-item a.active::before {
+  .navbar-nav .nav-item a:hover::after,
+  .navbar-nav .nav-item a:hover::before,
+  .navbar-nav .nav-item a.active::after,
+  .navbar-nav .nav-item a.active::before {
     opacity: 1;
   }
 }
 
 @media (max-width: 767px) {
-  .navbar-nav .nav-item a:hover::after, .navbar-nav .nav-item a:hover::before, .navbar-nav .nav-item a.active::after, .navbar-nav .nav-item a.active::before {
+  .navbar-nav .nav-item a:hover::after,
+  .navbar-nav .nav-item a:hover::before,
+  .navbar-nav .nav-item a.active::after,
+  .navbar-nav .nav-item a.active::before {
     opacity: 1;
   }
 }
@@ -1382,9 +1404,10 @@ p {
   color: #222;
 }
 
-.navbar-nav .nav-item .sub-menu li a.active, .navbar-nav .nav-item .sub-menu li a:hover {
+.navbar-nav .nav-item .sub-menu li a.active,
+.navbar-nav .nav-item .sub-menu li a:hover {
   padding-left: 25px;
-  color: #4E6EF1;
+  color: #4e6ef1;
 }
 
 .navbar-nav .sub-nav-toggler {
@@ -1438,6 +1461,7 @@ p {
   background-image: url("../img/hero/map-bg.svg");
   background-repeat: no-repeat;
   background-position: left;
+  /* width: 100% !important; */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1508,8 +1532,8 @@ p {
 
 .hero-section .hero-content .hero-btns .main-btn.border-btn {
   margin-right: 0;
-  color: #4E6EF1;
-  border-color: #4E6EF1;
+  color: #4e6ef1;
+  border-color: #4e6ef1;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -1798,7 +1822,7 @@ p {
 }
 
 .download-section .download li:first-child a {
-  background: #4E6EF1;
+  background: #4e6ef1;
   color: #fff;
 }
 
@@ -1826,22 +1850,21 @@ p {
 
 .download-section .download li a .icon {
   font-size: 30px;
-  color: #1D2A5D;
+  color: #1d2a5d;
   margin-right: 10px;
 }
 
 .download-section .download li a .text {
   font-size: 10px;
-  color: #5E678C;
+  color: #5e678c;
 }
 
 .download-section .download li a .text b {
-  color: #1D2A5D;
+  color: #1d2a5d;
   font-size: 16px;
   font-weight: 700;
   display: block;
 }
-
 
 .footer {
   position: relative;
@@ -1959,21 +1982,21 @@ p {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .footer .widget-wrapper .footer-widget .socials li a {
     background: rgba(78, 110, 241, 0.1);
-    color: #5E678C;
+    color: #5e678c;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer .widget-wrapper .footer-widget .socials li a {
     background: rgba(78, 110, 241, 0.1);
-    color: #5E678C;
+    color: #5e678c;
   }
 }
 
 @media (max-width: 767px) {
   .footer .widget-wrapper .footer-widget .socials li a {
     background: rgba(78, 110, 241, 0.1);
-    color: #5E678C;
+    color: #5e678c;
   }
 }
 
@@ -1983,12 +2006,12 @@ p {
 }
 
 .footer .widget-wrapper .footer-widget .links li a {
-  color: #5E678C;
+  color: #5e678c;
   line-height: 33px;
 }
 
 .footer .widget-wrapper .footer-widget .links li a:hover {
-  color: #4E6EF1;
+  color: #4e6ef1;
 }
 
 .footer .copy-right-wrapper {
@@ -2002,9 +2025,9 @@ p {
 }
 
 .footer .copy-right-wrapper p a {
-  color: #5E678C;
+  color: #5e678c;
 }
 
 .footer .copy-right-wrapper p a:hover {
-  color: #4E6EF1;
+  color: #4e6ef1;
 }
