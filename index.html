@@ -125,29 +125,13 @@
               <div class="hero-btns wow fadeInUp">
                 <div class="row g-3">
                   <div class="col-auto">
-                    <form
-                      id="subscription-form"
-                      action="https://formspree.io/f/mknyrgbe"
-                      method="POST"
+                    <a
+                      href="#signup-for-product"
+                      class="btn btn-primary btn-lg"
+                      data-wow-delay=".6s"
                     >
-                      <div class="input-group mb-3">
-                        <button
-                          class="btn btn-primary btn-lg"
-                          type="button"
-                          id="subscribe-btn"
-                        >
-                          Sign Up
-                        </button>
-                        <input
-                          type="text"
-                          name="email"
-                          class="form-control"
-                          placeholder="Email Address"
-                          aria-label="Email Address"
-                        />
-                      </div>
-                      <p id="my-form-status"></p>
-                    </form>
+                      Subscribe
+                    </a>
                   </div>
                   <div class="col-auto">
                     <a
@@ -313,20 +297,13 @@
 
     <!-- ========================= search-section start ========================= -->
     <section class="search-section pt-150">
-      <div class="search-shape">
-        <img
-          src="assets/img/search/search-shape.svg"
-          alt=""
-          class="shape shape-1"
-        />
-      </div>
       <div class="container">
         <div class="row align-items-center">
           <div class="col-xl-5 col-lg-6 order-last order-lg-first">
             <div class="search-content">
               <div class="section-title mb-40">
                 <h1 class="mb-40 wow fadeInUp" data-wow-delay=".2s">
-                  Explore and learn more about AppGrids
+                  What SCIN Brings To The Scientist Community?
                 </h1>
                 <p class="wow fadeInUp" data-wow-delay=".4s">
                   Lorem ipsum dolor samet consetetur sadipscing elitr, serewd
@@ -338,27 +315,42 @@
               <div class="app-info">
                 <div class="single-info">
                   <div class="icon-style color-1">
-                    <h2>2.2</h2>
+                    <h6>Open Access</h6>
                   </div>
-                  <h4>Version</h4>
+                  <p class="icon-descr">
+                    Promoting Open Access publishing by reducing the publishing
+                    costs
+                  </p>
                 </div>
                 <div class="single-info">
                   <div class="icon-style color-2">
-                    <h2>9.5</h2>
+                    <h6>Copyright Ownership</h6>
                   </div>
-                  <h4>Mb</h4>
-                </div>
-                <div class="single-info">
-                  <div class="icon-style color-3">
-                    <h2>4.5</h2>
-                  </div>
-                  <h4>Rating</h4>
+                  <p class="icon-descr">
+                    Authors will retain the copyright ownership of their work.
+                  </p>
                 </div>
               </div>
-              <p>
-                Lorem ipsum dolor samet consetetur sadipscing elitr, serewd diam
-                nonumy eirmod tempor invidunt.
-              </p>
+              <div class="app-info">
+                <div class="single-info">
+                  <div class="icon-style color-3">
+                    <h6>Royalty Earning</h6>
+                  </div>
+                  <p class="icon-descr">
+                    Collaborators of the publication could choose to earn
+                    royalty for their work.
+                  </p>
+                </div>
+                <div class="single-info">
+                  <div class="icon-style color-1">
+                    <h6>Expedited Reviewing</h6>
+                  </div>
+                  <p class="icon-descr">
+                    Incentivized peer-review process to ensure timely and high
+                    quality reviews of the manuscript.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -373,9 +365,13 @@
     <!-- ========================= search-section end ========================= -->
 
     <!-- ========================= counter-up-section start ========================= -->
-    <section class="counter-up-section pt-150">
+    <!-- <section class="counter-up-section pt-150">
       <div class="counter-shape">
-        <!-- <img src="assets/img/count-up/counter-shape.svg" alt="" class="shape shape-1"> -->
+        <img
+          src="assets/img/count-up/counter-shape.svg"
+          alt=""
+          class="shape shape-1"
+        />
       </div>
       <div class="container">
         <div class="row align-items-center">
@@ -447,34 +443,50 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ========================= counter-up-section end ========================= -->
 
     <!-- ========================= testimonial-section start ========================= -->
-    <section id="testimonial" class="testimonial-section">
+    <section id="signup-for-product" class="testimonial-section">
       <div class="container text-center">
-        <h1>
-          Decentralized Open-Access and Digital Peer-Reviewed Scientific
-          Publishing Platform
-        </h1>
-        <p>
-          Please, purchase full version of the template to get all sections,
-          docs and permission to remove footer credits.
-        </p>
-        <a
-          href="https://rebrand.ly/appgrids-gg/"
-          class="main-btn btn-hover wow fadeInUp"
-          data-wow-delay=".6s"
-          >Purchase Now</a
-        >
+        <h1>Are you intesred in publishing your paper with us?</h1>
+        <br />
+        <p>Please sign up and we will get back to you soon.</p>
+        <div class="row justify-content-center my-4">
+          <div class="col-6">
+            <form
+              id="subscription-form"
+              action="https://formspree.io/f/mknyrgbe"
+              method="POST"
+            >
+              <div class="input-group mb-3">
+                <button
+                  class="btn btn-primary btn-lg"
+                  type="button"
+                  id="subscribe-btn"
+                >
+                  Sign Up
+                </button>
+                <input
+                  type="text"
+                  name="email"
+                  class="form-control"
+                  placeholder="Email Address"
+                  aria-label="Email Address"
+                />
+              </div>
+              <p id="my-form-status"></p>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
     <!-- ========================= testimonial-section end ========================= -->
 
     <!-- ========================= download-section start ========================= -->
-    <section id="download" class="download-section pt-130 pb-130">
+    <!-- <section id="download" class="download-section pt-130 pb-130">
       <div class="map-bg">
-        <!-- <img src="assets/img/download/map-bg.svg" alt="" > -->
+        <img src="assets/img/download/map-bg.svg" alt="" />
       </div>
       <div class="download-shape">
         <img
@@ -521,13 +533,17 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ========================= download-section end ========================= -->
 
     <!-- ========================= footer start ========================= -->
     <footer id="footer" class="footer">
       <div class="footer-shape">
-        <!-- <img src="assets/img/footer/footer-shape-1.svg" alt="" class="shape shape-1"> -->
+        <img
+          src="assets/img/footer/footer-shape-1.svg"
+          alt=""
+          class="shape shape-1"
+        />
       </div>
       <div class="container">
         <div class="widget-wrapper">
@@ -618,7 +634,6 @@
         </div>
       </div>
     </footer>
-
     <!-- ========================= footer end ========================= -->
 
     <!-- ========================= scroll-top ========================= -->
