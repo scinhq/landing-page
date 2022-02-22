@@ -1458,7 +1458,7 @@ p {
   position: relative;
   z-index: 1;
   padding: 150px 0 50px;
-  background-image: url("../img/hero/map-bg.svg");
+  background-image: url("/img/hero/map-bg.svg");
   background-repeat: no-repeat;
   background-position: left;
   /* width: 100% !important; */
