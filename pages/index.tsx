@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={''}>
       <Head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <title>SCIN - Decentralized Scientific Publishing</title>
         <meta
