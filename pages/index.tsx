@@ -160,7 +160,7 @@ export default function Home() {
                     the ownership of their work.
                   </p>
                   <br />
-                  <p>
+                  <p className="wow fadeInUp" data-wow-delay=".4s">
                     This is achieved through our decentralized puyblishing
                     platform which publishes your scientific work as a smart
                     contract.
@@ -191,7 +191,7 @@ export default function Home() {
                     publish their work as a smart contract.
                   </p>
                   <br />
-                  <p>
+                  <p className="wow fadeInUp" data-wow-delay=".4s">
                     We are revolutionizing the peer-review publishing by
                     incentivizing reviewers to review the publications with more
                     accountability and responsibility. This is achieved by our
