@@ -161,7 +161,7 @@ export default function Home() {
                   </p>
                   <br />
                   <p className="wow fadeInUp" data-wow-delay=".4s">
-                    This is achieved through our decentralized puyblishing
+                    This is achieved through our decentralized publishing
                     platform which publishes your scientific work as a smart
                     contract.
                   </p>
