@@ -1,25 +1,17 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import Script from 'next/script';
+import SEO from '../components/seo';
 
 export default function Home() {
   return (
     <div className={''}>
-      <Head>
-        <meta charSet="utf-8" />
-        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <title>SCIN - Decentralized Scientific Publishing</title>
-        <meta
-          name="description"
-          content="SCIN is a decentralized scientific publishing platform, empowering researchers to retain the ownership of their work."
-        />
-        <meta
-          name="keywords"
-          content="Decentralized Publishign, DePub, Scientist Independence, SCIN, SCIN.io, SCIN.tech"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.svg" />
-      </Head>
+      <SEO
+        title={'SCIN'}
+        siteTitle={'Decentralized Scientific Publishing'}
+        description={
+          'SCIN is a decentralized scientific publishing platform, empowering researchers to retain the ownership of their work.'
+        }
+      />
 
       {/* <!-- ========================= preloader start ========================= --> */}
       <div className="preloader">
