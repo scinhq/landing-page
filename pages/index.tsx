@@ -104,7 +104,7 @@ export default function Home() {
                       </Link>
                     </div>
                     <div className="col-auto">
-                      <Link href="about" passHref>
+                      <Link href="https://app.scin.io" passHref>
                         <a
                           className="btn btn-outline-primary btn-lg"
                           data-wow-delay=".6s"
