@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Script from 'next/script';
-import SEO from '../components/Seo';
+import SEO from '../components/seo';
 
 export default function Home() {
   return (
