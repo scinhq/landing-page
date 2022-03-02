@@ -38,7 +38,7 @@ export default function Home() {
             <div className="row align-items-center">
               <div className="col-lg-12">
                 <nav className="navbar navbar-expand-lg">
-                  <Link href={''} passHref>
+                  <Link href="./" passHref>
                     <a className="navbar-brand">
                       <img
                         className="logo-1"
