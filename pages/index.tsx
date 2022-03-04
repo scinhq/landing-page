@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Script from 'next/script';
 import SEO from '../components/seo';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -40,11 +41,16 @@ export default function Home() {
                 <nav className="navbar navbar-expand-lg">
                   <Link href="./" passHref>
                     <a className="navbar-brand">
-                      <img
-                        className="logo-1"
-                        src="img/logo/logo.png"
-                        alt="SCIN Logo"
-                      />
+                      <div style={{ width: '12rem' }}>
+                        <Image
+                          className="logo-1"
+                          src="/img/logo/logo.png"
+                          alt="SCIN Logo"
+                          layout="responsive"
+                          width={1000}
+                          height={400}
+                        />
+                      </div>
                     </a>
                   </Link>
                   <button
