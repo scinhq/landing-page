@@ -2,6 +2,10 @@ import Link from 'next/link';
 import Script from 'next/script';
 import SEO from '../components/seo';
 import Image from 'next/image';
+import Logo from '../public/img/logo/logo.png';
+import heroImage from '../public/img/hero/hero-img.png';
+import searchImage from '../public/img/search/search-img.png';
+import smartContract from '../public/img/plan/smart contract.svg';
 
 export default function Home() {
   return (
@@ -44,7 +48,7 @@ export default function Home() {
                       <div style={{ width: '12rem' }}>
                         <Image
                           className="logo-1"
-                          src="/img/logo/logo.png"
+                          src={Logo}
                           alt="SCIN Logo"
                           layout="responsive"
                           width={1000}
@@ -125,7 +129,13 @@ export default function Home() {
             </div>
             <div className="col-lg-6">
               <div className="hero-img wow fadeInUp" data-wow-delay=".5s">
-                <img src="img/hero/hero-img.png" alt="" />
+                <Image
+                  src={heroImage}
+                  layout="responsive"
+                  width={751}
+                  height={501}
+                  alt="Publishing Hero Image"
+                />
               </div>
             </div>
           </div>
@@ -141,7 +151,13 @@ export default function Home() {
           <div className="row align-items-center">
             <div className="col-lg-6 col-xl-7">
               <div className="tracking-image">
-                <img src="img/plan/smart contract.svg" alt="" />
+                <Image
+                  src={smartContract}
+                  alt="Smart Contract Image"
+                  width={500}
+                  height={500}
+                  layout="responsive"
+                />
               </div>
             </div>
             <div className="col-lg-6 col-xl-5">
@@ -240,7 +256,13 @@ export default function Home() {
 
             <div className="col-xl-7 col-lg-6">
               <div className="search-img text-lg-right">
-                <img src="img/search/search-img.png" alt="" />
+                <Image
+                  src={searchImage}
+                  width={828}
+                  height={579}
+                  layout="responsive"
+                  alt="People doing research and completing a publication"
+                />
               </div>
             </div>
           </div>
