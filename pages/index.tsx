@@ -6,10 +6,11 @@ import heroImage from '../public/img/hero/hero-img.png';
 import searchImage from '../public/img/search/search-img.png';
 import smartContract from '../public/img/plan/smart contract.svg';
 import Navbar from '../components/Navbar';
+import Preloader from '../components/Preloader';
 
 export default function Home() {
   return (
-    <div className={''}>
+    <div>
       <SEO
         title={'SCIN'}
         siteTitle={'Decentralized Scientific Publishing'}
@@ -18,24 +19,7 @@ export default function Home() {
         }
       />
 
-      {/* <!-- ========================= preloader start ========================= --> */}
-      <div className="preloader">
-        <div className="loader">
-          <div className="ytp-spinner">
-            <div className="ytp-spinner-container">
-              <div className="ytp-spinner-rotator">
-                <div className="ytp-spinner-left">
-                  <div className="ytp-spinner-circle"></div>
-                </div>
-                <div className="ytp-spinner-right">
-                  <div className="ytp-spinner-circle"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- preloader end --> */}
+      <Preloader />
       <Navbar />
       {/* <!-- ========================= hero-section start ========================= --> */}
       <section id="home" className="hero-section">
