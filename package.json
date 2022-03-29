@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "PORT=3030 next dev",
     "build": "next build",
     "export": "next export",
-    "start": "next start",
+    "start": "PORT=3030 next start",
     "lint": "next lint",
     "prepare": "husky install"
   },

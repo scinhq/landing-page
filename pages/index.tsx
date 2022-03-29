@@ -2,10 +2,10 @@ import Link from 'next/link';
 import Script from 'next/script';
 import SEO from '../components/seo';
 import Image from 'next/image';
-import Logo from '../public/img/logo/logo.png';
 import heroImage from '../public/img/hero/hero-img.png';
 import searchImage from '../public/img/search/search-img.png';
 import smartContract from '../public/img/plan/smart contract.svg';
+import Navbar from '../components/Navbar';
 
 export default function Home() {
   return (
@@ -36,58 +36,7 @@ export default function Home() {
         </div>
       </div>
       {/* <!-- preloader end --> */}
-      {/* <!-- ========================= header start ========================= --> */}
-      <header className="header">
-        <div className="navbar-area">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-12">
-                <nav className="navbar navbar-expand-lg">
-                  <Link href="./" passHref>
-                    <a className="navbar-brand">
-                      <div style={{ width: '12rem' }}>
-                        <Image
-                          className="logo-1"
-                          src={Logo}
-                          alt="SCIN Logo"
-                          layout="responsive"
-                          width={1000}
-                          height={400}
-                        />
-                      </div>
-                    </a>
-                  </Link>
-                  <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span className="toggler-icon"></span>
-                    <span className="toggler-icon"></span>
-                    <span className="toggler-icon"></span>
-                  </button>
-
-                  <div
-                    className="collapse navbar-collapse sub-menu-bar"
-                    id="navbarSupportedContent"
-                  ></div>
-                  {/* <!-- navbar collapse --> */}
-                </nav>
-                {/* <!-- navbar --> */}
-              </div>
-            </div>
-            {/* <!-- row --> */}
-          </div>
-          {/* <!-- container --> */}
-        </div>
-        {/* <!-- navbar area --> */}
-      </header>
-      {/* <!-- ========================= header end ========================= --> */}
-
+      <Navbar />
       {/* <!-- ========================= hero-section start ========================= --> */}
       <section id="home" className="hero-section">
         <div className="container">
