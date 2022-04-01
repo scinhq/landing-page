@@ -2,9 +2,9 @@ import Link from 'next/link';
 import Script from 'next/script';
 import SEO from '../components/seo';
 import Image from 'next/image';
-import heroImage from '../public/img/hero/hero-img.png';
-import searchImage from '../public/img/search/search-img.png';
-import smartContract from '../public/img/plan/smart contract.svg';
+import heroImage from '../../public/img/hero/hero-img.png';
+import searchImage from '../../public/img/search/search-img.png';
+import smartContract from '../../public/img/plan/smart contract.svg';
 import Navbar from '../components/Navbar';
 import Preloader from '../components/Preloader';
 
