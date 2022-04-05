@@ -32,7 +32,7 @@ export default function Home() {
                 </h1>
                 <p className="wow fadeInUp" data-wow-delay=".4s">
                   Promoting Open Access peer-reviewed publishing and leaving the
-                  copytright ownership of publications to authors and reviewers.
+                  copyright ownership of publications to authors and reviewers.
                 </p>
                 <div className="hero-btns wow fadeInUp">
                   <div className="row g-3">
