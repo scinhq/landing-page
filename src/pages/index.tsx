@@ -6,11 +6,10 @@ import heroImage from '../../public/img/hero/hero-img.png';
 import searchImage from '../../public/img/search/search-img.png';
 import smartContract from '../../public/img/plan/smart contract.svg';
 import Navbar from '../components/Navbar';
-import Preloader from '../components/Preloader';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <SEO
         title={'SCIN'}
         siteTitle={'Decentralized Scientific Publishing'}
@@ -19,7 +18,6 @@ export default function Home() {
         }
       />
 
-      <Preloader />
       <Navbar />
       {/* <!-- ========================= hero-section start ========================= --> */}
       <section id="home" className="hero-section">
@@ -328,6 +326,6 @@ export default function Home() {
       <a href="#" className="scroll-top btn-hover">
         <em className="lni lni-chevron-up"></em>
       </a>
-    </div>
+    </>
   );
 }
