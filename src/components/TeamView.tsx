@@ -13,13 +13,15 @@ interface FounderInfoCardProps {
 const FOUNDERS: FounderInfoCardProps[] = [
   {
     fullName: 'Armin Bodaghkhani',
-    description: '',
+    description:
+      'lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet  lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet',
     position: 'CEO',
     imagePath: Avatar,
   },
   {
     fullName: 'Amirsalar Heydari',
-    description: '',
+    description:
+      'lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet  lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet',
     position: 'CTO',
     imagePath: Avatar,
   },
@@ -49,6 +51,7 @@ export default function TeamView() {
               /{founderInfo.position}
             </small>
           </h2>
+          <p className="text-muted">{founderInfo.description}</p>
         </div>
       </div>
     );
