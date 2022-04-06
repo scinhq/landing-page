@@ -11,54 +11,38 @@ export default function Navbar() {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-12">
-                <nav className="navbar navbar-expand-lg">
-                  <Link href="./" passHref>
-                    <a className="navbar-brand">
-                      <div style={{ width: '12rem' }}>
-                        <Image
-                          className="logo-1"
-                          src={Logo}
-                          alt="SCIN Logo"
-                          layout="responsive"
-                          width={1000}
-                          height={400}
-                        />
-                      </div>
-                    </a>
-                  </Link>
-                  <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span className="toggler-icon"></span>
-                    <span className="toggler-icon"></span>
-                    <span className="toggler-icon"></span>
-                  </button>
-
-                  <div
-                    className="collapse navbar-collapse sub-menu-bar"
-                    id="navbarSupportedContent"
-                  >
-                    <ul id="nav" className="navbar-nav ml-auto">
-                      <li className="nav-item">
-                        <Link href="./" passHref>
-                          <a>Home</a>
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link href="/team" passHref>
-                          <a>Team</a>
-                        </Link>
-                      </li>
-                    </ul>
+                <nav className="navbar fixed-top navbar-expand-lg bg-white">
+                  <div className="container">
+                    <Link href="./" passHref>
+                      <a className="navbar-brand">
+                        <div style={{ width: '12rem' }}>
+                          <Image
+                            className="logo-1"
+                            src={Logo}
+                            alt="SCIN Logo"
+                            layout="responsive"
+                            width={1000}
+                            height={400}
+                          />
+                        </div>
+                      </a>
+                    </Link>
+                    {/* left adjusted links */}
+                    <div className="" id="navbarSupportedContent">
+                      <ul className="navbar-nav mr-auto">
+                        <li className="nav-item">
+                          <Link href="./" passHref>
+                            <a className="nav-link">Home</a>
+                          </Link>
+                        </li>
+                        <li className="nav-item">
+                          <Link href="/team" passHref>
+                            <a className="nav-link">Team</a>
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-
-                  {/* <!-- navbar collapse --> */}
                 </nav>
                 {/* <!-- navbar --> */}
               </div>
