@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import Avatar from '../../public/img/avatar.png';
 import SEO from '../components/seo';
+import ScrollTopView from '../components/Scroller';
+import TeamView from '../components/TeamView';
 
 const TeamPage = () => {
   return (
@@ -14,7 +16,8 @@ const TeamPage = () => {
         }
       />
       <Navbar />
-      <section id="home" className="other-main-sections">
+      <TeamView />
+      {/* <section id="home" className="other-main-sections">
         <div className="container">
           <main role="main">
             <section className="jumbotron text-center">
@@ -71,7 +74,8 @@ const TeamPage = () => {
             </div>
           </main>
         </div>
-      </section>
+      </section> */}
+      <ScrollTopView />
     </>
   );
 };

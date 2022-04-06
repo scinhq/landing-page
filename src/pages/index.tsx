@@ -7,6 +7,7 @@ import searchImage from '../../public/img/search/search-img.png';
 import smartContract from '../../public/img/plan/smart contract.svg';
 import Navbar from '../components/Navbar';
 import ScrollTopView from '../components/Scroller';
+import FooterView from '../components/Footer';
 
 export default function Home() {
   return (
@@ -240,85 +241,9 @@ export default function Home() {
       {/* <!-- ========================= testimonial-section end ========================= --> */}
 
       {/* <!-- ========================= footer start ========================= --> */}
-      <footer id="footer" className="footer">
-        <div className="footer-shape">
-          <img
-            src="img/footer/footer-shape-1.svg"
-            alt=""
-            className="shape shape-1"
-            width="35%"
-            height="auto"
-          />
-        </div>
-        <div className="container">
-          <div className="widget-wrapper">
-            <div className="row">
-              <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                <div className="footer-widget">
-                  <div className="logo">
-                    <a href="index.html">
-                      {/* <!-- <img src="img/logo/logo-2.svg" alt="" className="logo-2">  --> */}
-                      <img
-                        src="img/logo/website-logo.svg"
-                        alt=""
-                        className="logo-1"
-                      />
-                    </a>
-                  </div>
-                  <ul className="socials">
-                    {/* <li>
-                    <a href="javascript:void(0)">
-                      <em className="lni lni-facebook-filled"></em>
-                    </a>
-                  </li> */}
-                    <li>
-                      <Link href="https://twitter.com/scinhq" passHref>
-                        <a target="_blank">
-                          <em className="lni lni-twitter-filled"></em>
-                        </a>
-                      </Link>
-                    </li>
-                    {/* <li>
-                    <a href="javascript:void(0)">
-                      <em className="lni lni-instagram-filled"></em>
-                    </a>
-                  </li> */}
-                    <li>
-                      <Link href="https://linkedin.com/company/scinhq" passHref>
-                        <a target="_blank">
-                          <em className="lni lni-linkedin-original"></em>
-                        </a>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-2 col-md-6 col-sm-6 ml-auto">
-                <div className="footer-widget">
-                  <h3>About SCIN</h3>
-                  <ul className="links">
-                    <li>
-                      <Link
-                        href="mailto:armin@scin.io?subject=Book a meeting to discuss SCIN"
-                        passHref
-                      >
-                        <a>Contact Us</a>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      {/* <!-- ========================= footer end ========================= --> */}
-
-      {/* <!-- ========================= JS here ========================= --> */}
-      <Script
-        src="js/bootstrap.5.0.0.alpha-2-min.js"
-        strategy="beforeInteractive"
-      />
+      <section id="home" className="container">
+        {<FooterView />}
+      </section>
 
       {/* <!-- ========================= scroll-top ========================= --> */}
       <ScrollTopView />
