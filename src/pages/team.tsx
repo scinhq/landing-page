@@ -5,7 +5,7 @@ import SEO from '../components/seo';
 
 const TeamPage = () => {
   return (
-    <div>
+    <>
       <SEO
         title={'SCIN'}
         siteTitle={'SCIN Team'}
@@ -72,7 +72,7 @@ const TeamPage = () => {
           </main>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 

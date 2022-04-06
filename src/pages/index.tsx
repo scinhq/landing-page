@@ -6,6 +6,7 @@ import heroImage from '../../public/img/hero/hero-img.png';
 import searchImage from '../../public/img/search/search-img.png';
 import smartContract from '../../public/img/plan/smart contract.svg';
 import Navbar from '../components/Navbar';
+import ScrollTopView from '../components/Scroller';
 
 export default function Home() {
   return (
@@ -318,14 +319,9 @@ export default function Home() {
         src="js/bootstrap.5.0.0.alpha-2-min.js"
         strategy="beforeInteractive"
       />
-      <Script src="js/count-up.min.js" strategy="beforeInteractive" />
-      <Script src="js/wow.min.js" strategy="beforeInteractive" />
-      <Script src="js/main.js" strategy="beforeInteractive" />
 
       {/* <!-- ========================= scroll-top ========================= --> */}
-      <a href="#" className="scroll-top btn-hover">
-        <em className="lni lni-chevron-up"></em>
-      </a>
+      <ScrollTopView />
     </>
   );
 }
