@@ -6,13 +6,13 @@ Author: GrayGrids
 /*===========================
     01.COMMON css
 ===========================*/
-@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Sen:wght@400;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Sen:wght@400;700;800&display=swap');
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Sen", sans-serif;
+  font-family: 'Sen', sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #5e678c;
@@ -189,7 +189,7 @@ p {
 }
 
 .btn-hover::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0%;
   height: 0%;
@@ -1291,7 +1291,7 @@ p {
 
 .navbar-nav .nav-item a::after,
 .navbar-nav .nav-item a::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   height: 2px;
@@ -1454,11 +1454,20 @@ p {
   top: -5px;
 }
 
+.other-main-sections {
+  position: relative;
+  z-index: 1;
+  padding: 150px 0 50px;
+  background-repeat: no-repeat;
+  background-position: left;
+  /* width: 100% !important; */
+}
+
 .hero-section {
   position: relative;
   z-index: 1;
   padding: 150px 0 50px;
-  background-image: url("/img/hero/map-bg.svg");
+  background-image: url('/img/hero/map-bg.svg');
   background-repeat: no-repeat;
   background-position: left;
   /* width: 100% !important; */
@@ -1520,7 +1529,7 @@ p {
   border-radius: 10px;
   font-weight: 500;
   font-size: 20px;
-  font-family: "Hind Siliguri", sans-serif;
+  font-family: 'Hind Siliguri', sans-serif;
   margin-right: 30px;
   margin-bottom: 30px;
   border: 2px solid transparent;
