@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from '../assets/styles/team.module.css';
-import Avatar from '../../public/img/avatar.png';
+import AmirsalarPhoto from '../../public/img/team/Amirsalar-B&W.jpg';
+import ArminPhoto from '../../public/img/team/Armin-B&W.jpg';
 import FooterView from './Footer';
 
 interface FounderInfoCardProps {
@@ -16,14 +17,14 @@ const FOUNDERS: FounderInfoCardProps[] = [
     description:
       'lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet  lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet',
     position: 'CEO',
-    imagePath: Avatar,
+    imagePath: ArminPhoto,
   },
   {
     fullName: 'Amirsalar Heydari',
     description:
       'lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet  lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet',
     position: 'CTO',
-    imagePath: Avatar,
+    imagePath: AmirsalarPhoto,
   },
 ];
 
@@ -35,7 +36,7 @@ export default function TeamView() {
           <div className="col-4 mt-3">
             <Image
               src={founderInfo.imagePath}
-              className="card-img-top"
+              className="card-img-top rounded-circle border"
               layout="responsive"
               width={100}
               height={100}
