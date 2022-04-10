@@ -45,6 +45,14 @@ export default function Navbar() {
                   <a className="nav-link">Team</a>
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link
+                  href="mailto:info@scin.io?subject=Have a question about SCIN"
+                  passHref
+                >
+                  <a className="nav-link">Contact Us</a>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
