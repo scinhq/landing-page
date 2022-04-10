@@ -2,14 +2,16 @@ import Link from 'next/link';
 import Script from 'next/script';
 import SEO from '../components/seo';
 import Image from 'next/image';
-import Logo from '../public/img/logo/logo.png';
-import heroImage from '../public/img/hero/hero-img.png';
-import searchImage from '../public/img/search/search-img.png';
-import smartContract from '../public/img/plan/smart contract.svg';
+import heroImage from '../../public/img/hero/hero-img.png';
+import searchImage from '../../public/img/search/search-img.png';
+import smartContract from '../../public/img/plan/smart contract.svg';
+import Navbar from '../components/Navbar';
+import ScrollTopView from '../components/Scroller';
+import FooterView from '../components/Footer';
 
 export default function Home() {
   return (
-    <div className={''}>
+    <>
       <SEO
         title={'SCIN'}
         siteTitle={'Decentralized Scientific Publishing'}
@@ -18,76 +20,7 @@ export default function Home() {
         }
       />
 
-      {/* <!-- ========================= preloader start ========================= --> */}
-      <div className="preloader">
-        <div className="loader">
-          <div className="ytp-spinner">
-            <div className="ytp-spinner-container">
-              <div className="ytp-spinner-rotator">
-                <div className="ytp-spinner-left">
-                  <div className="ytp-spinner-circle"></div>
-                </div>
-                <div className="ytp-spinner-right">
-                  <div className="ytp-spinner-circle"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <!-- preloader end --> */}
-      {/* <!-- ========================= header start ========================= --> */}
-      <header className="header">
-        <div className="navbar-area">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-12">
-                <nav className="navbar navbar-expand-lg">
-                  <Link href="./" passHref>
-                    <a className="navbar-brand">
-                      <div style={{ width: '12rem' }}>
-                        <Image
-                          className="logo-1"
-                          src={Logo}
-                          alt="SCIN Logo"
-                          layout="responsive"
-                          width={1000}
-                          height={400}
-                        />
-                      </div>
-                    </a>
-                  </Link>
-                  <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span className="toggler-icon"></span>
-                    <span className="toggler-icon"></span>
-                    <span className="toggler-icon"></span>
-                  </button>
-
-                  <div
-                    className="collapse navbar-collapse sub-menu-bar"
-                    id="navbarSupportedContent"
-                  ></div>
-                  {/* <!-- navbar collapse --> */}
-                </nav>
-                {/* <!-- navbar --> */}
-              </div>
-            </div>
-            {/* <!-- row --> */}
-          </div>
-          {/* <!-- container --> */}
-        </div>
-        {/* <!-- navbar area --> */}
-      </header>
-      {/* <!-- ========================= header end ========================= --> */}
-
+      <Navbar />
       {/* <!-- ========================= hero-section start ========================= --> */}
       <section id="home" className="hero-section">
         <div className="container">
@@ -99,7 +32,7 @@ export default function Home() {
                 </h1>
                 <p className="wow fadeInUp" data-wow-delay=".4s">
                   Promoting Open Access peer-reviewed publishing and leaving the
-                  copytright ownership of publications to authors and reviewers.
+                  copyright ownership of publications to authors and reviewers.
                 </p>
                 <div className="hero-btns wow fadeInUp">
                   <div className="row g-3">
@@ -308,93 +241,12 @@ export default function Home() {
       {/* <!-- ========================= testimonial-section end ========================= --> */}
 
       {/* <!-- ========================= footer start ========================= --> */}
-      <footer id="footer" className="footer">
-        <div className="footer-shape">
-          <img
-            src="img/footer/footer-shape-1.svg"
-            alt=""
-            className="shape shape-1"
-            width="35%"
-            height="auto"
-          />
-        </div>
-        <div className="container">
-          <div className="widget-wrapper">
-            <div className="row">
-              <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                <div className="footer-widget">
-                  <div className="logo">
-                    <a href="index.html">
-                      {/* <!-- <img src="img/logo/logo-2.svg" alt="" className="logo-2">  --> */}
-                      <img
-                        src="img/logo/website-logo.svg"
-                        alt=""
-                        className="logo-1"
-                      />
-                    </a>
-                  </div>
-                  <ul className="socials">
-                    {/* <li>
-                    <a href="javascript:void(0)">
-                      <em className="lni lni-facebook-filled"></em>
-                    </a>
-                  </li> */}
-                    <li>
-                      <Link href="https://twitter.com/scinhq" passHref>
-                        <a target="_blank">
-                          <em className="lni lni-twitter-filled"></em>
-                        </a>
-                      </Link>
-                    </li>
-                    {/* <li>
-                    <a href="javascript:void(0)">
-                      <em className="lni lni-instagram-filled"></em>
-                    </a>
-                  </li> */}
-                    <li>
-                      <Link href="https://linkedin.com/company/scinhq" passHref>
-                        <a target="_blank">
-                          <em className="lni lni-linkedin-original"></em>
-                        </a>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-2 col-md-6 col-sm-6 ml-auto">
-                <div className="footer-widget">
-                  <h3>About SCIN</h3>
-                  <ul className="links">
-                    <li>
-                      <Link
-                        href="mailto:armin@scin.io?subject=Book a meeting to discuss SCIN"
-                        passHref
-                      >
-                        <a>Contact Us</a>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      {/* <!-- ========================= footer end ========================= --> */}
-
-      {/* <!-- ========================= JS here ========================= --> */}
-      <Script
-        src="js/bootstrap.5.0.0.alpha-2-min.js"
-        strategy="beforeInteractive"
-      />
-      <Script src="js/count-up.min.js" strategy="beforeInteractive" />
-      <Script src="js/wow.min.js" strategy="beforeInteractive" />
-      <Script src="js/main.js" strategy="beforeInteractive" />
+      <section id="home" className="container">
+        {<FooterView />}
+      </section>
 
       {/* <!-- ========================= scroll-top ========================= --> */}
-      <a href="#" className="scroll-top btn-hover">
-        <em className="lni lni-chevron-up"></em>
-      </a>
-    </div>
+      <ScrollTopView />
+    </>
   );
 }
