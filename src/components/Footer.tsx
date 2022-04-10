@@ -62,6 +62,16 @@ export default function FooterView() {
           <h5>About</h5>
           <ul className="list-unstyled text-small">
             <li className="mb-1">
+              <Link
+                href="mailto:info@scin.io?subject=Have a question about SCIN"
+                passHref
+              >
+                <a className="link-secondary text-decoration-none">
+                  Contact Us
+                </a>
+              </Link>
+            </li>
+            <li className="mb-1">
               <Link href="./team" passHref>
                 <a className="link-secondary text-decoration-none">Team</a>
               </Link>
