@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import Logo from '../../public/img/logo/logo.svg';
+import { SocialButton } from './SocialButtons';
 
-interface SocialMediumInformation {
+export interface SocialMediumInformation {
   name: string;
   url: string;
   isActive: boolean;
@@ -37,20 +37,6 @@ const SOCIAL_MEDIA: SocialMediumInformation[] = [
 ];
 
 export default function FooterView() {
-  const socialButtons = (socialMediumInfo: SocialMediumInformation) => {
-    return (
-      <div className="btn-group me-2" role="group">
-        <button type="button" className="btn btn-secondary">
-          <Link href={socialMediumInfo.url} passHref>
-            <a target="_blank">
-              <em className={socialMediumInfo.iconClassName}></em>
-            </a>
-          </Link>
-        </button>
-      </div>
-    );
-  };
-
   return (
     <footer className="pt-4 my-md-5 pt-md-5 border-top">
       <div className="row">
@@ -64,7 +50,7 @@ export default function FooterView() {
               aria-label="Toolbar with button groups"
             >
               {SOCIAL_MEDIA.map((socialMed) => {
-                return socialMed.isActive ? socialButtons(socialMed) : <></>;
+                return socialMed.isActive ? SocialButton(socialMed) : <></>;
               })}
             </div>
           </div>
