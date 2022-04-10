@@ -4,8 +4,8 @@ import { FounderInfoCardProps } from './TeamView';
 
 export const SocialButton = (props: SocialMediumInformation) => {
   return (
-    <div className="btn-group me-2" role="group">
-      <button type="button" className="btn btn-secondary">
+    <div className="btn-group me-1" role="group">
+      <button type="button" className="btn btn-outline">
         <Link href={props.url} passHref>
           <a target="_blank">
             <em className={props.iconClassName}></em>
