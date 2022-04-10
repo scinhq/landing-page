@@ -37,13 +37,16 @@ const SOCIAL_MEDIA: SocialMediumInformation[] = [
   },
 ];
 
+const YEAR = new Date().getFullYear();
+
 export default function FooterView() {
   return (
     <footer className="pt-4 my-md-5 pt-md-5 border-top">
       <div className="row">
         <div className="col-12 col-md">
-          <Image src={Logo} alt="" width="40" height="55" />
-          <small className="d-block mb-3 text-muted">&copy; 2021</small>
+          <small className="d-block mb-3 text-muted">
+            &copy; {YEAR} SCIN Publishing Inc. All Rights Reserved.
+          </small>
           <div>
             <div
               className="btn-toolbar"
