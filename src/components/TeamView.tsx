@@ -113,9 +113,9 @@ export default function TeamView() {
         >
           <h1 className="display-4 fw-normal">SCIN Team</h1>
           <p className="fs-5 text-muted">
-            Quickly build an effective pricing table for your potential
-            customers with this Bootstrap example. It’s built with default
-            Bootstrap components and utilities with little customization.
+            SCIN is a technology company that builds a decentralized publishing
+            system that enables researchers to publish their scientific articles
+            while retaining the copyright ownership of their work.
           </p>
         </div>
 
