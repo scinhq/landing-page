@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from '../assets/styles/team.module.css';
-import AliPhoto from '../../public/img/team/Ali-B&W.jpg';
-import ArminPhoto from '../../public/img/team/Armin-B&W.jpg';
+import AliPhoto from '../../public/img/team/Ali-B&W.png';
+import ArminPhoto from '../../public/img/team/Armin-B&W.png';
 import FooterView, { SocialMediumInformation } from './Footer';
 import { TeamSocialLinks } from './SocialButtons';
 
