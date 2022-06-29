@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from '../assets/styles/team.module.css';
-import AmirsalarPhoto from '../../public/img/team/Amirsalar-B&W.jpg';
-import ArminPhoto from '../../public/img/team/Armin-B&W.jpg';
+import AliPhoto from '../../public/img/team/Ali-B&W.png';
+import ArminPhoto from '../../public/img/team/Armin-B&W.png';
 import FooterView, { SocialMediumInformation } from './Footer';
 import { TeamSocialLinks } from './SocialButtons';
 
@@ -44,29 +44,29 @@ const FOUNDERS: FounderInfoCardProps[] = [
     ],
   },
   {
-    fullName: 'Amirsalar Heydari',
+    fullName: 'Ali Farrokhtala',
     description:
-      "Amir (BSc. and MASc.) is a Software Engineer with more than 5 years of software \
-      development experience. He has worked in a large-scale S&P 500 fintech company \
-      and a couple of startups based in Silicon Valley, where he went through \
-      a full cycle of developing, leading and managing projects and teams. Amir has a \
-      solid track record of building a large-scale fintech product with his engineering \
-      team, which reinvented the revenue stream of his past organization. Before \
-      starting his professional career and entrepreneurial journey, he earned his master's degree \
-      in Electrical and Computer Engineering from UBC, where he was a high-standing \
-      student researcher, publishing several journals and conference papers.",
+      "Ali (MASc. and PhD Candidate) is a Researcher, Software Developer and IT Expert \
+      with more than 5 years of IT industry experience. He has worked in a different sectors \
+      such as Cloud Services and Finance and Tax industry, where he went through \
+      a full cycle of developing, leading and managing IT projects and teams. Ali has a \
+      solid track record of designing and deploying IT services and products. Before \
+      starting his professional career and entrepreneurial journey, he earned his master's \
+      degree in Computer Science from UTM, Malaysia and is now in the process of completing \
+      his Doctorate study at Memorial University where he has a high-standing research and \
+      teaching portfolio as well as publishing several journals and conference papers.",
     position: 'CTO',
-    imagePath: AmirsalarPhoto,
+    imagePath: AliPhoto,
     socialMediaLinks: [
       {
         name: 'twitter',
-        url: 'https://twitter.com/amirsalar',
+        url: 'https://twitter.com/Ali_Farrokhtala',
         isActive: true,
         iconClassName: 'lni lni-twitter-filled',
       },
       {
         name: 'linkedin',
-        url: 'https://linkedin.com/in/arminbodaghkhani',
+        url: 'https://linkedin.com/in/ali-farrokhtala',
         isActive: true,
         iconClassName: 'lni lni-linkedin-original',
       },
