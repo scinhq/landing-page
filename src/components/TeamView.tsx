@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from '../assets/styles/team.module.css';
 import AliPhoto from '../../public/img/team/Ali-B&W.png';
 import ArminPhoto from '../../public/img/team/Armin-B&W.png';
+import IsmaelPhoto from '../../public/img/team/Ismael-B&W.jpg';
 import FooterView, { SocialMediumInformation } from './Footer';
 import { TeamSocialLinks } from './SocialButtons';
 
@@ -46,15 +47,7 @@ const FOUNDERS: FounderInfoCardProps[] = [
   {
     fullName: 'Ali Farrokhtala',
     description:
-      "Ali (MASc. and PhD Candidate) is a Researcher, Software Developer and IT Expert \
-      with more than 5 years of IT industry experience. He has worked in a different sectors \
-      such as Cloud Services and Finance and Tax industry, where he went through \
-      a full cycle of developing, leading and managing IT projects and teams. Ali has a \
-      solid track record of designing and deploying IT services and products. Before \
-      starting his professional career and entrepreneurial journey, he earned his master's \
-      degree in Computer Science from UTM, Malaysia and is now in the process of completing \
-      his Doctorate study at Memorial University where he has a high-standing research and \
-      teaching portfolio as well as publishing several journals and conference papers.",
+      "Ali (MASc. and PhD Candidate) is a Researcher, Software Developer and IT Expert with more than 5 years of IT industry experience. He has worked in a different sectors such as Cloud Services and Finance and Tax industry, where he went through a full cycle of developing, leading and managing IT projects and teams. Ali has a solid track record of designing and deploying IT services and products. Before starting his professional career and entrepreneurial journey, he earned his master's degree in Computer Science from UTM, Malaysia and is now in the process of completing his Doctorate study at Memorial University where he has a high-standing research and teaching portfolio as well as publishing several journals and conference papers.",
     position: 'CTO',
     imagePath: AliPhoto,
     socialMediaLinks: [
@@ -67,6 +60,27 @@ const FOUNDERS: FounderInfoCardProps[] = [
       {
         name: 'linkedin',
         url: 'https://linkedin.com/in/ali-farrokhtala',
+        isActive: true,
+        iconClassName: 'lni lni-linkedin-original',
+      },
+    ],
+  },
+  {
+    fullName: 'Ismael Golmaohammadi',
+    description:
+      'Ismael is an industrial engineer and a Ph.D. candidate in international business and strategy at Memorial University, Canada. He is a passionate and dedicated researcher who believes in the power of knowledge to build a prosperous and sustainable society for everyone. Ismael has received several prestigious awards and recognitions for his devotion to studying international business. He has been awarded the Bank of Montreal’s scholarship for academic standing, the Mitacs Accelerate Fellowship, the best paper award from Administrative Science of Canada, and the Dr. Robert Sexty Scholarship for Social Responsibility. Along with his academic endeavors, Ismael has more than fourteen years of experience working with industries in different capacities, including Business and Strategy Analyst, Marketing Manager, and Director of Business Development. In his leisure time, Ismael enjoys hiking, traveling, fishing, and spending time with family and friends.',
+    position: 'CBDO',
+    imagePath: IsmaelPhoto,
+    socialMediaLinks: [
+      {
+        name: 'twitter',
+        url: 'https://twitter.com/IsmaelGolm',
+        isActive: true,
+        iconClassName: 'lni lni-twitter-filled',
+      },
+      {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/igolm',
         isActive: true,
         iconClassName: 'lni lni-linkedin-original',
       },
