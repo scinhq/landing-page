@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from '../assets/styles/team.module.css';
-import AliPhoto from '../../public/img/team/Ali-B&W.png';
+// import AliPhoto from '../../public/img/team/Ali-B&W.png';
 import ArminPhoto from '../../public/img/team/Armin-B&W.png';
 import IsmaelPhoto from '../../public/img/team/Ismael-B&W.jpg';
 import FooterView, { SocialMediumInformation } from './Footer';
@@ -44,27 +44,27 @@ const FOUNDERS: FounderInfoCardProps[] = [
       },
     ],
   },
-  {
-    fullName: 'Ali Farrokhtala',
-    description:
-      "Ali (MASc. and PhD Candidate) is a Researcher, Software Developer and IT Expert with more than 5 years of IT industry experience. He has worked in a different sectors such as Cloud Services and Finance and Tax industry, where he went through a full cycle of developing, leading and managing IT projects and teams. Ali has a solid track record of designing and deploying IT services and products. Before starting his professional career and entrepreneurial journey, he earned his master's degree in Computer Science from UTM, Malaysia and is now in the process of completing his Doctorate study at Memorial University where he has a high-standing research and teaching portfolio as well as publishing several journals and conference papers.",
-    position: 'CTO',
-    imagePath: AliPhoto,
-    socialMediaLinks: [
-      {
-        name: 'twitter',
-        url: 'https://twitter.com/Ali_Farrokhtala',
-        isActive: true,
-        iconClassName: 'lni lni-twitter-filled',
-      },
-      {
-        name: 'linkedin',
-        url: 'https://linkedin.com/in/ali-farrokhtala',
-        isActive: true,
-        iconClassName: 'lni lni-linkedin-original',
-      },
-    ],
-  },
+  // {
+  //   fullName: 'Ali Farrokhtala',
+  //   description:
+  //     "Ali (MASc. and PhD Candidate) is a Researcher, Software Developer and IT Expert with more than 5 years of IT industry experience. He has worked in a different sectors such as Cloud Services and Finance and Tax industry, where he went through a full cycle of developing, leading and managing IT projects and teams. Ali has a solid track record of designing and deploying IT services and products. Before starting his professional career and entrepreneurial journey, he earned his master's degree in Computer Science from UTM, Malaysia and is now in the process of completing his Doctorate study at Memorial University where he has a high-standing research and teaching portfolio as well as publishing several journals and conference papers.",
+  //   position: 'CTO',
+  //   imagePath: AliPhoto,
+  //   socialMediaLinks: [
+  //     {
+  //       name: 'twitter',
+  //       url: 'https://twitter.com/Ali_Farrokhtala',
+  //       isActive: true,
+  //       iconClassName: 'lni lni-twitter-filled',
+  //     },
+  //     {
+  //       name: 'linkedin',
+  //       url: 'https://linkedin.com/in/ali-farrokhtala',
+  //       isActive: true,
+  //       iconClassName: 'lni lni-linkedin-original',
+  //     },
+  //   ],
+  // },
   {
     fullName: 'Ismael Golmaohammadi',
     description:
