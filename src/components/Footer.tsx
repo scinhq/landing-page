@@ -43,10 +43,15 @@ export default function FooterView() {
   return (
     <footer className="pt-4 my-md-5 pt-md-5 border-top">
       <div className="row">
-        <div className="col-12 col-md">
-          <small className="d-block mb-3 text-muted">
-            &copy; {YEAR} SCIN Publishing Inc. All Rights Reserved.
-          </small>
+        <div className="col-12 col-md-5">
+          <div>
+            <p className="stronger">Stay Connected</p>
+            <p className="lead">
+              Follow us on social media to stay updated with the latest news,
+              insights, and exciting developments as we embark on this
+              transformative journey together.
+            </p>
+          </div>
           <div>
             <div
               className="btn-toolbar"
@@ -58,6 +63,9 @@ export default function FooterView() {
               })}
             </div>
           </div>
+          <small className="d-block mt-3 text-muted">
+            &copy; {YEAR} SCIN Publishing Inc. All Rights Reserved.
+          </small>
         </div>
         <div className="col-6 col-md"></div>
         <div className="col-6 col-md"></div>

@@ -3,6 +3,7 @@ import styles from '../assets/styles/team.module.css';
 // import AliPhoto from '../../public/img/team/Ali-B&W.png';
 import ArminPhoto from '../../public/img/team/Armin-B&W.png';
 import IsmaelPhoto from '../../public/img/team/Ismael-B&W.jpg';
+import MasoudPhoto from '../../public/img/team/Masoud-B&W.jpg';
 import FooterView, { SocialMediumInformation } from './Footer';
 import { TeamSocialLinks } from './SocialButtons';
 
@@ -81,6 +82,27 @@ const FOUNDERS: FounderInfoCardProps[] = [
       {
         name: 'linkedin',
         url: 'https://www.linkedin.com/in/igolm',
+        isActive: true,
+        iconClassName: 'lni lni-linkedin-original',
+      },
+    ],
+  },
+  {
+    fullName: 'Masoud Zare',
+    description:
+      'Masoud is a CS student at Memorial university with a background in marketing. I have a demonstrated experience in working on web applications and designing responsive websites.',
+    position: 'CTO',
+    imagePath: MasoudPhoto,
+    socialMediaLinks: [
+      {
+        name: 'twitter',
+        url: 'https://twitter.com/masoudzare18',
+        isActive: true,
+        iconClassName: 'lni lni-twitter-filled',
+      },
+      {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/masoudzare',
         isActive: true,
         iconClassName: 'lni lni-linkedin-original',
       },
