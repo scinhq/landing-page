@@ -2,12 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '../../public/img/logo/logo.svg';
 import { SocialButton } from './SocialButtons';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export interface SocialMediumInformation {
   name: string;
   url: string;
   isActive: boolean;
-  iconClassName: string;
+  faIcon?: IconDefinition;
 }
 
 const SOCIAL_MEDIA: SocialMediumInformation[] = [
@@ -15,25 +17,13 @@ const SOCIAL_MEDIA: SocialMediumInformation[] = [
     name: 'twitter',
     url: 'https://twitter.com/scinhq',
     isActive: true,
-    iconClassName: 'lni lni-twitter-filled',
-  },
-  {
-    name: 'facebook',
-    url: '',
-    isActive: false,
-    iconClassName: 'lni lni-facebook-filled',
-  },
-  {
-    name: 'instagram',
-    url: '',
-    isActive: false,
-    iconClassName: 'lni lni-instagram-filled',
+    faIcon: faXTwitter,
   },
   {
     name: 'linkedin',
     url: 'https://linkedin.com/company/scinhq',
     isActive: true,
-    iconClassName: 'lni lni-linkedin-original',
+    faIcon: faLinkedin,
   },
 ];
 
@@ -43,10 +33,15 @@ export default function FooterView() {
   return (
     <footer className="pt-4 my-md-5 pt-md-5 border-top">
       <div className="row">
-        <div className="col-12 col-md">
-          <small className="d-block mb-3 text-muted">
-            &copy; {YEAR} SCIN Publishing Inc. All Rights Reserved.
-          </small>
+        <div className="col-12 col-md-5">
+          <div>
+            <p className="stronger">Stay Connected</p>
+            <p className="lead">
+              Follow us on social media to stay updated with the latest news,
+              insights, and exciting developments as we embark on this
+              transformative journey together.
+            </p>
+          </div>
           <div>
             <div
               className="btn-toolbar"
@@ -58,6 +53,9 @@ export default function FooterView() {
               })}
             </div>
           </div>
+          <small className="d-block mt-3 text-muted">
+            &copy; {YEAR} SCIN Publishing Inc. All Rights Reserved.
+          </small>
         </div>
         <div className="col-6 col-md"></div>
         <div className="col-6 col-md"></div>
@@ -80,19 +78,18 @@ export default function FooterView() {
               </Link>
             </li>
             <li className="mb-1">
-              <a className="link-secondary text-decoration-none" href="#">
-                Locations
-              </a>
+              <Link href="./privacy" passHref>
+                <a className="link-secondary text-decoration-none" href="#">
+                  Privacy
+                </a>
+              </Link>
             </li>
             <li className="mb-1">
-              <a className="link-secondary text-decoration-none" href="#">
-                Privacy
-              </a>
-            </li>
-            <li className="mb-1">
-              <a className="link-secondary text-decoration-none" href="#">
-                Terms
-              </a>
+              <Link href="./terms" passHref>
+                <a className="link-secondary text-decoration-none" href="#">
+                  Terms
+                </a>
+              </Link>
             </li>
           </ul>
         </div>

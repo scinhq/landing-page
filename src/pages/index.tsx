@@ -2,7 +2,10 @@ import Link from 'next/link';
 import Script from 'next/script';
 import SEO from '../components/seo';
 import Image from 'next/image';
-import heroImage from '../../public/img/hero/hero-img.png';
+import heroImage from '../../public/img/hero/new-hero.jpg';
+import empoweringImage from '../../public/img/hero/1602186250-GettyImages-1150199386.jpg';
+import librariesImage from '../../public/img/hero/image.png';
+import journalImage from '../../public/img/hero/teamwork-in-the-workplace-rh.jpg';
 import searchImage from '../../public/img/search/search-img.png';
 import smartContract from '../../public/img/plan/smart contract.svg';
 import Navbar from '../components/Navbar';
@@ -22,97 +25,139 @@ export default function Home() {
 
       <Navbar />
       {/* <!-- ========================= hero-section start ========================= --> */}
-      <section id="home" className="hero-section">
-        <div className="container">
+      <section
+        id="home"
+        style={{
+          marginTop: '5rem',
+          backgroundColor: '#0F7AB6',
+          color: 'white',
+        }}
+      >
+        <div className="container d-flex align-items-center justify-content-center pt-200 pb-200">
           <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div className="hero-content">
-                <h1 className="wow fadeInUp" data-wow-delay=".2s">
-                  Decentralized Scientific Publishing Platform
-                </h1>
-                <p className="wow fadeInUp" data-wow-delay=".4s">
-                  Promoting Open Access peer-reviewed publishing and leaving the
-                  copyright ownership of publications to authors and reviewers.
-                </p>
-                <div className="hero-btns wow fadeInUp">
-                  <div className="row g-3">
-                    <div className="col-auto">
-                      <Link href="#signup-for-product" passHref>
-                        <a
-                          className="btn btn-primary btn-lg"
-                          data-wow-delay=".6s"
-                        >
-                          Publish With Us
-                        </a>
-                      </Link>
-                    </div>
-                    <div className="col-auto">
-                      <Link href="https://app.scin.io" passHref>
-                        <a
-                          className="btn btn-outline-primary btn-lg"
-                          data-wow-delay=".6s"
-                        >
-                          Learn More
-                        </a>
-                      </Link>
-                    </div>
+            <div className="hero-content">
+              <h1
+                className="wow fadeInUp pb-70"
+                style={{ fontSize: '4.5rem', borderBottom: '4px solid white' }}
+                data-wow-delay=".2s"
+              >
+                {`Welcome to SCIN:`} <br />{' '}
+                {`Revolutionizing Scientific Publishing`}
+              </h1>
+              <h3 className="wow fadeInUp pt-70 pb-50" data-wow-delay=".4s">
+                Promoting Open Access peer-reviewed publishing and leaving the
+                copyright ownership of publications to authors and reviewers.
+              </h3>
+              <div className="hero-btns wow fadeInUp">
+                <div className="row g-3">
+                  <div className="col-auto">
+                    <Link href="/form" passHref>
+                      <a className="btn btn-dark btn-lg" data-wow-delay=".6s">
+                        Publish With Us
+                      </a>
+                    </Link>
+                  </div>
+                  <div className="col-auto">
+                    <Link href="https://app.scin.io" passHref>
+                      <a
+                        className="btn btn-outline-light btn-lg"
+                        data-wow-delay=".6s"
+                      >
+                        Learn More
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="hero-img wow fadeInUp" data-wow-delay=".5s">
-                <Image
-                  src={heroImage}
-                  layout="responsive"
-                  width={751}
-                  height={501}
-                  alt="Publishing Hero Image"
-                />
-              </div>
-            </div>
           </div>
         </div>
-        <div className="hero-shape">
-          {/* <!-- <img src="img/hero/hero-shape-1.svg" alt="" className="shape shape-1"> --> */}
+      </section>
+      {/* <!-- ========================= hero-section end ========================= --> */}
+      {/* <!-- ========================= hero-section start ========================= --> */}
+      <section
+        id="home"
+        className="d-flex flex-column align-items-center justify-content-center pt-150 pb-50"
+      >
+        <div className="container d-flex flex-column align-items-center justify-content-center">
+          <div className="flex align-items-center justify-content-center">
+            <h1
+              className="text-center"
+              style={{
+                fontWeight: 'bold',
+                textShadow: '2px 2px 4px rgba(0,0,0,0.1)',
+                padding: '10px 0',
+                background: '-webkit-linear-gradient(45deg, #0F7AB6, #0d6efd)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}
+            >
+              Unlocking the Future of Scientific Publishing
+            </h1>
+            <p
+              className="mt-4 lead"
+              style={{ marginTop: '2rem' }}
+              data-wow-delay=".4s"
+            >
+              At SCIN, we are rewriting the story of scientific publishing.
+              We're not just a startup; we are the future of scholarly
+              communication. SCIN, short for Scientific Innovation or Scientific
+              Independence , is the groundbreaking platform where knowledge
+              meets rewards. We are more than just a publisher; we are a
+              catalyst for change in the academic world.
+            </p>
+          </div>
+          <div className="custom-divider mt-100"></div>
         </div>
       </section>
       {/* <!-- ========================= hero-section end ========================= --> */}
       {/* <!-- ========================= tracking-section start ========================= --> */}
-      <section id="tracking" className="tracking-section pt-150">
+      <section id="tracking" className="tracking-section pt-120">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6 col-xl-7">
-              <div className="tracking-image">
-                <Image
-                  src={smartContract}
-                  alt="Smart Contract Image"
-                  width={500}
-                  height={500}
-                  layout="responsive"
-                />
-              </div>
-            </div>
-            <div className="col-lg-6 col-xl-5">
+            <div className="col-lg-6">
               <div className="tracking-content">
-                <div className="section-title mb-50">
-                  <h1 className="mb-40 wow fadeInUp" data-wow-delay=".2s">
-                    Why SCIN?
+                <div
+                  className="section-title mb-50"
+                  style={{ marginRight: '2rem' }}
+                >
+                  <h1 className="mb-30 wow fadeInUp" data-wow-delay=".2s">
+                    Our Mission: Empowering the Scientific Community
                   </h1>
+                  <h5
+                    className="mb-30 fst-italic wow fadeInUp"
+                    data-wow-delay=".2s"
+                  >
+                    Bringing Science to Life, One Discovery at a Time
+                  </h5>
                   <p className="wow fadeInUp" data-wow-delay=".4s">
-                    We are on a mission to revolutionize the scientific
-                    publishing and empower the authors and researchers to keep
-                    the ownership of their work. Authors will have the choice to
-                    publish their work as Open Access with lower fees or retain
-                    the ownership of their work.
-                  </p>
-                  <br />
-                  <p className="wow fadeInUp" data-wow-delay=".4s">
-                    This is achieved through our decentralized publishing
-                    platform which publishes your scientific work as a smart
-                    contract.
+                    Our mission is clear: to empower authors, reviewers,
+                    editors, and institutions by transforming the way we
+                    disseminate scientific knowledge. SCIN is the first platform
+                    of its kind, pioneering a revolutionary business model and
+                    ecosystem that makes publishing not just a scholarly
+                    endeavor but a rewarding one.
                   </p>
                 </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div
+                className="hero-img wow fadeInUp"
+                data-wow-delay=".5s"
+                style={{
+                  borderRadius: '20px', // Add border radius
+                  overflow: 'hidden', // Ensure the image follows the border radius
+                  filter: 'drop-shadow(0 0 2rem rgba(0, 0, 0, 0.3))', // Add a fade effect
+                }}
+              >
+                <Image
+                  src={empoweringImage}
+                  layout="responsive"
+                  width={851}
+                  height={601}
+                  alt="Publishing Hero Image"
+                />
               </div>
             </div>
           </div>
@@ -121,94 +166,271 @@ export default function Home() {
       {/* <!-- ========================= tracking-section end ========================= --> */}
 
       {/* <!-- ========================= search-section start ========================= --> */}
-      <section className="search-section pt-150">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-xl-5 col-lg-6 order-last order-lg-first">
-              <div className="search-content">
-                <div className="section-title mb-40">
-                  <h1 className="mb-40 wow fadeInUp" data-wow-delay=".2s">
-                    What SCIN Brings To The Scientific Community?
-                  </h1>
-                  <p className="wow fadeInUp" data-wow-delay=".4s">
-                    SCIN empowers authors/researchers to own their publishing
-                    and decide if they want to publish it as open access or earn
-                    lifetime royalties on their work. Through our decentralized
-                    nature, we are able to provide authors with a platform to
-                    publish their work as a smart contract.
-                  </p>
-                  <br />
-                  <p className="wow fadeInUp" data-wow-delay=".4s">
-                    We are revolutionizing the peer-review publishing by
-                    incentivizing reviewers to review the publications with more
-                    accountability and responsibility. This is achieved by our
-                    unique fair system of distribution of royalties.
-                  </p>
+      <section id="tracking" className="tracking-section pt-150 mt-70">
+        <div
+          className="pt-80 pb-80"
+          style={{ backgroundColor: '#0F7AB6', color: 'white' }}
+        >
+          <div className="container d-flex align-items-center justify-content-center tracking-content">
+            <div
+              className="section-title mb-50"
+              style={{
+                marginRight: '2rem',
+                paddingLeft: '3rem',
+                maxWidth: '60rem',
+              }}
+            >
+              <h1
+                className="mb-30 wow fadeInUp"
+                style={{ color: 'white' }}
+                data-wow-delay=".2s"
+              >
+                SCIN's Unique Approach
+              </h1>
+              <h5
+                className="mb-30 fst-italic wow fadeInUp"
+                style={{ color: 'lightgrey' }}
+                data-wow-delay=".2s"
+              >
+                Your Ideas, Your Rewards
+              </h5>
+              <p className="wow fadeInUp" data-wow-delay=".4s">
+                SCIN operates on a simple principle: authors deserve more than
+                just recognition; they deserve compensation for their
+                contributions. We believe that reviewers, the unsung heroes of
+                scientific publishing, also deserve recognition for their
+                invaluable service.
+              </p>
+              <p className="wow fadeInUp" data-wow-delay=".4s">
+                We offer an enticing proposition to authors and reviewers alike:
+                get paid for your work, fueling your passion for discovery while
+                contributing to the advancement of human knowledge. When you
+                publish or review with SCIN, you are not just building a career;
+                you are building a legacy.
+              </p>
+              <div className="mt-40 wow fadeInUp">
+                <div className="row g-3">
+                  <div className="col-auto">
+                    <Link href="/form" passHref>
+                      <a className="btn btn-dark btn-lg" data-wow-delay=".6s">
+                        Join the Waitlist
+                      </a>
+                    </Link>
+                  </div>
+                  <div className="col-auto">
+                    <Link href="https://app.scin.io" passHref>
+                      <a
+                        className="btn btn-outline-light btn-lg"
+                        data-wow-delay=".6s"
+                      >
+                        Learn More
+                      </a>
+                    </Link>
+                  </div>
                 </div>
-                <div className="app-info">
-                  <div className="single-info">
-                    <div className="icon-style color-1">
-                      <h6>Open Access</h6>
-                    </div>
-                    <p className="icon-descr">
-                      Promoting Open Access publishing by reducing the
-                      publishing costs
-                    </p>
-                  </div>
-                  <div className="single-info">
-                    <div className="icon-style color-2">
-                      <h6>Copyright Ownership</h6>
-                    </div>
-                    <p className="icon-descr">
-                      Authors will retain the copyright ownership of their work.
-                    </p>
-                  </div>
-                </div>
-                <div className="app-info">
-                  <div className="single-info">
-                    <div className="icon-style color-3">
-                      <h6>Royalty Earning</h6>
-                    </div>
-                    <p className="icon-descr">
-                      Collaborators of the publication could choose to earn
-                      royalty for their work.
-                    </p>
-                  </div>
-                  <div className="single-info">
-                    <div className="icon-style color-1">
-                      <h6>Expedited Reviewing</h6>
-                    </div>
-                    <p className="icon-descr">
-                      Incentivized peer-review process to ensure timely and high
-                      quality reviews of the manuscript.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-xl-7 col-lg-6">
-              <div className="search-img text-lg-right">
-                <Image
-                  src={searchImage}
-                  width={828}
-                  height={579}
-                  layout="responsive"
-                  alt="People doing research and completing a publication"
-                />
               </div>
             </div>
           </div>
         </div>
       </section>
       {/* <!-- ========================= search-section end ========================= --> */}
+      <section id="tracking" className="tracking-section pt-150">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div className="tracking-content">
+                <div
+                  className="section-title mb-50"
+                  style={{ marginRight: '2rem' }}
+                >
+                  <h1 className="mb-30 wow fadeInUp" data-wow-delay=".2s">
+                    Benefits for Libraries and Institutions
+                  </h1>
+                  <h5
+                    className="mb-30 fst-italic wow fadeInUp"
+                    data-wow-delay=".2s"
+                  >
+                    Empowering the Knowledge Guardians
+                  </h5>
+                  <p className="wow fadeInUp" data-wow-delay=".4s">
+                    Libraries and institutions are the guardians of knowledge.
+                    With SCIN, they become co-owners of the content produced by
+                    their members who publish with us. This means that not only
+                    can institutions support their researchers in new ways, but
+                    they also get to participate in the rewards generated by
+                    their own intellectual community.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div
+                className="hero-img wow fadeInUp"
+                data-wow-delay=".5s"
+                style={{
+                  borderRadius: '20px', // Add border radius
+                  overflow: 'hidden', // Ensure the image follows the border radius
+                  filter: 'drop-shadow(0 0 2rem rgba(0, 0, 0, 0.3))', // Add a fade effect
+                }}
+              >
+                <Image
+                  src={librariesImage}
+                  layout="responsive"
+                  width={851}
+                  height={601}
+                  alt="Publishing Hero Image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="tracking" className="tracking-section pt-150">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div
+                className="hero-img wow fadeInUp"
+                data-wow-delay=".5s"
+                style={{
+                  borderRadius: '20px', // Add border radius
+                  overflow: 'hidden', // Ensure the image follows the border radius
+                  filter: 'drop-shadow(0 0 2rem rgba(0, 0, 0, 0.3))', // Add a fade effect
+                }}
+              >
+                <Image
+                  src={journalImage}
+                  layout="responsive"
+                  width={851}
+                  height={601}
+                  alt="Publishing Hero Image"
+                />
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="tracking-content">
+                <div
+                  className="section-title mb-50"
+                  style={{ marginLeft: '2rem' }}
+                >
+                  <h1 className="mb-30 wow fadeInUp" data-wow-delay=".2s">
+                    Benefits for Journal Owners
+                  </h1>
+                  <h5
+                    className="mb-30 fst-italic wow fadeInUp"
+                    data-wow-delay=".2s"
+                  >
+                    Reducing Costs, Accelerating Progress
+                  </h5>
+                  <p className="wow fadeInUp" data-wow-delay=".4s">
+                    For journal owners, SCIN is a game-changer. Our model
+                    reduces the financial burden on publishers by providing a
+                    sustainable way to pay authors and reviewers. Plus, our
+                    efficient system accelerates the turnaround time of the
+                    reviewing process, meaning your content gets published
+                    faster, reaching a global audience in record time.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="tracking" className="tracking-section pt-150 text-center">
+        <div className="container d-flex align-items-center justify-content-center">
+          <div className="tracking-content">
+            <div className="section-title mb-50" style={{ maxWidth: '50rem' }}>
+              <h1 className="mb-30 wow fadeInUp" data-wow-delay=".2s">
+                Transparency and Trust: The SCIN Way
+              </h1>
+              <h5
+                className="mb-30 fst-italic wow fadeInUp"
+                style={{ color: 'darkgrey' }}
+                data-wow-delay=".2s"
+              >
+                Smart Contracts for a Smarter Future
+              </h5>
+              <p className="wow fadeInUp  text-center" data-wow-delay=".4s">
+                SCIN is committed to transparency. We utilize cutting-edge smart
+                contracts to ensure that payments are fair, transparent, and
+                delivered promptly. With SCIN, you can trust that your work is
+                not only valued but rewarded.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="tracking" className="tracking-section pt-150 mt-70">
+        <div
+          className="pt-80 pb-80"
+          style={{ backgroundColor: '#0F7AB6', color: 'white' }}
+        >
+          <div className="tracking-content container d-flex align-items-center justify-content-center">
+            <div
+              className="section-title mb-50"
+              style={{
+                marginRight: '2rem',
+                paddingLeft: '3rem',
+                maxWidth: '60rem',
+              }}
+            >
+              <h1
+                className="mb-30 wow fadeInUp"
+                style={{ color: 'white' }}
+                data-wow-delay=".2s"
+              >
+                Join the SCIN Revolution
+              </h1>
+              <p className="wow fadeInUp" data-wow-delay=".4s">
+                The time for change is now, and the future of scientific
+                publishing is in your hands. Join us in reshaping the landscape
+                of academia, where every contributor is celebrated, and every
+                institution benefits.
+              </p>
+              <p className="wow fadeInUp" data-wow-delay=".4s">
+                Be a part of the SCIN community today. Join our waitlist to be
+                among the first to experience the future of scientific
+                publishing, where knowledge is power, and rewards await those
+                who dare to innovate.
+              </p>
+              <p>
+                Unlock the Future with{' '}
+                <span style={{ fontWeight: 'bold' }}>SCIN.</span>
+              </p>
+              <div className="mt-40 wow fadeInUp">
+                <div className="row g-3">
+                  <div className="col-auto">
+                    <Link href="/form" passHref>
+                      <a className="btn btn-dark btn-lg" data-wow-delay=".6s">
+                        Join the Waitlist
+                      </a>
+                    </Link>
+                  </div>
+                  <div className="col-auto">
+                    <Link href="https://app.scin.io" passHref>
+                      <a
+                        className="btn btn-outline-light btn-lg"
+                        data-wow-delay=".6s"
+                      >
+                        Learn More
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* <!-- ========================= testimonial-section start ========================= --> */}
-      <section id="signup-for-product" className="testimonial-section">
+      <section id="signup-for-product" className="testimonial-section pt-150">
         <div className="container text-center">
           <h1>Are you intesred in publishing your paper with us?</h1>
           <br />
-          <p>Please sign up and we will get back to you soon.</p>
+          <p className="text-center">
+            Please sign up and we will get back to you soon.
+          </p>
           <div className="row justify-content-center my-4">
             <div className="col-auto">
               <form
@@ -217,20 +439,15 @@ export default function Home() {
                 method="POST"
               >
                 <div className="input-group mb-3">
-                  <button
-                    className="btn btn-primary btn-lg"
-                    type="button"
-                    id="subscribe-btn"
-                  >
-                    Sign Up
-                  </button>
-                  <input
-                    type="text"
-                    name="email"
-                    className="form-control"
-                    placeholder="Email Address"
-                    aria-label="Email Address"
-                  />
+                  <Link href="/form" passHref>
+                    <button
+                      className="btn btn-primary btn-lg"
+                      type="button"
+                      id="subscribe-btn"
+                    >
+                      Sign Up
+                    </button>
+                  </Link>
                 </div>
                 <p id="my-form-status"></p>
               </form>

@@ -1,8 +1,11 @@
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '../../public/img/logo/logo.png';
 
 export default function Navbar() {
+  const router = useRouter();
+
   return (
     <>
       <nav className="navbar fixed-top navbar-expand-lg bg-white">
@@ -37,24 +40,66 @@ export default function Navbar() {
             <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link href="./" passHref>
-                  <a className="nav-link">Home</a>
+                  <a
+                    className={`nav-link ${
+                      router.pathname === '/' ? 'active' : ''
+                    }`}
+                  >
+                    Home
+                  </a>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/howScinWorks" passHref>
+                  <a
+                    className={`nav-link ${
+                      router.pathname === '/howScinWorks' ? 'active' : ''
+                    }`}
+                  >
+                    How SCIN works
+                  </a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/team" passHref>
-                  <a className="nav-link">Team</a>
+                  <a
+                    className={`nav-link ${
+                      router.pathname === '/team' ? 'active' : ''
+                    }`}
+                  >
+                    About Us
+                  </a>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                  href="mailto:info@scin.io?subject=Have a question about SCIN"
-                  passHref
-                >
-                  <a className="nav-link">Contact Us</a>
+                <Link href="/pricing" passHref>
+                  <a
+                    className={`nav-link ${
+                      router.pathname === '/pricing' ? 'active' : ''
+                    }`}
+                  >
+                    Pricing
+                  </a>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/blog" passHref>
+                  <a
+                    className={`nav-link ${
+                      router.pathname === '/blog' ? 'active' : ''
+                    }`}
+                  >
+                    Blog
+                  </a>
                 </Link>
               </li>
             </ul>
           </div>
+          <Link href="/form" passHref>
+            <a className="btn btn-primary btn-lg" data-wow-delay=".6s">
+              Join Our Waitlist
+            </a>
+          </Link>
         </div>
       </nav>
       {/* <!-- navbar --> */}

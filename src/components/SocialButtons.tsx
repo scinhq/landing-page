@@ -1,14 +1,18 @@
 import Link from 'next/link';
 import { SocialMediumInformation } from './Footer';
 import { FounderInfoCardProps } from './TeamView';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const SocialButton = (props: SocialMediumInformation) => {
+  console.log(props);
   return (
     <div className="btn-group me-1" role="group">
       <button type="button" className="btn btn-outline">
         <Link href={props.url} passHref>
           <a target="_blank">
-            <em className={props.iconClassName}></em>
+            <div style={{ width: '1rem', height: '1rem' }}>
+              <FontAwesomeIcon icon={props.faIcon} />
+            </div>
           </a>
         </Link>
       </button>
@@ -22,7 +26,9 @@ export const TeamSocialLinks = (props: FounderInfoCardProps) => {
     return (
       <Link href={socialMedInfo.url} passHref>
         <a className="mx-2" target="_blank">
-          <em className={socialMedInfo.iconClassName}></em>
+          <div style={{ width: '1rem', height: '1rem' }}>
+            <FontAwesomeIcon icon={socialMedInfo.faIcon} />
+          </div>
         </a>
       </Link>
     );
