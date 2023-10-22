@@ -25,62 +25,49 @@ export default function Home() {
 
       <Navbar />
       {/* <!-- ========================= hero-section start ========================= --> */}
-      <section id="home" style={{ marginTop: '10rem' }}>
-        <div className="container">
+      <section
+        id="home"
+        style={{
+          marginTop: '5rem',
+          backgroundColor: '#0F7AB6',
+          color: 'white',
+        }}
+      >
+        <div className="container d-flex align-items-center justify-content-center pt-200 pb-200">
           <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div className="hero-content">
-                <h1 className="wow fadeInUp" data-wow-delay=".2s">
-                  {`Welcome to SCIN:`} <br />{' '}
-                  {`Revolutionizing Scientific Publishing`}
-                </h1>
-                <p className="wow fadeInUp" data-wow-delay=".4s">
-                  Promoting Open Access peer-reviewed publishing and leaving the
-                  copyright ownership of publications to authors and reviewers.
-                </p>
-                <div className="hero-btns wow fadeInUp">
-                  <div className="row g-3">
-                    <div className="col-auto">
-                      <Link href="#signup-for-product" passHref>
-                        <a
-                          className="btn btn-primary btn-lg"
-                          data-wow-delay=".6s"
-                        >
-                          Publish With Us
-                        </a>
-                      </Link>
-                    </div>
-                    <div className="col-auto">
-                      <Link href="https://app.scin.io" passHref>
-                        <a
-                          className="btn btn-outline-primary btn-lg"
-                          data-wow-delay=".6s"
-                        >
-                          Learn More
-                        </a>
-                      </Link>
-                    </div>
+            <div className="hero-content">
+              <h1
+                className="wow fadeInUp pb-70"
+                style={{ fontSize: '4.5rem', borderBottom: '4px solid white' }}
+                data-wow-delay=".2s"
+              >
+                {`Welcome to SCIN:`} <br />{' '}
+                {`Revolutionizing Scientific Publishing`}
+              </h1>
+              <h3 className="wow fadeInUp pt-70 pb-50" data-wow-delay=".4s">
+                Promoting Open Access peer-reviewed publishing and leaving the
+                copyright ownership of publications to authors and reviewers.
+              </h3>
+              <div className="hero-btns wow fadeInUp">
+                <div className="row g-3">
+                  <div className="col-auto">
+                    <Link href="/form" passHref>
+                      <a className="btn btn-dark btn-lg" data-wow-delay=".6s">
+                        Publish With Us
+                      </a>
+                    </Link>
+                  </div>
+                  <div className="col-auto">
+                    <Link href="https://app.scin.io" passHref>
+                      <a
+                        className="btn btn-outline-light btn-lg"
+                        data-wow-delay=".6s"
+                      >
+                        Learn More
+                      </a>
+                    </Link>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div
-                className="hero-img wow fadeInUp"
-                data-wow-delay=".5s"
-                style={{
-                  borderRadius: '20px', // Add border radius
-                  overflow: 'hidden', // Ensure the image follows the border radius
-                  filter: 'drop-shadow(0 0 2rem rgba(0, 0, 0, 0.3))', // Add a fade effect
-                }}
-              >
-                <Image
-                  src={heroImage}
-                  layout="responsive"
-                  width={851}
-                  height={601}
-                  alt="Publishing Hero Image"
-                />
               </div>
             </div>
           </div>
@@ -90,16 +77,25 @@ export default function Home() {
       {/* <!-- ========================= hero-section start ========================= --> */}
       <section
         id="home"
-        className="d-flex align-items-center justify-content-center"
-        style={{ marginTop: '10rem', height: '30vh' }}
+        className="d-flex flex-column align-items-center justify-content-center pt-150 pb-50"
       >
-        <div className="container d-flex align-items-center justify-content-center">
+        <div className="container d-flex flex-column align-items-center justify-content-center">
           <div className="flex align-items-center justify-content-center">
-            <h1 className="text-center ">
+            <h1
+              className="text-center"
+              style={{
+                fontWeight: 'bold',
+                textShadow: '2px 2px 4px rgba(0,0,0,0.1)',
+                padding: '10px 0',
+                background: '-webkit-linear-gradient(45deg, #0F7AB6, #0d6efd)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}
+            >
               Unlocking the Future of Scientific Publishing
             </h1>
             <p
-              className="text-center "
+              className="mt-4 lead"
               style={{ marginTop: '2rem' }}
               data-wow-delay=".4s"
             >
@@ -111,11 +107,12 @@ export default function Home() {
               catalyst for change in the academic world.
             </p>
           </div>
+          <div className="custom-divider mt-100"></div>
         </div>
       </section>
       {/* <!-- ========================= hero-section end ========================= --> */}
       {/* <!-- ========================= tracking-section start ========================= --> */}
-      <section id="tracking" className="tracking-section pt-150">
+      <section id="tracking" className="tracking-section pt-120">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -171,16 +168,16 @@ export default function Home() {
       {/* <!-- ========================= search-section start ========================= --> */}
       <section id="tracking" className="tracking-section pt-150 mt-70">
         <div
-          className="container pt-80 pb-80"
+          className="pt-80 pb-80"
           style={{ backgroundColor: '#0F7AB6', color: 'white' }}
         >
-          <div className="tracking-content">
+          <div className="container d-flex align-items-center justify-content-center tracking-content">
             <div
               className="section-title mb-50"
               style={{
                 marginRight: '2rem',
                 paddingLeft: '3rem',
-                maxWidth: '50rem',
+                maxWidth: '60rem',
               }}
             >
               <h1
@@ -214,7 +211,7 @@ export default function Home() {
               <div className="mt-40 wow fadeInUp">
                 <div className="row g-3">
                   <div className="col-auto">
-                    <Link href="#signup-for-product" passHref>
+                    <Link href="/form" passHref>
                       <a className="btn btn-dark btn-lg" data-wow-delay=".6s">
                         Join the Waitlist
                       </a>
@@ -365,16 +362,16 @@ export default function Home() {
       </section>
       <section id="tracking" className="tracking-section pt-150 mt-70">
         <div
-          className="container pt-80 pb-80"
+          className="pt-80 pb-80"
           style={{ backgroundColor: '#0F7AB6', color: 'white' }}
         >
-          <div className="tracking-content">
+          <div className="tracking-content container d-flex align-items-center justify-content-center">
             <div
               className="section-title mb-50"
               style={{
                 marginRight: '2rem',
                 paddingLeft: '3rem',
-                maxWidth: '50rem',
+                maxWidth: '60rem',
               }}
             >
               <h1
@@ -403,7 +400,7 @@ export default function Home() {
               <div className="mt-40 wow fadeInUp">
                 <div className="row g-3">
                   <div className="col-auto">
-                    <Link href="#signup-for-product" passHref>
+                    <Link href="/form" passHref>
                       <a className="btn btn-dark btn-lg" data-wow-delay=".6s">
                         Join the Waitlist
                       </a>
@@ -442,20 +439,15 @@ export default function Home() {
                 method="POST"
               >
                 <div className="input-group mb-3">
-                  <button
-                    className="btn btn-primary btn-lg"
-                    type="button"
-                    id="subscribe-btn"
-                  >
-                    Sign Up
-                  </button>
-                  <input
-                    type="text"
-                    name="email"
-                    className="form-control"
-                    placeholder="Email Address"
-                    aria-label="Email Address"
-                  />
+                  <Link href="/form" passHref>
+                    <button
+                      className="btn btn-primary btn-lg"
+                      type="button"
+                      id="subscribe-btn"
+                    >
+                      Sign Up
+                    </button>
+                  </Link>
                 </div>
                 <p id="my-form-status"></p>
               </form>

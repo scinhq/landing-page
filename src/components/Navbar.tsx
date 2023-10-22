@@ -95,7 +95,7 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <Link href="#signup-for-product" passHref>
+          <Link href="/form" passHref>
             <a className="btn btn-primary btn-lg" data-wow-delay=".6s">
               Join Our Waitlist
             </a>

@@ -2,12 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '../../public/img/logo/logo.svg';
 import { SocialButton } from './SocialButtons';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export interface SocialMediumInformation {
   name: string;
   url: string;
   isActive: boolean;
-  iconClassName: string;
+  faIcon?: IconDefinition;
 }
 
 const SOCIAL_MEDIA: SocialMediumInformation[] = [
@@ -15,25 +17,13 @@ const SOCIAL_MEDIA: SocialMediumInformation[] = [
     name: 'twitter',
     url: 'https://twitter.com/scinhq',
     isActive: true,
-    iconClassName: 'lni lni-twitter-filled',
-  },
-  {
-    name: 'facebook',
-    url: '',
-    isActive: false,
-    iconClassName: 'lni lni-facebook-filled',
-  },
-  {
-    name: 'instagram',
-    url: '',
-    isActive: false,
-    iconClassName: 'lni lni-instagram-filled',
+    faIcon: faXTwitter,
   },
   {
     name: 'linkedin',
     url: 'https://linkedin.com/company/scinhq',
     isActive: true,
-    iconClassName: 'lni lni-linkedin-original',
+    faIcon: faLinkedin,
   },
 ];
 
@@ -88,19 +78,18 @@ export default function FooterView() {
               </Link>
             </li>
             <li className="mb-1">
-              <a className="link-secondary text-decoration-none" href="#">
-                Locations
-              </a>
+              <Link href="./privacy" passHref>
+                <a className="link-secondary text-decoration-none" href="#">
+                  Privacy
+                </a>
+              </Link>
             </li>
             <li className="mb-1">
-              <a className="link-secondary text-decoration-none" href="#">
-                Privacy
-              </a>
-            </li>
-            <li className="mb-1">
-              <a className="link-secondary text-decoration-none" href="#">
-                Terms
-              </a>
+              <Link href="./terms" passHref>
+                <a className="link-secondary text-decoration-none" href="#">
+                  Terms
+                </a>
+              </Link>
             </li>
           </ul>
         </div>

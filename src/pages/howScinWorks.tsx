@@ -1,4 +1,12 @@
-import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faBuildingColumns,
+  faUserPen,
+  faMagnifyingGlass,
+  faPen,
+  faCheckToSlot,
+  faMoneyBillTrendUp,
+} from '@fortawesome/free-solid-svg-icons';
 import SEO from '../components/seo';
 import Image from 'next/image';
 import empoweringImage from '../../public/img/hero/1_j6TaV7aTIeTEH_z4o0MozA.jpg';
@@ -65,17 +73,21 @@ export default function HowScinWorks() {
           </div>
         </div>
       </section>
-      <section id="income-distribution" className="pt-150">
+      <section id="income-distribution" className="pt-200 pb-100">
         <div className="container">
           <div className="row">
             {/* Authors */}
-            <div className="col-md-4 mb-4">
-              <div className="card">
-                <div className="card-body">
-                  <h3 className="card-title">
-                    <i className="bi bi-person-fill"></i> Authors (30%)
-                  </h3>
-                  <p className="card-text">
+            <div className="col-md-4 mb-4 d-flex align-items-stretch">
+              <div className="card shadow-lg">
+                <div className="card-body px-5">
+                  <div
+                    className="pb-5 pt-4"
+                    style={{ width: '2.5rem', height: '2.5rem' }}
+                  >
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                  <h3 className="card-title mt-2">Authors (30%)</h3>
+                  <p>
                     Authors receive 30% of the total income for their
                     significant contribution to research creation.
                   </p>
@@ -83,14 +95,19 @@ export default function HowScinWorks() {
               </div>
             </div>
             {/* Affiliated Institutions */}
-            <div className="col-md-4 mb-4">
-              <div className="card">
-                <div className="card-body">
-                  <h3 className="card-title">
-                    <i className="bi bi-building"></i> Affiliated Institutions
-                    (20%)
+            <div className="col-md-4 mb-4 d-flex align-items-stretch">
+              <div className="card shadow-lg">
+                <div className="card-body px-5">
+                  <div
+                    className="pb-5 pt-4"
+                    style={{ width: '2.5rem', height: '2.5rem' }}
+                  >
+                    <FontAwesomeIcon icon={faBuildingColumns} />
+                  </div>
+                  <h3 className="card-title mt-2">
+                    Affiliated Institutions (20%)
                   </h3>
-                  <p className="card-text">
+                  <p>
                     20% of the total income is allocated to the affiliated
                     institutions of authors.
                   </p>
@@ -98,13 +115,17 @@ export default function HowScinWorks() {
               </div>
             </div>
             {/* Reviewers */}
-            <div className="col-md-4 mb-4">
-              <div className="card">
-                <div className="card-body">
-                  <h3 className="card-title">
-                    <i className="bi bi-clipboard-check"></i> Reviewers (9%)
-                  </h3>
-                  <p className="card-text">
+            <div className="col-md-4 mb-4 d-flex align-items-stretch">
+              <div className="card shadow-lg">
+                <div className="card-body px-5">
+                  <div
+                    className="pb-5 pt-4"
+                    style={{ width: '2.5rem', height: '2.5rem' }}
+                  >
+                    <FontAwesomeIcon icon={faMagnifyingGlass} />
+                  </div>
+                  <h3 className="card-title mt-2">Reviewers (9%)</h3>
+                  <p>
                     Reviewers receive 9% of the total income for their role in
                     ensuring the quality and integrity of published works.
                   </p>
@@ -112,13 +133,17 @@ export default function HowScinWorks() {
               </div>
             </div>
             {/* Editors */}
-            <div className="col-md-4 mb-4">
-              <div className="card">
-                <div className="card-body">
-                  <h3 className="card-title">
-                    <i className="bi bi-pencil-square"></i> Editors (4%)
-                  </h3>
-                  <p className="card-text">
+            <div className="col-md-4 mb-4 d-flex align-items-stretch">
+              <div className="card shadow-lg">
+                <div className="card-body mx-5">
+                  <div
+                    className="pb-5 pt-4"
+                    style={{ width: '2.5rem', height: '2.5rem' }}
+                  >
+                    <FontAwesomeIcon icon={faUserPen} />
+                  </div>
+                  <h3 className="card-title mt-2">Editors (4%)</h3>
+                  <p>
                     Editors, crucial in curating and overseeing the peer review
                     process, receive 4% of the total income.
                   </p>
@@ -126,14 +151,19 @@ export default function HowScinWorks() {
               </div>
             </div>
             {/* Proofreaders and Quality Control Personnel */}
-            <div className="col-md-4 mb-4">
-              <div className="card">
-                <div className="card-body">
-                  <h3 className="card-title">
-                    <i className="bi bi-card-checklist"></i> Proofreaders and QC
-                    Personnel (2%)
+            <div className="col-md-4 mb-4 d-flex align-items-stretch">
+              <div className="card shadow-lg">
+                <div className="card-body mx-5">
+                  <div
+                    className="pb-5 pt-4"
+                    style={{ width: '2.5rem', height: '2.5rem' }}
+                  >
+                    <FontAwesomeIcon icon={faCheckToSlot} />
+                  </div>
+                  <h3 className="card-title mt-2">
+                    Proofreaders and QC Personnel (2%)
                   </h3>
-                  <p className="card-text">
+                  <p>
                     Proofreaders and quality control personnel are allocated 2%
                     of the total income for ensuring the accuracy and clarity of
                     research publications.
@@ -142,13 +172,17 @@ export default function HowScinWorks() {
               </div>
             </div>
             {/* SCIN */}
-            <div className="col-md-4 mb-4">
-              <div className="card">
-                <div className="card-body">
-                  <h3 className="card-title">
-                    <i className="bi bi-cash-stack"></i> SCIN (35%)
-                  </h3>
-                  <p className="card-text">
+            <div className="col-md-4 mb-4 d-flex align-items-stretch">
+              <div className="card shadow-lg">
+                <div className="card-body px-5">
+                  <div
+                    className="pb-5 pt-4"
+                    style={{ width: '2.5rem', height: '2.5rem' }}
+                  >
+                    <FontAwesomeIcon icon={faMoneyBillTrendUp} />
+                  </div>
+                  <h3 className="card-title mt-2">SCIN (35%)</h3>
+                  <p>
                     SCIN allocates 35% of the total income to cover costs
                     associated with platform administration, maintenance, and
                     other operational expenses.
