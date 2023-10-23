@@ -4,7 +4,6 @@ import { FounderInfoCardProps } from './TeamView';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const SocialButton = (props: SocialMediumInformation) => {
-  console.log(props);
   return (
     <div className="btn-group me-1" role="group">
       <button type="button" className="btn btn-outline">
