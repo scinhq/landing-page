@@ -9,7 +9,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import SEO from '../components/seo';
 import Image from 'next/image';
-import empoweringImage from '../../public/img/hero/1_j6TaV7aTIeTEH_z4o0MozA.jpg';
 import Navbar from '../components/Navbar';
 import ScrollTopView from '../components/Scroller';
 import FooterView from '../components/Footer';
@@ -62,7 +61,7 @@ export default function HowScinWorks() {
                 }}
               >
                 <Image
-                  src={empoweringImage}
+                  src="img/hero/1602186250-GettyImages-1150199386.jpg"
                   layout="responsive"
                   width={851}
                   height={601}

@@ -20,6 +20,7 @@ const FixedMenuLayout = () => (
             size="mini"
             src="/img/logo/logo.png"
             style={{ marginRight: '1.5em' }}
+            alt="logo image"
           />
           Project Name
         </Menu.Item>

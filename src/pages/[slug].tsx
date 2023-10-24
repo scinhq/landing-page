@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
-import firstImage from '../../public/img/hero/1_j6TaV7aTIeTEH_z4o0MozA.jpg';
-import secondImage from '../../public/img/hero/1602186250-GettyImages-1150199386.jpg';
-import thirdImage from '../../public/img/hero/image.png';
-import fourthImage from '../../public/img/hero/membership_orig.jpg';
-import fifthImage from '../../public/img/hero/teamwork-in-the-workplace-rh.jpg';
-import sixthImage from '../../public/img/hero/new-hero.jpg';
+// import firstImage from '../../public/img/hero/1_j6TaV7aTIeTEH_z4o0MozA.jpg';
+// import secondImage from '../../public/img/hero/1602186250-GettyImages-1150199386.jpg';
+// import thirdImage from '../../public/img/hero/image.png';
+// import fourthImage from '../../public/img/hero/new-hero-2.jpg';
+// import fifthImage from '../../public/img/hero/teamwork-in-the-workplace-rh.jpg';
+// import sixthImage from '../../public/img/hero/new-hero.jpg';
 import Navbar from '../components/Navbar';
 import ScrollTopView from '../components/Scroller';
 import FooterView from '../components/Footer';
@@ -39,7 +39,7 @@ const blogs = [
       
       In conclusion, the landscape of scientific publishing is undergoing a transformative evolution. Revolutionary platforms that monetize both reviewers and authors are at the forefront of this change, enhancing the quality of research, driving organic growth, and fostering collaboration within the global research community. By embracing innovative SEO, content creation, and user experience strategies, these platforms are paving the way for a brighter, more collaborative future in scientific publishing.
       `,
-    image: firstImage,
+    //image: firstImage,
   },
   {
     title:
@@ -49,31 +49,31 @@ const blogs = [
         This paradigm shift not only elevates the standard of published work but also acknowledges the invaluable contributions 
         of those involved. In this blog post, we delve into the concept of monetizing both reviewers and authors in the context
         of groundbreaking scientific publishing.`,
-    image: secondImage,
+    //image: secondImage,
   },
   {
     title:
       'Blockchain and Smart Contracts: Transforming Scientific Publishing with Monetization and Integrity',
     content: `In the rapidly evolving landscape of scientific publishing, traditional models are being challenged by innovative approaches that seek to benefit both reviewers and authors. This paradigm shift not only enhances the quality of research but also addresses the financial concerns of both stakeholders. In this blog post, we will explore how revolutionary scientific publishing can monetize both reviewers and authors, driving organic growth and fostering collaboration within the research community. ...`,
-    image: thirdImage,
+    //image: thirdImage,
   },
   {
     title:
       'Elevating Scholarly Publishing: Harnessing AI to Match Papers, Editors, Reviewers, and Optimize Content Discovery',
     content: `In the rapidly evolving landscape of scientific publishing, traditional models are being challenged by innovative approaches that seek to benefit both reviewers and authors. This paradigm shift not only enhances the quality of research but also addresses the financial concerns of both stakeholders. In this blog post, we will explore how revolutionary scientific publishing can monetize both reviewers and authors, driving organic growth and fostering collaboration within the research community. ...`,
-    image: fourthImage,
+    //image: fourthImage,
   },
   {
     title:
       'Blockchain and Smart Contracts: Transforming Scientific Publishing with Monetization and Integrity',
     content: `In the rapidly evolving landscape of scientific publishing, traditional models are being challenged by innovative approaches that seek to benefit both reviewers and authors. This paradigm shift not only enhances the quality of research but also addresses the financial concerns of both stakeholders. In this blog post, we will explore how revolutionary scientific publishing can monetize both reviewers and authors, driving organic growth and fostering collaboration within the research community. ...`,
-    image: fifthImage,
+    //image: fifthImage,
   },
   {
     title:
       'Elevating Scholarly Publishing: Harnessing AI to Match Papers, Editors, Reviewers, and Optimize Content Discovery',
     content: `In the rapidly evolving landscape of scientific publishing, traditional models are being challenged by innovative approaches that seek to benefit both reviewers and authors. This paradigm shift not only enhances the quality of research but also addresses the financial concerns of both stakeholders. In this blog post, we will explore how revolutionary scientific publishing can monetize both reviewers and authors, driving organic growth and fostering collaboration within the research community. ...`,
-    image: sixthImage,
+    //image: sixthImage,
   },
 ];
 
@@ -82,13 +82,13 @@ const BlogPost = ({ blog }) => {
     <>
       <Navbar />
       <div className="container mt-150">
-        <Image
+        {/* <Image
           src={blog.image}
           layout="responsive"
           width={851}
           height={601}
           alt="Journal Image"
-        />
+        /> */}
         <h1 className="mt-4">{blog.title}</h1>
         <h2>{blog.subTitle}</h2>
         <p>{blog.content}</p>

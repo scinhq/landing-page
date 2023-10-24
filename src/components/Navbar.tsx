@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '../../public/img/logo/logo.png';
+//import Logo from '../../public/img/logo/logo.png';
 
 export default function Navbar() {
   const router = useRouter();
@@ -15,7 +15,7 @@ export default function Navbar() {
               <div style={{ width: '12rem' }}>
                 <Image
                   className="logo-1"
-                  src={Logo}
+                  src="/img/logo/logo.png"
                   alt="SCIN Logo"
                   layout="responsive"
                   width={1000}

@@ -1,13 +1,6 @@
 import Link from 'next/link';
-import Script from 'next/script';
 import SEO from '../components/seo';
 import Image from 'next/image';
-import heroImage from '../../public/img/hero/new-hero.jpg';
-import empoweringImage from '../../public/img/hero/1602186250-GettyImages-1150199386.jpg';
-import librariesImage from '../../public/img/hero/image.png';
-import journalImage from '../../public/img/hero/teamwork-in-the-workplace-rh.jpg';
-import searchImage from '../../public/img/search/search-img.png';
-import smartContract from '../../public/img/plan/smart contract.svg';
 import Navbar from '../components/Navbar';
 import ScrollTopView from '../components/Scroller';
 import FooterView from '../components/Footer';
@@ -152,7 +145,7 @@ export default function Home() {
                 }}
               >
                 <Image
-                  src={empoweringImage}
+                  src="img/hero/1602186250-GettyImages-1150199386.jpg"
                   layout="responsive"
                   width={851}
                   height={601}
@@ -274,7 +267,7 @@ export default function Home() {
                 }}
               >
                 <Image
-                  src={librariesImage}
+                  src="/img/hero/image.png"
                   layout="responsive"
                   width={851}
                   height={601}
@@ -299,7 +292,7 @@ export default function Home() {
                 }}
               >
                 <Image
-                  src={journalImage}
+                  src="/img/hero/teamwork-in-the-workplace-rh.jpg"
                   layout="responsive"
                   width={851}
                   height={601}
