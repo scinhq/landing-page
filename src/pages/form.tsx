@@ -81,7 +81,7 @@ const Form = () => {
     }
 
     try {
-      let databaseResponse = await fetch('http://localhost:3007/api/addUsers', {
+      let databaseResponse = await fetch('../api/addUsers', {
         method: 'POST',
         body: JSON.stringify({
           firstName: formData.firstName,
