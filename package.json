@@ -7,7 +7,8 @@
     "build": "next build",
     "export": "next export",
     "start": "PORT=3030 next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "node -e \"if (process.env.NODE_ENV !== 'production'){process.exit(1)} \" || husky install"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
