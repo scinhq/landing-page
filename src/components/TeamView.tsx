@@ -1,10 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../assets/styles/team.module.css';
-// import AliPhoto from '../../public/img/team/Ali-B&W.png';
-// import ArminPhoto from '../../public/img/team/Armin-B&W.png';
-// import IsmaelPhoto from '../../public/img/team/Ismael-B&W.jpg';
-// import MasoudPhoto from '../../public/img/team/Masoud-B&W.jpg';
 import FooterView, { SocialMediumInformation } from './Footer';
 import { TeamSocialLinks } from './SocialButtons';
 import {
@@ -56,7 +52,7 @@ const FOUNDERS: FounderInfoCardProps[] = [
       Ismael has fourteen years of industry experience. His diverse professional journey has encompassed 
       roles including Business and Strategy Analyst, Marketing Manager, and Director of Business Development.`,
     position: 'CBDO',
-    imagePath: '/img/team/Armin-B&W.png',
+    imagePath: '/img/team/Ismael-B&W.jpg',
     socialMediaLinks: [
       {
         name: 'twitter',
@@ -77,7 +73,7 @@ const FOUNDERS: FounderInfoCardProps[] = [
     description: `Masoud is a computer science student at Memorial University, complemented by a bachelor's degree in business and seven years of marketing experience. Recently, he spent two years as a Full Stack Developer, creating web applications and responsive websites. His unique blend of technical expertise and business insights positions him as an invaluable asset in both tech and multidisciplinary roles.
       Having worked in diverse capacities ranging from marketing roles to pivotal tech positions, Masoud has cultivated a holistic view of projects, ensuring both the functional and aesthetic aspects are in harmony.`,
     position: 'CTO',
-    imagePath: '/img/team/Armin-B&W.png',
+    imagePath: '/img/team/Masoud-B&W.jpg',
     socialMediaLinks: [
       {
         name: 'twitter',
