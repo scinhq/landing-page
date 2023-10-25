@@ -1456,6 +1456,11 @@ ul {
   background: linear-gradient(to right, #0f7ab6, #0d6efd);
 }
 
+.hero-title {
+  font-size: 3.5rem;
+  border-bottom: 4px solid white;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .navbar-nav .sub-nav-toggler {
     display: block;
@@ -1483,6 +1488,10 @@ ul {
     border: 0;
     width: 30px;
     height: 30px;
+  }
+  .hero-title {
+    font-size: 1.8rem;
+    margin-top: 0;
   }
 }
 

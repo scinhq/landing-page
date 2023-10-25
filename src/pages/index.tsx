@@ -30,8 +30,7 @@ export default function Home() {
           <div className="row align-items-center">
             <div className="hero-content">
               <h1
-                className="wow fadeInUp pb-70"
-                style={{ fontSize: '4.5rem', borderBottom: '4px solid white' }}
+                className="wow fadeInUp pb-70 hero-title"
                 data-wow-delay=".2s"
               >
                 {`Welcome to SCIN:`} <br />{' '}
