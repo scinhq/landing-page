@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import ScrollTopView from '../components/Scroller';
 import FooterView from '../components/Footer';
@@ -45,30 +45,30 @@ const Form = () => {
   const [showRoleDropdown, setShowRoleDropdown] = useState(false);
   const [showFieldDropdown, setShowFieldDropdown] = useState(false);
   const [subjects, setSubjects] = useState([]);
-  const [filteredSubjects, setFilteredSubjects] = useState([]);
-  const searchRef = useRef(null);
 
   useEffect(() => {
     const fetchSubjects = async () => {
       try {
         const response = await fetch(`/api/searchSubjects`);
         const data = await response.json();
-        setSubjects(data['subject-classifications']['subject-classification']);
+
+        // Extract the subjects
+        const subjectsArray =
+          data['subject-classifications']['subject-classification'];
+
+        // Sort the subjects by their description
+        subjectsArray.sort((a, b) =>
+          a.description.localeCompare(b.description),
+        );
+
+        // Set the sorted subjects
+        setSubjects(subjectsArray);
       } catch (error) {
         console.error('Error fetching subjects:', error);
       }
     };
     fetchSubjects();
   }, []);
-
-  const handleSearch = (e) => {
-    console.log(e.target.value);
-    const query = e.target.value.toLowerCase();
-    const results = subjects.filter((subject) =>
-      subject.description.toLowerCase().includes(query),
-    );
-    setFilteredSubjects(results);
-  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -270,25 +270,24 @@ const Form = () => {
                   Field of Study*
                 </label>
 
-                <input
-                  type="text"
-                  id="fieldOfStudy"
-                  className="form-control"
-                  placeholder="Enter your field of study"
-                  value={formData.fieldOfStudy}
-                  onChange={handleSearch}
-                  onClick={() => setShowFieldDropdown(true)}
-                  onBlur={() =>
-                    setTimeout(() => setShowFieldDropdown(false), 200)
-                  } // small timeout to handle item selection
-                  ref={searchRef}
-                />
-
                 <Dropdown show={showFieldDropdown} align="start">
+                  <Dropdown.Toggle
+                    as="input"
+                    readOnly
+                    id="fieldOfStudy"
+                    className="form-control"
+                    placeholder="Select your field of study"
+                    value={formData.fieldOfStudy}
+                    onClick={() => setShowFieldDropdown(!showFieldDropdown)}
+                    onBlur={() =>
+                      setTimeout(() => setShowFieldDropdown(false), 200)
+                    } // small timeout to handle item selection
+                  />
+
                   <Dropdown.Menu
                     style={{ maxHeight: '200px', overflowY: 'auto' }}
                   >
-                    {filteredSubjects.map((subject) => (
+                    {subjects.map((subject) => (
                       <Dropdown.Item
                         as="button"
                         key={subject.code}
@@ -299,7 +298,6 @@ const Form = () => {
                             fieldOfStudy: subject.description,
                           });
                           setShowFieldDropdown(false);
-                          searchRef.current.focus();
                         }}
                       >
                         {subject.description}
