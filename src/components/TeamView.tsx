@@ -26,7 +26,7 @@ const FOUNDERS: FounderInfoCardProps[] = [
       managed 15+ industrial projects in Canada, and guided over ten students and engineers. 
       His fervor for research and innovation has steered multiple companies to success, 
       supporting numerous entrepreneurs along the way.`,
-    position: 'CEO',
+    position: 'Co-founder and CEO',
     imagePath: '/img/team/Armin-B&W.png',
     socialMediaLinks: [
       {
@@ -51,7 +51,7 @@ const FOUNDERS: FounderInfoCardProps[] = [
       the prestigious Best Paper Award from the Administrative Science Association of Canada, 
       Ismael has fourteen years of industry experience. His diverse professional journey has encompassed 
       roles including Business and Strategy Analyst, Marketing Manager, and Director of Business Development.`,
-    position: 'CBDO',
+    position: 'Co-founder and CBDO',
     imagePath: '/img/team/Ismael-B&W.jpg',
     socialMediaLinks: [
       {
@@ -72,7 +72,7 @@ const FOUNDERS: FounderInfoCardProps[] = [
     fullName: 'Masoud Zare',
     description: `Masoud is a computer science student at Memorial University, complemented by a bachelor's degree in business and seven years of marketing experience. Recently, he spent two years as a Full Stack Developer, creating web applications and responsive websites. His unique blend of technical expertise and business insights positions him as an invaluable asset in both tech and multidisciplinary roles.
       Having worked in diverse capacities ranging from marketing roles to pivotal tech positions, Masoud has cultivated a holistic view of projects, ensuring both the functional and aesthetic aspects are in harmony.`,
-    position: 'CTO',
+    position: 'Co-founder and CTO',
     imagePath: '/img/team/Masoud-B&W.jpg',
     socialMediaLinks: [
       {
@@ -108,14 +108,16 @@ export default function TeamView() {
             />
           </div>
         </div>
-        <div className="card-body">
-          <h2 className="card-title mb-4 pricing-card-title text-center">
-            {founderInfo.fullName}
-            <small className="text-muted fw-light">
-              /{founderInfo.position}
-            </small>
-          </h2>
-          <p className="text-muted">{founderInfo.description}</p>
+        <div className="card-body d-flex flex-column">
+          <div className="flex-grow-1">
+            <h3 className="card-title mb-2 pricing-card-title text-center text-nowrap">
+              {founderInfo.fullName}
+            </h3>
+            <h5 className="text-muted mb-4 fw-light text-center text-nowrap">
+              {founderInfo.position}
+            </h5>
+            <p className="text-muted">{founderInfo.description}</p>
+          </div>
           {TeamSocialLinks(founderInfo)}
         </div>
       </div>
@@ -159,7 +161,7 @@ export default function TeamView() {
         id="tracking"
         style={{ backgroundColor: '#0F7AB6', color: '#ffffff' }}
       >
-        <div className="d-flex align-items-center justify-content-center pt-80 pb-80">
+        <div className="d-flex align-items-center justify-content-center pt-80 pb-60">
           <div className="container">
             <h2 className="display-6 fw-normal text-center mb-4">
               Our Mission
@@ -228,9 +230,9 @@ export default function TeamView() {
           </div>
         </div>
       </section>
-      <div className="container">
+      <div className="container pt-80 pb-80">
         <main>
-          <h1 className="display-6 fw-normal text-center mb-4">Our Team</h1>
+          <h1 className="display-6 fw-normal text-center mb-40">Our Team</h1>
           <div className="row row-cols-1 row-cols-md-3 mb-3 justify-content-center">
             {FOUNDERS.map((aFounder, index) => {
               return (
@@ -267,7 +269,9 @@ export default function TeamView() {
                     color: '#ffffff',
                   }}
                 >
-                  <h4 className="mb-3">Supporting Emerging Talent</h4>
+                  <h4 className="mb-3 text-nowrap">
+                    Supporting Emerging Talent
+                  </h4>
                   <p>
                     We are dedicated to supporting emerging talent in academia,
                     including graduate researchers, PhD students, and early
@@ -288,7 +292,7 @@ export default function TeamView() {
                     color: '#ffffff',
                   }}
                 >
-                  <h4 className="mb-3">Open Access Advocates</h4>
+                  <h4 className="mb-3 text-nowrap">Open Access Advocates</h4>
                   <p>
                     SCIN is a staunch advocate for open access. We believe that
                     knowledge should be freely accessible to all. As part of our
@@ -309,7 +313,9 @@ export default function TeamView() {
                     color: '#ffffff',
                   }}
                 >
-                  <h4 className="mb-3">Transparency and Accountability</h4>
+                  <h4 className="mb-3 text-nowrap">
+                    Transparency and Accountability
+                  </h4>
                   <p>
                     Our commitment to transparency extends to every aspect of
                     our operation. We are transparent about our income
@@ -325,25 +331,28 @@ export default function TeamView() {
       </section>
 
       <section id="commitment">
-        <div className="d-flex align-items-center justify-content-center pt-80">
-          <div className="container">
-            <h2 className="display-6 fw-normal text-center mb-4">
-              Join Us in Shaping the Future
-            </h2>
-            <p className="mb-4">
-              We invite you to join us in reshaping the future of scholarly
-              publishing. Whether you are an author, reviewer, editor,
-              affiliated institution, or simply a passionate advocate for
-              change, SCIN welcomes your involvement. Together, we can create a
-              scholarly publishing landscape that truly serves the needs of
-              those who have dedicated their lives to the pursuit of knowledge.
-            </p>
-            <p>
-              Thank you for being a part of the SCIN community. Together, we are
-              pioneering a new era of scholarly communication that empowers
-              authors and reviewers to lead the way.
-            </p>
-          </div>
+        <div className="container d-flex flex-column align-items-center justify-content-center pt-80 pb-40">
+          <h2 className="display-6 fw-normal text-center mb-4">
+            Join Us in Shaping the Future
+          </h2>
+          <p className="mb-4">
+            We invite you to join us in reshaping the future of scholarly
+            publishing. Whether you are an author, reviewer, editor, affiliated
+            institution, or simply a passionate advocate for change, SCIN
+            welcomes your involvement. Together, we can create a scholarly
+            publishing landscape that truly serves the needs of those who have
+            dedicated their lives to the pursuit of knowledge.
+          </p>
+          <p>
+            Thank you for being a part of the SCIN community. Together, we are
+            pioneering a new era of scholarly communication that empowers
+            authors and reviewers to lead the way.
+          </p>
+          <Link href="/form" passHref>
+            <a className="btn btn-primary btn-lg" data-wow-delay=".6s">
+              Join Our Waitlist
+            </a>
+          </Link>
         </div>
       </section>
 

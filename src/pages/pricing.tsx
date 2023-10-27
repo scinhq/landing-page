@@ -37,14 +37,14 @@ const Pricing = () => {
               <div className="card shadow-sm bg-custom">
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title text-info">
-                    Option 1: Pay-per-Use for Articles
+                    Option 1: Pay-per-use for Articles
                   </h5>
                   <p className="font-weight-bold">
                     Price: $20 - $40 per Article
                   </p>
                   <p>
                     For those who require access to specific articles, our
-                    Pay-per-Use model offers flexibility and affordability. You
+                    Pay-per-use model offers flexibility and affordability. You
                     pay only for the articles you need, with pricing that adapts
                     to the content.
                   </p>
@@ -119,8 +119,7 @@ const Pricing = () => {
                       Subscription for 10 Journals: 20% Discount
                     </li>
                     <li className="mt-3">
-                      Subscription for 10 Journals: Subscription for 15 and More
-                      Journals: 25% Discount
+                      Subscription for 15 and More Journals: 25% Discount
                     </li>
                   </ul>
                   <p>Why Choose an Institutional Subscription?</p>
@@ -177,7 +176,7 @@ const Pricing = () => {
                     </li>
                   </ul>
 
-                  <p className="card-title text-info">
+                  <p className="card-title">
                     Option 4.2: Revenue Sharing - Free to Use with a 30% Revenue
                     Share
                   </p>
@@ -254,7 +253,7 @@ const Pricing = () => {
         </section>
 
         <section>
-          <div className="pt-80 pb-80 container">
+          <div className="pt-80 pb-80 container d-flex flex-column align-items-center justify-content-center">
             <h3 className="text-center">Join SCIN Today</h3>
             <p>
               Unlock the doors to a world of knowledge and rewards with SCIN.
@@ -264,6 +263,11 @@ const Pricing = () => {
               models, please feel free to contact us at (Email). We're here to
               assist you on your academic journey.
             </p>
+            <Link href="/form" passHref>
+              <a className="btn btn-primary btn-lg" data-wow-delay=".6s">
+                Join Our Waitlist
+              </a>
+            </Link>
           </div>
         </section>
       </section>

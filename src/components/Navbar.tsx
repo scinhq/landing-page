@@ -56,7 +56,7 @@ export default function Navbar() {
                       router.pathname === '/howScinWorks' ? 'active' : ''
                     }`}
                   >
-                    How SCIN works
+                    How SCIN works?
                   </a>
                 </Link>
               </li>

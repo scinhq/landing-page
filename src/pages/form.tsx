@@ -133,7 +133,7 @@ const Form = () => {
       firstName: !data.firstName ? 'Name is required' : null,
       lastName: !data.lastName ? 'Name is required' : null,
       email: !data.email ? 'Email is required' : null,
-      role: !data.role ? 'Role is required' : null,
+      role: data.role.length === 0 ? 'Role is required' : null,
       fieldOfStudy: !data.fieldOfStudy ? 'Field of Study is required' : null,
       general: null,
     };
@@ -222,12 +222,12 @@ const Form = () => {
                 <Dropdown
                   show={showRoleDropdown}
                   id="dropdown-basic"
+                  className="custom-dropdown-width"
                   onBlur={() => setShowRoleDropdown(false)}
                   onSelect={() => {}} // required for preventing auto-close
                 >
                   <Dropdown.Toggle
                     id="dropdown-basic-button"
-                    variant="secondary"
                     onClick={() => setShowRoleDropdown(!showRoleDropdown)}
                   >
                     {getDropdownTitle()}

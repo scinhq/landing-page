@@ -85,7 +85,7 @@ export default function HowScinWorks() {
                   >
                     <FontAwesomeIcon icon={faPen} />
                   </div>
-                  <h3 className="card-title mt-2">Authors (30%)</h3>
+                  <h4 className="card-title mt-2">Authors (20%)</h4>
                   <p>
                     Authors receive 30% of the total income for their
                     significant contribution to research creation.
@@ -103,9 +103,9 @@ export default function HowScinWorks() {
                   >
                     <FontAwesomeIcon icon={faBuildingColumns} />
                   </div>
-                  <h3 className="card-title mt-2">
-                    Affiliated Institutions (20%)
-                  </h3>
+                  <h4 className="card-title mt-2">
+                    Affiliated Institutions (15%)
+                  </h4>
                   <p>
                     20% of the total income is allocated to the affiliated
                     institutions of authors.
@@ -123,7 +123,7 @@ export default function HowScinWorks() {
                   >
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                   </div>
-                  <h3 className="card-title mt-2">Reviewers (9%)</h3>
+                  <h4 className="card-title mt-2">Reviewers (9%)</h4>
                   <p>
                     Reviewers receive 9% of the total income for their role in
                     ensuring the quality and integrity of published works.
@@ -141,7 +141,7 @@ export default function HowScinWorks() {
                   >
                     <FontAwesomeIcon icon={faUserPen} />
                   </div>
-                  <h3 className="card-title mt-2">Editors (4%)</h3>
+                  <h4 className="card-title mt-2">Editors (4%)</h4>
                   <p>
                     Editors, crucial in curating and overseeing the peer review
                     process, receive 4% of the total income.
@@ -159,9 +159,7 @@ export default function HowScinWorks() {
                   >
                     <FontAwesomeIcon icon={faCheckToSlot} />
                   </div>
-                  <h3 className="card-title mt-2">
-                    Proofreaders and QC Personnel (2%)
-                  </h3>
+                  <h4 className="card-title mt-2">Typesetters (2%)</h4>
                   <p>
                     Proofreaders and quality control personnel are allocated 2%
                     of the total income for ensuring the accuracy and clarity of
@@ -180,7 +178,7 @@ export default function HowScinWorks() {
                   >
                     <FontAwesomeIcon icon={faMoneyBillTrendUp} />
                   </div>
-                  <h3 className="card-title mt-2">SCIN (35%)</h3>
+                  <h4 className="card-title mt-2">SCIN (50%)</h4>
                   <p>
                     SCIN allocates 35% of the total income to cover costs
                     associated with platform administration, maintenance, and

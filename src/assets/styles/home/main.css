@@ -1461,6 +1461,21 @@ ul {
   border-bottom: 4px solid white;
 }
 
+.custom-dropdown-width .dropdown-toggle {
+  min-width: 40%;
+  text-align: left;
+}
+
+.custom-dropdown-width .dropdown-menu {
+  min-width: 40%;
+  text-align: left;
+}
+
+.custom-dropdown-width .dropdown-toggle::after {
+  float: right;
+  margin-top: 10px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .navbar-nav .sub-nav-toggler {
     display: block;

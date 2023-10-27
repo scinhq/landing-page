@@ -37,8 +37,8 @@ export default function Home() {
                 {`Revolutionizing Scientific Publishing`}
               </h1>
               <h3 className="wow fadeInUp pt-70 pb-50" data-wow-delay=".4s">
-                Promoting Open Access peer-reviewed publishing and leaving the
-                copyright ownership of publications to authors and reviewers.
+                Empowering Authors and Reviewers with Copyright Ownership in
+                Peer-Reviewed Publishing!
               </h3>
               <div className="hero-btns wow fadeInUp">
                 <div className="row g-3">
@@ -50,7 +50,7 @@ export default function Home() {
                     </Link>
                   </div>
                   <div className="col-auto">
-                    <Link href="https://app.scin.io" passHref>
+                    <Link href="/team" passHref>
                       <a
                         className="btn btn-outline-light btn-lg"
                         data-wow-delay=".6s"
@@ -93,10 +93,10 @@ export default function Home() {
             >
               At SCIN, we are rewriting the story of scientific publishing.
               We're not just a startup; we are the future of scholarly
-              communication. SCIN, short for Scientific Innovation or Scientific
-              Independence , is the groundbreaking platform where knowledge
-              meets rewards. We are more than just a publisher; we are a
-              catalyst for change in the academic world.
+              communication. SCIN, short for Scientific Independence , is the
+              groundbreaking platform where knowledge meets rewards. We are more
+              than just a publisher; we are a catalyst for change in the
+              academic world.
             </p>
           </div>
           <div className="custom-divider mt-100"></div>
@@ -205,12 +205,12 @@ export default function Home() {
                   <div className="col-auto">
                     <Link href="/form" passHref>
                       <a className="btn btn-dark btn-lg" data-wow-delay=".6s">
-                        Join the Waitlist
+                        Join Our Waitlist
                       </a>
                     </Link>
                   </div>
                   <div className="col-auto">
-                    <Link href="https://app.scin.io" passHref>
+                    <Link href="/team" passHref>
                       <a
                         className="btn btn-outline-light btn-lg"
                         data-wow-delay=".6s"
@@ -331,7 +331,7 @@ export default function Home() {
       <section id="tracking" className="tracking-section pt-150 text-center">
         <div className="container d-flex align-items-center justify-content-center">
           <div className="tracking-content">
-            <div className="section-title mb-50" style={{ maxWidth: '50rem' }}>
+            <div className="section-title" style={{ maxWidth: '50rem' }}>
               <h1 className="mb-30 wow fadeInUp" data-wow-delay=".2s">
                 Transparency and Trust: The SCIN Way
               </h1>
@@ -342,7 +342,7 @@ export default function Home() {
               >
                 Smart Contracts for a Smarter Future
               </h5>
-              <p className="wow fadeInUp  text-center" data-wow-delay=".4s">
+              <p className="wow fadeInUp" data-wow-delay=".4s">
                 SCIN is committed to transparency. We utilize cutting-edge smart
                 contracts to ensure that payments are fair, transparent, and
                 delivered promptly. With SCIN, you can trust that your work is
@@ -352,7 +352,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="tracking" className="tracking-section pt-150 mt-70">
+      <section id="tracking" className="tracking-section pt-40 mt-70">
         <div
           className="pt-80 pb-80"
           style={{ backgroundColor: '#0F7AB6', color: 'white' }}
@@ -394,12 +394,12 @@ export default function Home() {
                   <div className="col-auto">
                     <Link href="/form" passHref>
                       <a className="btn btn-dark btn-lg" data-wow-delay=".6s">
-                        Join the Waitlist
+                        Join Our Waitlist
                       </a>
                     </Link>
                   </div>
                   <div className="col-auto">
-                    <Link href="https://app.scin.io" passHref>
+                    <Link href="/team" passHref>
                       <a
                         className="btn btn-outline-light btn-lg"
                         data-wow-delay=".6s"
