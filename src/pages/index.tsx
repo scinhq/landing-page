@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import SEO from '../components/seo';
 import Image from 'next/image';
-import Navbar from '../components/Navbar';
+import MainNavbar from '../components/Navbar';
 import ScrollTopView from '../components/Scroller';
 import FooterView from '../components/Footer';
 
@@ -16,12 +16,12 @@ export default function Home() {
         }
       />
 
-      <Navbar />
+      <MainNavbar />
       {/* <!-- ========================= hero-section start ========================= --> */}
       <section
         id="home"
         style={{
-          marginTop: '5rem',
+          marginTop: '1rem',
           backgroundColor: '#0F7AB6',
           color: 'white',
         }}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import Navbar from '../components/Navbar';
+import MainNavbar from '../components/Navbar';
 import ScrollTopView from '../components/Scroller';
 import FooterView from '../components/Footer';
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -147,8 +147,8 @@ const Form = () => {
 
   return (
     <>
-      <Navbar />
-      <div className="container mt-150">
+      <MainNavbar />
+      <div className="container mt-100">
         <h2 className="mb-4 text-center">Join Our Waitlist</h2>
         <div className="row justify-content-center">
           <div className="col-md-6">

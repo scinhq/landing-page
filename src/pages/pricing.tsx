@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import SEO from '../components/seo';
-import Navbar from '../components/Navbar';
+import MainNavbar from '../components/Navbar';
 import ScrollTopView from '../components/Scroller';
 import FooterView from '../components/Footer';
 
@@ -16,8 +16,8 @@ const Pricing = () => {
         }
       />
 
-      <Navbar />
-      <section id="tracking" className="tracking-section pt-150">
+      <MainNavbar />
+      <section id="tracking" className="tracking-section ">
         <div className="container mt-5 pb-100">
           <Head>
             <title>SCIN Pricing Models</title>

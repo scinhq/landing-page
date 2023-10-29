@@ -127,7 +127,7 @@ export default function TeamView() {
   return (
     <div className="other-main-sections">
       <section id="tracking">
-        <div className="d-flex align-items-center justify-content-center pt-100 pb-150">
+        <div className="d-flex align-items-center justify-content-center pb-150">
           <div>
             <h1
               className="display-3 mb-40 wow fadeInUp text-center"
@@ -135,7 +135,6 @@ export default function TeamView() {
               style={{
                 fontWeight: 'bold', // Bold font-weight
                 textShadow: '2px 2px 4px rgba(0,0,0,0.1)', // Subtle text-shadow for depth
-                padding: '10px 0', // Padding top and bottom
                 background: '-webkit-linear-gradient(45deg, #0F7AB6, #0d6efd)', // Gradient background
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',

@@ -1,5 +1,5 @@
 import SEO from '../components/seo';
-import Navbar from '../components/Navbar';
+import MainNavbar from '../components/Navbar';
 import ScrollTopView from '../components/Scroller';
 import FooterView from '../components/Footer';
 
@@ -14,9 +14,9 @@ const ProcessingNotices = () => {
         }
       />
 
-      <Navbar />
+      <MainNavbar />
 
-      <div className="container mt-150">
+      <div className="container mt-80">
         <h1 className="mb-4">
           Processing notice for SCIN funding solutions for funders
         </h1>

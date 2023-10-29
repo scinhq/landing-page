@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import SEO from '../components/seo';
-import Navbar from '../components/Navbar';
+import MainNavbar from '../components/Navbar';
 import ScrollTopView from '../components/Scroller';
 import FooterView from '../components/Footer';
 
@@ -15,8 +15,8 @@ const Privacy = () => {
         }
       />
 
-      <Navbar />
-      <div className="container mt-150">
+      <MainNavbar />
+      <div className="container mt-80">
         <h1 className="mb-4">SCIN Privacy Policy</h1>
         <p>
           SCIN is committed to maintaining your confidence and trust with

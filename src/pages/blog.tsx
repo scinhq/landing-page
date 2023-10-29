@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '../components/seo';
-import Navbar from '../components/Navbar';
+import MainNavbar from '../components/Navbar';
 import Image from 'next/image';
 import ScrollTopView from '../components/Scroller';
 import FooterView from '../components/Footer';
@@ -48,9 +48,9 @@ const BlogPage = () => {
         }
       />
 
-      <Navbar />
+      <MainNavbar />
       {/* ... other sections above */}
-      <div className="container mt-150">
+      <div className="container mt-50">
         <div className="row">
           {blogs.map((blog, index) => (
             <div className="col-md-4 d-flex align-items-stretch" key={index}>

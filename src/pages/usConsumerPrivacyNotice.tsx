@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import SEO from '../components/seo';
-import Navbar from '../components/Navbar';
+import MainNavbar from '../components/Navbar';
 import ScrollTopView from '../components/Scroller';
 import FooterView from '../components/Footer';
 
@@ -15,9 +15,9 @@ const USConsumerPrivacyNotice = () => {
         }
       />
 
-      <Navbar />
+      <MainNavbar />
 
-      <div className="container mt-150">
+      <div className="container mt-80">
         <h1 className="mb-4">US Consumer Privacy Notice</h1>
         <ol className="mb-4">
           <li className="mb-2 list-items">

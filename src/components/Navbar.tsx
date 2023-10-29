@@ -1,43 +1,37 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
-//import Logo from '../../public/img/logo/logo.png';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-export default function Navbar() {
+export default function MainNavbar() {
   const router = useRouter();
 
   return (
-    <>
-      <nav className="navbar fixed-top navbar-expand-lg bg-white">
-        <div className="container">
-          <Link href="./" passHref>
-            <a className="navbar-brand">
-              <div style={{ width: '12rem' }}>
-                <Image
-                  className="logo-1"
-                  src="/img/logo/logo.png"
-                  alt="SCIN Logo"
-                  layout="responsive"
-                  width={1000}
-                  height={400}
-                />
-              </div>
-            </a>
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+    <Navbar expand="lg">
+      <div className="container pt-4 d-flex align-items-center justify-content-between">
+        {/* Logo Section */}
+        <Link href="./" passHref>
+          <a className="navbar-brand">
+            <div style={{ width: '12rem' }}>
+              <Image
+                className="logo-1"
+                src="/img/logo/logo.png"
+                alt="SCIN Logo"
+                layout="responsive"
+                width={1000}
+                height={400}
+              />
+            </div>
+          </a>
+        </Link>
 
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+        {/* Navigation Items */}
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link href="./" passHref>
                   <a
@@ -94,15 +88,17 @@ export default function Navbar() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </Nav>
+        </Navbar.Collapse>
+
+        <div>
           <Link href="/form" passHref>
             <a className="btn btn-primary btn-lg" data-wow-delay=".6s">
               Join Our Waitlist
             </a>
           </Link>
         </div>
-      </nav>
-      {/* <!-- navbar --> */}
-    </>
+      </div>
+    </Navbar>
   );
 }

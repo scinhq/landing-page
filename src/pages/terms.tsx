@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import SEO from '../components/seo';
-import Navbar from '../components/Navbar';
+import MainNavbar from '../components/Navbar';
 import ScrollTopView from '../components/Scroller';
 import FooterView from '../components/Footer';
 
@@ -16,8 +16,8 @@ const Terms = () => {
         }
       />
 
-      <Navbar />
-      <div className="container mt-150">
+      <MainNavbar />
+      <div className="container mt-80">
         <h1 className="mb-4">Terms and Conditions</h1>
         <p className="paragraph-items">
           These terms and conditions (“Terms and Conditions”) apply to your use

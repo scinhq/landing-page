@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import MainNavbar from '../components/Navbar';
 import ScrollTopView from '../components/Scroller';
 import FooterView from '../components/Footer';
 
@@ -282,7 +282,7 @@ const blogs = [
 const BlogPost = ({ blog }) => {
   return (
     <>
-      <Navbar />
+      <MainNavbar />
       <div className="container mt-150">
         <h1 className="mt-4 mb-4 display-6 font-weight-bold text-uppercase border-bottom pb-2 text-shadow">
           {blog.title}

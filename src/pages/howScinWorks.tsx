@@ -9,7 +9,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import SEO from '../components/seo';
 import Image from 'next/image';
-import Navbar from '../components/Navbar';
+import MainNavbar from '../components/Navbar';
 import ScrollTopView from '../components/Scroller';
 import FooterView from '../components/Footer';
 
@@ -24,12 +24,12 @@ export default function HowScinWorks() {
         }
       />
 
-      <Navbar />
+      <MainNavbar />
       {/* <!-- ========================= hero-section start ========================= --> */}
       {/* ... other sections above */}
 
       {/* <!-- ========================= income-distribution-section start ========================= --> */}
-      <section id="tracking" className="tracking-section pt-150">
+      <section id="tracking" className="tracking-section pt-100">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
