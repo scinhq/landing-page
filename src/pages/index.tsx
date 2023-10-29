@@ -93,7 +93,7 @@ export default function Home() {
             >
               At SCIN, we are rewriting the story of scientific publishing.
               We're not just a startup; we are the future of scholarly
-              communication. SCIN, short for Scientific Independence , is the
+              communication. SCIN, short for Scientific Independence, is the
               groundbreaking platform where knowledge meets rewards. We are more
               than just a publisher; we are a catalyst for change in the
               academic world.

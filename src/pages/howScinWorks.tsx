@@ -87,7 +87,7 @@ export default function HowScinWorks() {
                   </div>
                   <h4 className="card-title mt-2">Authors (20%)</h4>
                   <p>
-                    Authors receive 30% of the total income for their
+                    Authors receive 20% of the total income for their
                     significant contribution to research creation.
                   </p>
                 </div>
@@ -107,7 +107,7 @@ export default function HowScinWorks() {
                     Affiliated Institutions (15%)
                   </h4>
                   <p>
-                    20% of the total income is allocated to the affiliated
+                    15% of the total income is allocated to the affiliated
                     institutions of authors.
                   </p>
                 </div>
@@ -180,7 +180,7 @@ export default function HowScinWorks() {
                   </div>
                   <h4 className="card-title mt-2">SCIN (50%)</h4>
                   <p>
-                    SCIN allocates 35% of the total income to cover costs
+                    SCIN allocates 50% of the total income to cover costs
                     associated with platform administration, maintenance, and
                     other operational expenses.
                   </p>
