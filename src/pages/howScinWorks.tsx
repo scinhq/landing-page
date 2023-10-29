@@ -38,7 +38,7 @@ export default function HowScinWorks() {
                   className="section-title mb-50"
                   style={{ marginRight: '2rem' }}
                 >
-                  <h1 className="mt-5">Income Distribution</h1>
+                  <h1 className="mt-5">Income Distribution*</h1>
                   <p className="mt-5">
                     At SCIN, we believe in fostering a collaborative and
                     equitable ecosystem for researchers, authors, institutions,
@@ -86,10 +86,10 @@ export default function HowScinWorks() {
                     <FontAwesomeIcon icon={faPen} />
                   </div>
                   <h4 className="card-title mt-2">Authors (20%)</h4>
-                  <p>
+                  <div className="text-styling pt-2">
                     Authors receive 20% of the total income for their
                     significant contribution to research creation.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -106,10 +106,10 @@ export default function HowScinWorks() {
                   <h4 className="card-title mt-2">
                     Affiliated Institutions (15%)
                   </h4>
-                  <p>
+                  <div className="text-styling pt-2">
                     15% of the total income is allocated to the affiliated
                     institutions of authors.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -124,10 +124,10 @@ export default function HowScinWorks() {
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                   </div>
                   <h4 className="card-title mt-2">Reviewers (9%)</h4>
-                  <p>
+                  <div className="text-styling pt-2">
                     Reviewers receive 9% of the total income for their role in
                     ensuring the quality and integrity of published works.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -142,10 +142,10 @@ export default function HowScinWorks() {
                     <FontAwesomeIcon icon={faUserPen} />
                   </div>
                   <h4 className="card-title mt-2">Editors (4%)</h4>
-                  <p>
+                  <div className="text-styling pt-2">
                     Editors, crucial in curating and overseeing the peer review
                     process, receive 4% of the total income.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -160,11 +160,11 @@ export default function HowScinWorks() {
                     <FontAwesomeIcon icon={faCheckToSlot} />
                   </div>
                   <h4 className="card-title mt-2">Typesetters (2%)</h4>
-                  <p>
+                  <div className="text-styling pt-2">
                     Proofreaders and quality control personnel are allocated 2%
                     of the total income for ensuring the accuracy and clarity of
                     research publications.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -179,14 +179,20 @@ export default function HowScinWorks() {
                     <FontAwesomeIcon icon={faMoneyBillTrendUp} />
                   </div>
                   <h4 className="card-title mt-2">SCIN (50%)</h4>
-                  <p>
+                  <div className="text-styling pt-2">
                     SCIN allocates 50% of the total income to cover costs
                     associated with platform administration, maintenance, and
                     other operational expenses.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div className="pt-2">
+            * The numbers mentioned here are the best approximations at this
+            point and are subject to change in the future without any legal
+            consequences. Any adjustments to the revenue distribution model will
+            not result in any liability for SCIN.
           </div>
         </div>
       </section>

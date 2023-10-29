@@ -23,7 +23,7 @@ const Pricing = () => {
             <title>SCIN Pricing Models</title>
           </Head>
 
-          <h1 className="text-center mb-5">SCIN Pricing Models</h1>
+          <h1 className="text-center mb-5">SCIN Pricing Models*</h1>
           <p>
             Welcome to SCIN, where we offer flexible pricing models to cater to
             the diverse needs of our users. Whether you are an individual
@@ -205,6 +205,13 @@ const Pricing = () => {
               </div>
             </div>
           </div>
+          <div className="pt-2">
+            * Please be aware that the numbers presented here are our best
+            approximations and may be subject to change in the future without
+            any legal consequences. Furthermore, any modifications to the
+            pricing model and cost of service will not result in any liability
+            for SCIN.{' '}
+          </div>
         </div>
 
         <section id="tracking" style={{ backgroundColor: '#f9f8ff' }}>
@@ -218,33 +225,33 @@ const Pricing = () => {
                 <div className="col col-md-4 d-flex align-items-stretch">
                   <div className="card mb-4 rounded-3 shadow-sm p-3">
                     <h4 className="mb-3">Flexibility</h4>
-                    <p>
+                    <div className="text-styling">
                       We understand that your needs may change. Our flexible
                       pricing models allow you to choose what suits you best at
                       any given time.{' '}
-                    </p>
+                    </div>
                   </div>
                 </div>
 
                 <div className="col col-md-4 d-flex align-items-stretch">
                   <div className="card mb-4 rounded-3 shadow-sm p-3">
                     <h4 className="mb-3">Affordability</h4>
-                    <p>
+                    <div className="text-styling">
                       SCIN is committed to making scientific knowledge
                       accessible to all. Our pricing is designed to be
                       reasonable and competitive.{' '}
-                    </p>
+                    </div>
                   </div>
                 </div>
 
                 <div className="col col-md-4 d-flex align-items-stretch">
                   <div className="card mb-4 rounded-3 shadow-sm p-3">
                     <h4 className="mb-3">Quality Content</h4>
-                    <p>
+                    <div className="text-styling">
                       With SCIN, you can trust that you're accessing
                       high-quality, peer-reviewed scientific content that
                       contributes to your academic and professional success.{' '}
-                    </p>
+                    </div>
                   </div>
                 </div>
               </div>

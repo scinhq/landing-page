@@ -116,7 +116,9 @@ export default function TeamView() {
             <h5 className="text-muted mb-4 fw-light text-center text-nowrap">
               {founderInfo.position}
             </h5>
-            <p className="text-muted">{founderInfo.description}</p>
+            <div className="text-muted text-styling">
+              {founderInfo.description}
+            </div>
           </div>
           {TeamSocialLinks(founderInfo)}
         </div>
@@ -178,12 +180,12 @@ export default function TeamView() {
                   }}
                 >
                   <h4 className="mb-3">Empowering Authors</h4>
-                  <p>
+                  <div className="text-styling">
                     SCIN is on a mission to support and uplift authors,
                     especially graduate researchers and emerging talents. By
                     providing fair compensation, we aim to ensure authors
                     continue their roles in shaping the future of research.
-                  </p>
+                  </div>
                 </div>
               </div>
 
@@ -198,12 +200,12 @@ export default function TeamView() {
                   }}
                 >
                   <h4 className="mb-3">Accelerating the Review Process</h4>
-                  <p>
+                  <div className="text-styling">
                     We are committed to expediting the peer review process. Our
                     approach matches manuscripts with expert reviewers,
                     streamlining evaluation and accelerating groundbreaking
                     research dissemination.
-                  </p>
+                  </div>
                 </div>
               </div>
 
@@ -218,11 +220,11 @@ export default function TeamView() {
                   }}
                 >
                   <h4 className="mb-3">Revolutionizing Scholarly Publishing</h4>
-                  <p>
+                  <div className="text-styling">
                     SCIN challenges traditional publishing practices. We
                     introduce a fair income distribution model to create an
                     equitable ecosystem for all collaborators.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -271,13 +273,13 @@ export default function TeamView() {
                   <h4 className="mb-3 text-nowrap">
                     Supporting Emerging Talent
                   </h4>
-                  <p>
+                  <div className="text-styling">
                     We are dedicated to supporting emerging talent in academia,
                     including graduate researchers, PhD students, and early
                     career professionals. By recognizing their potential and
                     contributions, we aim to provide them with the resources and
                     encouragement needed to thrive.
-                  </p>
+                  </div>
                 </div>
               </div>
 
@@ -292,13 +294,13 @@ export default function TeamView() {
                   }}
                 >
                   <h4 className="mb-3 text-nowrap">Open Access Advocates</h4>
-                  <p>
+                  <div className="text-styling">
                     SCIN is a staunch advocate for open access. We believe that
                     knowledge should be freely accessible to all. As part of our
                     commitment, we pledge to make all articles published on our
                     platform open access after a 10-year period, promoting
                     widespread access to valuable research.
-                  </p>
+                  </div>
                 </div>
               </div>
 
@@ -315,13 +317,13 @@ export default function TeamView() {
                   <h4 className="mb-3 text-nowrap">
                     Transparency and Accountability
                   </h4>
-                  <p>
+                  <div className="text-styling">
                     Our commitment to transparency extends to every aspect of
                     our operation. We are transparent about our income
                     distribution model, financial projections, and policies. We
                     regularly share updates and financial reports to maintain
                     accountability to our stakeholders.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
