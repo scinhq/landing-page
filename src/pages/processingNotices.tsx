@@ -20,32 +20,34 @@ const ProcessingNotices = () => {
         <h1 className="mb-4">
           Processing notice for SCIN funding solutions for funders
         </h1>
-        <p>Last updated: 1 October 2023</p>
+        <div className="text-styling mb-3">Last updated: 1 October 2023</div>
         <ol className="mb-4">
           <li className="mb-2 list-items">
             About this processing notice
-            <p className="paragraph-items">
+            <div className="text-styling paragraph-items">
               This processing notice applies to the personal information
               processed in (“Service”) provided to funding customers
               (“Funders”). SCIN Publishing Inc (“SCIN”) is the controller of
               personal information provided to, or collected by or for, the
               Service.
-            </p>
+            </div>
           </li>
           <li className="mb-2 list-items">
             Purposes for processing
-            <p className="paragraph-items">
+            <div className="text-styling paragraph-items">
               SCIN processes personal information of individuals involved in
               research to help Funders develop their funding strategies and
               improve their grant allocations, workflows, and other funding
               mechanisms to comply with their legal obligations, effectively
               manage their risks, make informed decisions, run themselves in an
               ethical manner, and ensure value for the invested funds.
-              <p className="sub-list-items mb-1">2.1 Find scientific experts</p>
-              <p className="paragraph-items">
+              <div className="sub-list-items mb-1">
+                2.1 Find scientific experts
+              </div>
+              <div className="text-styling paragraph-items">
                 SCIN processes researcher personal information to help Funders
                 to, for example:
-              </p>
+              </div>
               <ul>
                 <li>
                   locate and approach researchers who might match funding
@@ -64,13 +66,13 @@ const ProcessingNotices = () => {
                   reviewers and grant applicants.
                 </li>
               </ul>
-              <p className="sub-list-items mb-1">
+              <div className="sub-list-items mb-1">
                 2.2 Evaluate grant applications
-              </p>
-              <p className="paragraph-items">
+              </div>
+              <div className="text-styling paragraph-items">
                 SCIN processes grant applicant personal information to help
                 Funders to, for example:
-              </p>
+              </div>
               <ul>
                 <li>lidentify publication histories of grant applicants;</li>
                 <li>identify funding histories of grant applicants;</li>
@@ -82,21 +84,21 @@ const ProcessingNotices = () => {
                   conflicts.
                 </li>
               </ul>
-              <p className="sub-list-items mb-1">
+              <div className="sub-list-items mb-1">
                 2.3 Conduct portfolio analysis
-              </p>
-              <p className="paragraph-items">
+              </div>
+              <div className="text-styling paragraph-items">
                 SCIN processes Scopus author profiles and grant information to
                 help Funders with their analysis and benchmarking of their grant
                 programs.
-              </p>
-            </p>
+              </div>
+            </div>
           </li>
           <li className="mb-2 list-items">Personal information processed</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             SCIN processes personal information of individuals involved in
             research. This personal information may include:
-          </p>
+          </div>
           <ul>
             <li>name and professional contact details;</li>
             <li>history of affiliated institutions;</li>
@@ -106,7 +108,7 @@ const ProcessingNotices = () => {
             <li>patent filings; and</li>
             <li>grant award history.</li>
           </ul>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             The personal information is sourced from grant awards, public
             records, such as patent filings, and publicly available information,
             such as scholarly works and news stories. This information is
@@ -114,34 +116,36 @@ const ProcessingNotices = () => {
             third-party sources like publishers, funders, preprint servers, news
             services, patent offices, public repositories, and other data
             providers.
-          </p>
+          </div>
 
           <li className="mb-2 list-items">Use of personal information</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             SCIN uses personal information to provide the Service to Funders.
             Funders make their own decisions as to how to use the personal
             information provided by the Service, including whether to award a
             grant. SCIN does not make any decisions about an individual.
             Funders’ privacy policies and other notices will describe how they
             use personal information.
-          </p>
+          </div>
           <li className="mb-2 list-items">Grounds for processing</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             Personal information is processed for SCIN and/or Funders where
             necessary for:
-          </p>
+          </div>
           <ul>
             <li>compliance with a legal obligation;</li>
             <li>performance of a task carried out in the public interest;</li>
             <li>purposes of the legitimate interests described above.</li>
           </ul>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             Where SCIN relies on legitimate interests to process personal
             information, the individuals to whom the personal information
             relates have the right to object.
-          </p>
+          </div>
           <li className="mb-2 list-items">Information recipients</li>
-          <p className="paragraph-items">SCIN shares personal information:</p>
+          <div className="text-styling paragraph-items">
+            SCIN shares personal information:
+          </div>
           <ul>
             <li>with Funders, service providers, and other processors;</li>
             <li>
@@ -169,7 +173,7 @@ const ProcessingNotices = () => {
           </ul>
 
           <li className="mb-2 list-items">Locations of processing</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             Personal information may be stored and processed in the region or
             country where ESCIN companies and their service providers maintain
             servers and facilities, including Canada, Ireland, the Netherlands,
@@ -178,13 +182,13 @@ const ProcessingNotices = () => {
             information continues to be protected wherever it is located in a
             manner consistent with the standards of protection required under
             applicable law.
-          </p>
+          </div>
 
           <li className="mb-2 list-items">Your rights</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             You have the right under certain privacy and data protection laws,
             as may be applicable, to request free of charge:
-          </p>
+          </div>
           <ul>
             <li>
               access to and correction and deletion of your personal
@@ -196,7 +200,7 @@ const ProcessingNotices = () => {
             </li>
             <li>portability of your personal information.</li>
           </ul>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             If you wish to exercise any of these rights, please contact us
             through the Email at{' '}
             <a href="mailto:info@scin.io" className="text-primary">
@@ -207,26 +211,26 @@ const ProcessingNotices = () => {
             your identity. You may designate an authorized agent to make a
             request on your behalf subject to proof of identity and
             authorization.
-          </p>
+          </div>
 
           <li className="mb-2 list-items">Data retention</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             SCIN retains personal information for only as long as necessary to
             provide the Service and fulfil the transactions Funders have
             requested, or for other essential purposes such as complying with
             legal obligations, maintaining business and financial records,
             resolving disputes, maintaining security, detecting and preventing
             fraud and abuse, and enforcing agreements.
-          </p>
+          </div>
 
           <li className="mb-2 list-items">Changes</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             SCIN will update this processing notice from time to time. Any
             changes will be posted on this page with an updated revision date.
-          </p>
+          </div>
 
           <li className="mb-2 list-items">Contact</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             For any questions, comments, complaints, or requests regarding this
             processing notice, please contact the SCIN Data Protection Officer
             via the email at{' '}
@@ -235,27 +239,27 @@ const ProcessingNotices = () => {
             </a>
             . You also may lodge a complaint with the data protection authority
             in the applicable jurisdiction.
-          </p>
+          </div>
         </ol>
         <h1 className="mb-4">
           Processing notice for SCIN recruitment solutions
         </h1>
-        <p>Last updated: 1 October 2023</p>
+        <div className="text-styling mb-3">Last updated: 1 October 2023</div>
         <ol className="mb-4">
           <li className="mb-2 list-items">
             About this processing notice
-            <p className="paragraph-items">
+            <div className="text-styling paragraph-items">
               This processing notice applies to the personal information
               processed in SCIN recruitment solutions (“Service”) provided to
               academic and other customers engaged in staff recruitment
               (“Recruiters”). SCIN Publishing Inc (“SCIN”) is the controller of
               personal information provided to, or collected by or for, the
               Service.
-            </p>
+            </div>
           </li>
           <li className="mb-2 list-items">
             Purposes for processing
-            <p className="paragraph-items">
+            <div className="text-styling paragraph-items">
               SCIN processes personal information of researchers to help
               Recruiters develop and implement their recruitment strategies and
               capabilities, for example, to:
@@ -277,12 +281,12 @@ const ProcessingNotices = () => {
                   engagement.
                 </li>
               </ul>
-            </p>
+            </div>
           </li>
           <li className="mb-2 list-items">Personal information processed</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             SCIN processes researcher personal information that may include:
-          </p>
+          </div>
           <ul>
             <li>name and professional contact details;</li>
             <li>history of affiliated institutions;</li>
@@ -292,7 +296,7 @@ const ProcessingNotices = () => {
             <li>patent filings; and</li>
             <li>grant award history.</li>
           </ul>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             TThe personal information is sourced from public records, such as
             patent filings, and publicly available information, such as
             scholarly works and news stories. This information is obtained
@@ -301,24 +305,26 @@ const ProcessingNotices = () => {
             offices, public repositories, public award lists and other data
             providers. Inferences may be drawn from this personal information,
             such as gender, career length and supervisor activity.
-          </p>
+          </div>
 
           <li className="mb-2 list-items">Use of personal information</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             SCIN uses personal information to provide the Service to Recruiters.
             Recruiters make their own decisions as to how to use the personal
             information provided by the Service, including whether to interview
             or hire a candidate. SCIN does not make any decisions about an
             individual. Recruiters’ privacy policies and other notices will
             describe how they use personal information.{' '}
-          </p>
+          </div>
           <li className="mb-2 list-items">Grounds for processing</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             Personal information is processed on the basis that is in SCIN’s or
             others’ legitimate interests.
-          </p>
+          </div>
           <li className="mb-2 list-items">Information recipients</li>
-          <p className="paragraph-items">SCIN shares personal information:</p>
+          <div className="text-styling paragraph-items">
+            SCIN shares personal information:
+          </div>
           <ul>
             <li>with Recruiters, service providers, and other processors;</li>
             <li>
@@ -346,7 +352,7 @@ const ProcessingNotices = () => {
           </ul>
 
           <li className="mb-2 list-items">Locations of processing</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             Personal information may be stored and processed in the region or
             country where SCIN companies and their service providers maintain
             servers and facilities, including Canada, Ireland, the Netherlands,
@@ -355,13 +361,13 @@ const ProcessingNotices = () => {
             information continues to be protected wherever it is located in a
             manner consistent with the standards of protection required under
             applicable law.
-          </p>
+          </div>
 
           <li className="mb-2 list-items">Your rights</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             You have the right under certain privacy and data protection laws,
             as may be applicable, to request free of charge:
-          </p>
+          </div>
           <ul>
             <li>
               access to and correction and deletion of your personal
@@ -373,7 +379,7 @@ const ProcessingNotices = () => {
             </li>
             <li>portability of your personal information.</li>
           </ul>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             If you wish to exercise any of these rights, please contact us
             through the Email at{' '}
             <a href="mailto:info@scin.io" className="text-primary">
@@ -384,25 +390,25 @@ const ProcessingNotices = () => {
             your identity. You may designate an authorized agent to make a
             request on your behalf subject to proof of identity and
             authorization.
-          </p>
+          </div>
 
           <li className="mb-2 list-items">Data retention</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             SCIN retains personal information for only as long as necessary to
             provide the Service and fulfill the transactions Recruiters have
             requested, or for other essential purposes such as complying with
             legal obligations, maintaining business and financial records,
             resolving disputes, maintaining security, detecting and preventing
             fraud and abuse, and enforcing agreements.
-          </p>
+          </div>
           <li className="mb-2 list-items">Changes</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             SCIN will update this processing notice from time to time. Any
             changes will be posted on this page with an updated revision date.
-          </p>
+          </div>
 
           <li className="mb-2 list-items">Contact</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             For any questions, comments, complaints, or requests regarding this
             processing notice, please contact the SCIN Data Protection Officer
             via the email at{' '}
@@ -411,7 +417,7 @@ const ProcessingNotices = () => {
             </a>
             . You also may lodge a complaint with the data protection authority
             in the applicable jurisdiction.
-          </p>
+          </div>
         </ol>
       </div>
 

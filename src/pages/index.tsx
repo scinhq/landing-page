@@ -26,7 +26,7 @@ export default function Home() {
           color: 'white',
         }}
       >
-        <div className="container d-flex align-items-center justify-content-center pt-200 pb-200">
+        <div className="container d-flex align-items-center justify-content-center pt-100 pb-100">
           <div className="row align-items-center">
             <div className="hero-content">
               <h1
@@ -86,18 +86,14 @@ export default function Home() {
             >
               Unlocking the Future of Scientific Publishing
             </h1>
-            <p
-              className="mt-4 lead"
-              style={{ marginTop: '2rem' }}
-              data-wow-delay=".4s"
-            >
+            <div className="text-styling mt-4" style={{ fontSize: '22px' }}>
               At SCIN, we are rewriting the story of scientific publishing.
               We're not just a startup; we are the future of scholarly
               communication. SCIN, short for Scientific Independence, is the
               groundbreaking platform where knowledge meets rewards. We are more
               than just a publisher; we are a catalyst for change in the
               academic world.
-            </p>
+            </div>
           </div>
           <div className="custom-divider mt-100"></div>
         </div>
@@ -226,7 +222,7 @@ export default function Home() {
         </div>
       </section>
       {/* <!-- ========================= search-section end ========================= --> */}
-      <section id="tracking" className="tracking-section pt-150">
+      <section id="tracking1" className="tracking-section pt-150">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -277,10 +273,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="tracking" className="tracking-section pt-150">
+      <section id="tracking2" className="tracking-section pt-150">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-6 custom-order-2">
               <div
                 className="hero-img wow fadeInUp"
                 data-wow-delay=".5s"
@@ -299,7 +295,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 custom-order-1">
               <div className="tracking-content">
                 <div
                   className="section-title mb-50"
@@ -328,7 +324,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="tracking" className="tracking-section pt-150 text-center">
+      <section id="tracking" className="tracking-section pt-150">
         <div className="container d-flex align-items-center justify-content-center">
           <div className="tracking-content">
             <div className="section-title" style={{ maxWidth: '50rem' }}>

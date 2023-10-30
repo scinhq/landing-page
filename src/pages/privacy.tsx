@@ -18,13 +18,13 @@ const Privacy = () => {
       <MainNavbar />
       <div className="container mt-80">
         <h1 className="mb-4">SCIN Privacy Policy</h1>
-        <p>
+        <div className="text-styling">
           SCIN is committed to maintaining your confidence and trust with
           respect to your privacy. This privacy policy explains how we collect,
           use and share your personal information.
-        </p>
+        </div>
         <h2 className="mt-4 mb-2">About our privacy policy</h2>
-        <p className="mb-3">
+        <div className="text-styling mb-3">
           This privacy policy applies to our websites, apps and other services,
           including programs and events, that refer or link to this privacy
           policy (each, a “Service”). This policy may be supplemented by
@@ -55,9 +55,9 @@ const Privacy = () => {
             </a>
           </Link>
           .
-        </p>
+        </div>
         <h2 className="mt-4 mb-2">Information we collect</h2>
-        <p>
+        <div className="text-styling">
           We collect information about you in three ways: directly from your
           input, from third-party sources, and through automated technologies.
           <br />
@@ -177,7 +177,7 @@ const Privacy = () => {
             cookie notice
           </a>{' '}
           of the Service.
-        </p>
+        </div>
         <h2 className="mt-4 mb-3">How we use your information</h2>
         We are committed to delivering a relevant and useful experience to you.
         Depending on how you interact with us and the Service, we use your
@@ -220,7 +220,9 @@ const Privacy = () => {
             pursuant to a customer agreement.
           </li>
         </ul>
-        <p className="mt-4">We may also use your personal information to:</p>
+        <div className="text-styling mb-3">
+          We may also use your personal information to:
+        </div>
         <ul>
           <li>Respond to your requests, inquiries, comments or concerns;</li>
           <li>
@@ -250,13 +252,13 @@ const Privacy = () => {
           </li>
         </ul>
         <h2 className="mt-4">Sharing of your information</h2>
-        <p>
+        <div className="text-styling">
           We share your personal information in the following ways and contexts.
-        </p>
+        </div>
         <br />
         <strong>Your institution</strong>
         <br />
-        <p>
+        <div className="text-styling">
           If you access the Service through a subscription administered by your
           institution, your personal information and certain usage data gathered
           through the Service, such as the number of items you downloaded, any
@@ -271,14 +273,14 @@ const Privacy = () => {
           parties non-personally identifiable information, such as anonymous
           usage data reports and aggregated information, subject to any
           applicable legal or contractual obligations.
-        </p>
+        </div>
         <br />
         <strong>Our group companies and service providers</strong>
         <br />
-        <p>
+        <div className="text-styling">
           Depending on the Service provided, we share your personal information
           with our:
-        </p>
+        </div>
         <ul>
           <li>
             Affiliates, trading names and divisions within the SICN Publishing
@@ -293,17 +295,17 @@ const Privacy = () => {
             providers;
           </li>
         </ul>
-        <p>
+        <div className="text-styling">
           to process the information as necessary to provide the Service,
           complete a transaction or fulfill your request or otherwise on our
           behalf based on our instructions and in compliance with this privacy
           policy and any other appropriate confidentiality and security
           measures.
-        </p>
+        </div>
         <br />
         <strong>Your choices</strong>
         <br />
-        <p>
+        <div className="text-styling">
           We may also share your personal information with our group companies
           and with sponsors, joint venture partners and other third parties,
           including entities for which we are acting as an agent, licensee,
@@ -317,14 +319,14 @@ const Privacy = () => {
           collected and used by others, may be indexed by search engines, and
           might not be able to be removed. Please be careful when disclosing
           personal information in these public areas.
-        </p>
+        </div>
         <br />
         <strong>Legal reasons</strong>
         <br />
-        <p>
+        <div className="text-styling">
           We also will disclose your personal information if we have a good
           faith belief that such disclosure is necessary to:
-        </p>
+        </div>
         <ul>
           <li>
             Meet any applicable law, regulation, legal process or other legal
@@ -339,30 +341,30 @@ const Privacy = () => {
             or others;
           </li>
         </ul>
-        <p className="mt-4">
+        <div className="text-styling mt-3">
           And as part of a corporate transaction, such as a transfer of a
           journal or other assets to or an acquisition by or merger with another
           company.
-        </p>
+        </div>
         <h2 className="mt-4">Your personal account</h2>
-        <p>
+        <div className="text-styling">
           If you create a personal user account on SCIN Publishing, you can sign
           in with the same credentials to all other website under SCIN
           Publishing. We will share your usage activity, preferences and other
           information amongst these and related SCIN services to help you
           improve your productivity.
-        </p>
+        </div>
         <h2 className="mt-4">Administrator data</h2>
-        <p>
+        <div className="text-styling">
           If you are an administrator of an institution with a subscription to a
           Service, we will use your details to communicate with you about your
           institution’s subscription and related services. If you supply us
           contact information of your colleagues, we may include a reference to
           you when we contact those individuals with communications about the
           Service.
-        </p>
+        </div>
         <h2 className="mt-4">Your communications preferences</h2>
-        <p>
+        <div className="text-styling">
           You can customize and manage your communications preferences and other
           settings when you register with the Service, by updating your account
           features and preferences, by using the “opt-in/out” or
@@ -370,19 +372,19 @@ const Privacy = () => {
           communications that you receive from us or by contacting us. We
           reserve the right to notify you of changes or updates to the Service
           whenever necessary.
-        </p>
+        </div>
         <h2 className="mt-4">Accessing and updating your information</h2>
-        <p>
+        <div className="text-styling">
           The Service may allow registered users to directly access their
           account information and make corrections or updates at any time.
           Keeping such information up to date is solely the responsibility of
           the user. Registered users may also close their account directly
           through the Service or by contacting the Service’s customer support.
-        </p>
-        <p>
+        </div>
+        <div className="text-styling">
           You have the right under certain privacy and data protection laws, as
           may be applicable, to request free of charge:
-        </p>
+        </div>
         <ul>
           <li>
             Access to and correction and deletion of your personal information;
@@ -393,7 +395,7 @@ const Privacy = () => {
           </li>
           <li>Portability of your personal information.</li>
         </ul>
-        <p>
+        <div className="text-styling">
           If you wish to exercise any of these rights, please contact us through
           the{' '}
           <a href="mailto:info@scin.io" className="text-primary">
@@ -403,25 +405,25 @@ const Privacy = () => {
           protect your privacy and security, we may require you to verify your
           identity. You may designate an authorized agent to make a request on
           your behalf subject to proof of identity and authorization.
-        </p>
+        </div>
         <h2 className="mt-4">Data retention</h2>
-        <p>
+        <div className="text-styling">
           We retain your personal information for as long as necessary to
           provide the Service and fulfill the transactions you have requested,
           or for other essential purposes such as complying with our legal
           obligations, maintaining business and financial records, resolving
           disputes, maintaining security, detecting and preventing fraud and
           abuse, and enforcing our agreements.
-        </p>
+        </div>
         <h2 className="mt-4">Data security</h2>
-        <p>
+        <div className="text-styling">
           We take precautions to safeguard your personal information against
           loss, theft and misuse and unauthorized access, disclosure, alteration
           and destruction through the use of appropriate technical and
           organizational measures.
-        </p>
+        </div>
         <h2 className="mt-4">Locations of processing</h2>
-        <p>
+        <div className="text-styling">
           Your personal information may be stored and processed in your region
           or another country where SCIN Publishing companies and their service
           providers maintain servers and facilities, including Australia,
@@ -431,8 +433,8 @@ const Privacy = () => {
           information continues to be protected wherever it is located in a
           manner consistent with the standards of protection required under
           applicable law.
-        </p>
-        <p>
+        </div>
+        <div className="text-styling">
           Certain U.S. entities within the SCIN group of companies have
           certified certain of their services to the EU-U.S. and Swiss-U.S.
           Privacy Shield Frameworks as set forth by the U.S. Department of
@@ -447,9 +449,9 @@ const Privacy = () => {
             www.privacyshield.gov
           </a>
           .
-        </p>
+        </div>
         <h2 className="mt-4">Grounds for processing</h2>
-        <p>
+        <div className="text-styling">
           When we process any personal information within the scope of certain
           privacy and data protection laws, we do so:
           <ul>
@@ -478,16 +480,16 @@ const Privacy = () => {
           have the right to withdraw your consent at any time, and where we rely
           on legitimate interests, you may have the right to object to our
           processing.
-        </p>
+        </div>
         <h2 className="mt-4">Changes</h2>
-        <p>
+        <div className="text-styling">
           We will update this privacy policy from time to time. Any changes will
           be posted on this page with an updated revision date. If we make any
           material changes, we will provide notice through the Service or by
           other means.
-        </p>
+        </div>
         <h2 className="mt-4">Contact</h2>
-        <p>
+        <div className="text-styling">
           If you have any questions, comments, complaints or requests regarding
           this privacy policy or our processing of your information, please
           contact the SCIN Publishing via the Email () You also may lodge a
@@ -499,18 +501,18 @@ const Privacy = () => {
           protection representative for our businesses that are processing
           personal data within the scope of United Kingdom data protection laws
           and established outside of the United Kingdom is SCIN Publishing.
-        </p>
+        </div>
         <h2 className="mt-4">Service-specific details</h2>
-        <p>
+        <div className="text-styling">
           Please read the service-specific details below for additional
           information about certain SCIN services.
-        </p>
-        <p>
+        </div>
+        <div className="text-styling">
           <br />
           <strong>SCIN Workflow Manager</strong>
           <br />
-        </p>
-        <p>
+        </div>
+        <div className="text-styling">
           Submissions to most SCIN journals are handled via the SCIN workflow
           manager online manuscript submission and peer review system. When you
           create or confirm an Editorial Manager account for a journal, certain
@@ -530,7 +532,7 @@ const Privacy = () => {
           such as website hosting and IT support.You can always manage your
           marketing communication preferences in your workflow manager account
           at any time.
-        </p>
+        </div>
       </div>
       {/* <!-- ========================= footer start ========================= --> */}
       <section id="home" className="container">

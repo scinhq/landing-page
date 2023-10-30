@@ -36,11 +36,11 @@ export default function FooterView() {
         <div className="col-12 col-md-5">
           <div>
             <p className="stronger">Stay Connected</p>
-            <p className="lead">
+            <div className="lead pb-2">
               Follow us on social media to stay updated with the latest news,
               insights, and exciting developments as we embark on this
               transformative journey together.
-            </p>
+            </div>
           </div>
           <div>
             <div
@@ -53,7 +53,7 @@ export default function FooterView() {
               })}
             </div>
           </div>
-          <small className="d-block mt-3 text-muted">
+          <small className="d-block mt-3 mb-3 text-muted">
             &copy; {YEAR} SCIN Publishing Inc. All Rights Reserved.
           </small>
         </div>

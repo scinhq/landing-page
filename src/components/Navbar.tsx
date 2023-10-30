@@ -8,8 +8,8 @@ export default function MainNavbar() {
   const router = useRouter();
 
   return (
-    <Navbar expand="lg">
-      <div className="container pt-4 d-flex align-items-center justify-content-between">
+    <Navbar expand="lg" className="d-flex justify-content-between">
+      <div className="container pt-4">
         {/* Logo Section */}
         <Link href="./" passHref>
           <a className="navbar-brand">
@@ -89,15 +89,15 @@ export default function MainNavbar() {
               </li>
             </ul>
           </Nav>
-        </Navbar.Collapse>
-
-        <div>
           <Link href="/form" passHref>
-            <a className="btn btn-primary btn-lg" data-wow-delay=".6s">
+            <button
+              className="btn btn-primary ml-auto custom-mb"
+              data-wow-delay=".6s"
+            >
               Join Our Waitlist
-            </a>
+            </button>
           </Link>
-        </div>
+        </Navbar.Collapse>
       </div>
     </Navbar>
   );

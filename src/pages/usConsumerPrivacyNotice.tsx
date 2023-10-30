@@ -22,7 +22,7 @@ const USConsumerPrivacyNotice = () => {
         <ol className="mb-4">
           <li className="mb-2 list-items">
             About this Privacy Notice
-            <p className="paragraph-items">
+            <div className="text-styling paragraph-items">
               Pursuant to the California Consumer Privacy Act, Colorado Privacy
               Act, Connecticut Data Privacy Act and Virginia Consumer Data
               Protection Act (collectively, “U.S. Consumer Privacy Laws”), SCIN
@@ -43,11 +43,11 @@ const USConsumerPrivacyNotice = () => {
               does not apply to personal information that we process on behalf
               of our customers or that we collect from job applicants,
               contractors, or employees.
-            </p>
+            </div>
           </li>
           <li className="mb-2 list-items">
             Personal Information Collected, Processed and Disclosed
-            <p className="paragraph-items">
+            <div className="text-styling paragraph-items">
               We collect, and have collected and disclosed in the preceding 12
               months, the following categories of personal information:
               <ul>
@@ -139,16 +139,16 @@ const USConsumerPrivacyNotice = () => {
               information, processing payments, or providing analytic services,
               storage or similar services for the business; and activities
               relating to quality and safety control or product improvement.
-            </p>
+            </div>
           </li>
           <li className="mb-2 list-items">Personal Information Sold</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             We do not sell personal information to third parties within the
             scope of the application of the U.S. Consumer Privacy Laws.
-          </p>
+          </div>
 
           <li className="mb-2 list-items">Personal Information Shared</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             We share for purposes of cross-context behavioral advertising or
             targeted advertising, and have shared for such purposes, in the
             preceding 12 months, with advertising networks, internet service
@@ -177,10 +177,10 @@ const USConsumerPrivacyNotice = () => {
             sensitive personal information, of minors under 16 years of age
             within the scope of the application of the U.S. Consumer Privacy
             Laws.
-          </p>
+          </div>
 
           <li className="mb-2 list-items">Retention</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             We retain your personal information for as long as necessary to
             provide our products and services to you and fulfill the
             transactions you have requested, or for other essential purposes
@@ -191,12 +191,12 @@ const USConsumerPrivacyNotice = () => {
             includes the legal limitation of liability period, agreed
             contractual provisions, applicable regulatory requirements, and
             industry standards.
-          </p>
+          </div>
           <li className="mb-2 list-items">Consumer Rights and Requests</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             If you are a California, Colorado, Connecticut or Virginia resident:
-          </p>
-          <p className="paragraph-items">
+          </div>
+          <div className="text-styling paragraph-items">
             <span className="font-weight-bold">Right to Know.</span>You may
             request to know whether we process your personal information and to
             access such personal information. In addition, if you are a
@@ -214,18 +214,18 @@ const USConsumerPrivacyNotice = () => {
             specific pieces of personal information, including, where
             applicable, to obtain a copy of your personal information in a
             portable, readily usable format.
-          </p>
-          <p className="paragraph-items">
+          </div>
+          <div className="text-styling paragraph-items">
             <span className="font-weight-bold">Right to Delete.</span>You may
             request that we delete your personal information, subject to certain
             exceptions. If you are a California resident, this applies to
             personal information we collected from you.
-          </p>
-          <p className="paragraph-items">
+          </div>
+          <div className="text-styling paragraph-items">
             <span className="font-weight-bold">Right to Correct.</span>You may
             request to correct inaccuracies in your personal information.
-          </p>
-          <p className="paragraph-items">
+          </div>
+          <div className="text-styling paragraph-items">
             <span className="font-weight-bold">Right to Opt-Out.</span>You may
             request that we do not share your personal information for
             cross-contextual behavioral advertising or targeted advertising by
@@ -239,24 +239,24 @@ const USConsumerPrivacyNotice = () => {
             processing of your personal information for purposes of profiling in
             furtherance of decisions that produce legal or similarly significant
             effects concerning you.
-          </p>
-          <p className="paragraph-items">
+          </div>
+          <div className="text-styling paragraph-items">
             <span className="font-weight-bold">
               Right Not to Receive Discriminatory Treatment.
             </span>
             We will not unlawfully discriminate against you because you exercise
             any of your rights under the U.S. Consumer Privacy Laws.
-          </p>
+          </div>
 
           <li className="mb-2 list-items">How to Make a Request</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             You may make a request described above via our email at{' '}
             <a href="mailto:info@scin.io" className="text-primary">
               info@scin.io
             </a>
             .
-          </p>
-          <p className="paragraph-items">
+          </div>
+          <div className="text-styling paragraph-items">
             You may be required to submit proof of your identity for certain of
             these requests to be processed. Such information may include your
             name, address, date of birth and government ID. This information
@@ -285,30 +285,30 @@ const USConsumerPrivacyNotice = () => {
               info@scin.io
             </a>
             .
-          </p>
+          </div>
 
           <li className="mb-2 list-items">Notice of Financial Incentives</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             We do not offer financial incentives, including price or service
             differences, to consumers in exchange for the collection, retention,
             sale or sharing of their personal information.
-          </p>
+          </div>
 
           <li className="mb-2 list-items">De-Identified Information</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             Where we maintain or use de-identified data, we will continue to
             maintain and use the de-identified data only in a de-identified
             fashion and will not attempt to re-identify the data.
-          </p>
+          </div>
 
           <li className="mb-2 list-items">Changes</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             We will update this Notice from time to time. Any changes will be
             posted on this page with an updated revision date.
-          </p>
+          </div>
 
           <li className="mb-2 list-items">Contact</li>
-          <p className="paragraph-items">
+          <div className="text-styling paragraph-items">
             If you have any questions or concerns regarding this Notice or our
             processing of your personal information, please contact us via email
             at{' '}
@@ -316,7 +316,7 @@ const USConsumerPrivacyNotice = () => {
               info@scin.io
             </a>
             .
-          </p>
+          </div>
         </ol>
       </div>
 

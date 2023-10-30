@@ -1,13 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from '../assets/styles/team.module.css';
 import FooterView, { SocialMediumInformation } from './Footer';
 import { TeamSocialLinks } from './SocialButtons';
-import {
-  faLinkedin,
-  faLinkedinIn,
-  faXTwitter,
-} from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export interface FounderInfoCardProps {
   fullName: string;
@@ -64,7 +59,7 @@ const FOUNDERS: FounderInfoCardProps[] = [
         name: 'linkedin',
         url: 'https://www.linkedin.com/in/igolm',
         isActive: true,
-        faIcon: faLinkedinIn,
+        faIcon: faLinkedin,
       },
     ],
   },
@@ -85,7 +80,7 @@ const FOUNDERS: FounderInfoCardProps[] = [
         name: 'linkedin',
         url: 'https://www.linkedin.com/in/masoudzare',
         isActive: true,
-        faIcon: faLinkedinIn,
+        faIcon: faLinkedin,
       },
     ],
   },
@@ -129,8 +124,8 @@ export default function TeamView() {
   return (
     <div className="other-main-sections">
       <section id="tracking">
-        <div className="d-flex align-items-center justify-content-center pb-150">
-          <div>
+        <div className="container d-flex justify-content-center align-items-center pb-150">
+          <div className="d-flex flex-column justify-content-center align-items-center">
             <h1
               className="display-3 mb-40 wow fadeInUp text-center"
               data-wow-delay=".2s"
@@ -145,16 +140,13 @@ export default function TeamView() {
               Revolutionizing Scholarly Publishing
             </h1>
 
-            <h3 className="display-4 text-center mb-4">Our Vision</h3>
-            <p
-              className="display-7 wow mx-auto w-75 fadeInUp text-center"
-              data-wow-delay=".4s"
-            >
+            <h3 className="display-4 mb-4">Our Vision</h3>
+            <div className="text-styling text-center px-4">
               SCIN is a technology company that builds a decentralized
               publishing system that enables researchers to publish their
               scientific articles while retaining the copyright ownership of
               their work.
-            </p>
+            </div>
           </div>
         </div>
       </section>
@@ -336,19 +328,19 @@ export default function TeamView() {
           <h2 className="display-6 fw-normal text-center mb-4">
             Join Us in Shaping the Future
           </h2>
-          <p className="mb-4">
+          <div className="text-styling mb-4">
             We invite you to join us in reshaping the future of scholarly
             publishing. Whether you are an author, reviewer, editor, affiliated
             institution, or simply a passionate advocate for change, SCIN
             welcomes your involvement. Together, we can create a scholarly
             publishing landscape that truly serves the needs of those who have
             dedicated their lives to the pursuit of knowledge.
-          </p>
-          <p>
+          </div>
+          <div className="text-styling mb-4">
             Thank you for being a part of the SCIN community. Together, we are
             pioneering a new era of scholarly communication that empowers
             authors and reviewers to lead the way.
-          </p>
+          </div>
           <Link href="/form" passHref>
             <a className="btn btn-primary btn-lg" data-wow-delay=".6s">
               Join Our Waitlist
