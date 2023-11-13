@@ -49,7 +49,7 @@ const Form = () => {
   useEffect(() => {
     const fetchSubjects = async () => {
       try {
-        const response = await fetch(`../api/searchSubjects`);
+        const response = await fetch(`/api/searchSubjects`);
         const data = await response.json();
 
         // Extract the subjects
@@ -81,7 +81,7 @@ const Form = () => {
     }
 
     try {
-      let databaseResponse = await fetch('../api/addUsers', {
+      let databaseResponse = await fetch('/api/addUsers', {
         method: 'POST',
         body: JSON.stringify({
           firstName: formData.firstName,
