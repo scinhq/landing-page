@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import MainNavbar from '../components/Navbar';
 import ScrollTopView from '../components/Scroller';
 import FooterView from '../components/Footer';
@@ -44,7 +44,9 @@ const Form = () => {
   const [submitSuccess, setSubmitSuccess] = useState<boolean>(false);
   const [showRoleDropdown, setShowRoleDropdown] = useState(false);
   const [showFieldDropdown, setShowFieldDropdown] = useState(false);
+  const [searchValue, setSearchValue] = useState('');
   const [subjects, setSubjects] = useState([]);
+  const searchRef = useRef(null);
 
   useEffect(() => {
     const fetchSubjects = async () => {
@@ -69,6 +71,21 @@ const Form = () => {
     };
     fetchSubjects();
   }, []);
+
+  useEffect(() => {
+    setSearchValue('');
+    if (showFieldDropdown && searchRef.current) {
+      searchRef.current.focus();
+    }
+  }, []);
+
+  const filteredSubjects = subjects.filter((subject) =>
+    subject.description.toLowerCase().includes(searchValue.toLowerCase()),
+  );
+
+  const handleSearchChange = (e) => {
+    setSearchValue(e.target.value);
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -280,15 +297,25 @@ const Form = () => {
                     placeholder="Select your field of study"
                     value={formData.fieldOfStudy}
                     onClick={() => setShowFieldDropdown(!showFieldDropdown)}
-                    onBlur={() =>
-                      setTimeout(() => setShowFieldDropdown(false), 200)
-                    } // small timeout to handle item selection
                   />
 
                   <Dropdown.Menu
                     style={{ maxHeight: '200px', overflowY: 'auto' }}
                   >
-                    {subjects.map((subject) => (
+                    {showFieldDropdown && (
+                      <div className="search-box">
+                        <input
+                          type="text"
+                          ref={searchRef}
+                          onChange={handleSearchChange}
+                          value={searchValue}
+                          className="form-control"
+                          placeholder="Search field of study"
+                        />
+                      </div>
+                    )}
+
+                    {filteredSubjects.map((subject) => (
                       <Dropdown.Item
                         as="button"
                         key={subject.code}

@@ -7,7 +7,7 @@ notificationapi.init(
 
 export default function handler(req, res) {
   if (req.method === 'POST') {
-    const { firstName, email } = req.body;
+    const { firstName, lastName, email, role, fieldOfStudy } = req.body;
 
     notificationapi.send({
       notificationId: 'welcome',
@@ -17,6 +17,17 @@ export default function handler(req, res) {
       },
       mergeTags: {
         firstName: firstName,
+        alerts: [{ title: 'This is a new alert from SCIN!' }],
+      },
+    });
+    notificationapi.send({
+      notificationId: 'welcome',
+      user: {
+        id: 'test_user_id',
+        email: 'masoudz@mun.ca',
+      },
+      mergeTags: {
+        firstName: [firstName, lastName, email, role, fieldOfStudy],
         alerts: [{ title: 'This is a new alert from SCIN!' }],
       },
     });
