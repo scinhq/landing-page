@@ -7,6 +7,7 @@ Author: GrayGrids
     01.COMMON css
 ===========================*/
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Sen:wght@400;700;800&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -123,18 +124,17 @@ h6 {
   font-size: 16px;
 }
 
-ul,
-ol {
-  margin: 0px;
-  padding: 0px;
-  list-style-type: none;
-}
-
 p {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
   margin: 0px;
+}
+
+.text-styling {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
 }
 
 .img-bg {
@@ -188,6 +188,18 @@ p {
   overflow: hidden;
 }
 
+@media only screen and (min-width: 300px) and (max-width: 991px) {
+  .custom-order-1 {
+    order: 1 !important;
+  }
+  .custom-order-2 {
+    order: 2 !important;
+  }
+  .custom-mb {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
 .btn-hover::after {
   content: '';
   position: absolute;
@@ -210,7 +222,7 @@ p {
 .scroll-top {
   width: 45px;
   height: 45px;
-  background: #4e6ef1;
+  background: #0f7ab6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1295,7 +1307,7 @@ p {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background: #4e6ef1;
+  background: #0f7ab6;
   z-index: -1;
   opacity: 0;
   border-radius: 10px;
@@ -1314,7 +1326,7 @@ p {
 
 .navbar-nav .nav-item a:hover,
 .navbar-nav .nav-item a.active {
-  color: #4e6ef1;
+  color: #0f7ab6;
 }
 
 .navbar-nav .nav-item a:hover::after,
@@ -1414,6 +1426,74 @@ p {
   display: none;
 }
 
+.btn-primary {
+  background-color: #0f7ab6 !important;
+  border-color: #0f7ab6 !important;
+}
+
+.nav-link.active {
+  color: #0f7ab6 !important;
+}
+
+.list-items {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.sub-list-items {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.paragraph-items {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.bg-custom {
+  color: #0f7ab6 !important;
+  border: none !important;
+}
+
+.card {
+  height: 100%;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+.custom-divider {
+  width: 60%; /* reduced width for visibility, adjust as needed */
+  height: 2px;
+  background: linear-gradient(to right, #0f7ab6, #0d6efd);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  border-bottom: 4px solid white;
+}
+
+.custom-dropdown-width .dropdown-toggle {
+  min-width: 40%;
+  text-align: left;
+}
+
+.custom-dropdown-width .dropdown-menu {
+  min-width: 40%;
+  text-align: left;
+}
+
+.custom-dropdown-width .dropdown-toggle::after {
+  float: right;
+  margin-top: 10px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .navbar-nav .sub-nav-toggler {
     display: block;
@@ -1442,6 +1522,10 @@ p {
     width: 30px;
     height: 30px;
   }
+  .hero-title {
+    font-size: 1.8rem;
+    margin-top: 0;
+  }
 }
 
 .navbar-nav .sub-nav-toggler span {
@@ -1457,7 +1541,7 @@ p {
 .other-main-sections {
   position: relative;
   z-index: 1;
-  padding: 150px 0 50px;
+  padding: 100px 0 50px;
   background-repeat: no-repeat;
   background-position: left;
   /* width: 100% !important; */
