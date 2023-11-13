@@ -108,7 +108,7 @@ const Form = () => {
 
       const data = await response.json();
 
-      if (data.success && dataResponse.acknowledged) {
+      if (data.success) {
         setSubmitSuccess(true);
         setFormData({
           firstName: '',
