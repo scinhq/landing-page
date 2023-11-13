@@ -49,7 +49,7 @@ const Form = () => {
   useEffect(() => {
     const fetchSubjects = async () => {
       try {
-        const response = await fetch(`/api/searchSubjects`);
+        const response = await fetch(`../api/searchSubjects`);
         const data = await response.json();
 
         // Extract the subjects
@@ -81,22 +81,23 @@ const Form = () => {
     }
 
     try {
-      //   let databaseResponse = await fetch('../api/addUsers', {
-      //     method: 'POST',
-      //     body: JSON.stringify({
-      //       firstName: formData.firstName,
-      //       lastName: formData.lastName,
-      //       email: formData.email,
-      //       role: formData.role,
-      //       fieldOfStudy: formData.fieldOfStudy,
-      //     }),
-      //     headers: {
-      //       Accept: 'application/json, text/plain, */*',
-      //       'Content-Type': 'application/json',
-      //     },
-      //   });
+      let databaseResponse = await fetch('../api/addUsers', {
+        method: 'POST',
+        body: JSON.stringify({
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          role: formData.role,
+          fieldOfStudy: formData.fieldOfStudy,
+        }),
+        headers: {
+          Accept: 'application/json, text/plain, */*',
+          'Content-Type': 'application/json',
+        },
+      });
 
-      //   const dataResponse = await databaseResponse.json();
+      const dataResponse = await databaseResponse.json();
+
       const response = await fetch('/api/submitForm', {
         method: 'POST',
         headers: {
@@ -107,7 +108,7 @@ const Form = () => {
 
       const data = await response.json();
 
-      if (data.success) {
+      if (data.success && dataResponse.acknowledged) {
         setSubmitSuccess(true);
         setFormData({
           firstName: '',
