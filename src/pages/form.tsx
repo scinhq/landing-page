@@ -98,23 +98,6 @@ const Form = () => {
     }
 
     try {
-      // let databaseResponse = await fetch('/api/addUsers', {
-      //   method: 'POST',
-      //   body: JSON.stringify({
-      //     firstName: formData.firstName,
-      //     lastName: formData.lastName,
-      //     email: formData.email,
-      //     role: formData.role,
-      //     fieldOfStudy: formData.fieldOfStudy,
-      //   }),
-      //   headers: {
-      //     Accept: 'application/json, text/plain, */*',
-      //     'Content-Type': 'application/json',
-      //   },
-      // });
-
-      // const dataResponse = await databaseResponse.json();
-
       const response = await fetch('/api/submitForm', {
         method: 'POST',
         headers: {
