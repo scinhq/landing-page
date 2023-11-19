@@ -26,7 +26,7 @@ const FOUNDERS: FounderInfoCardProps[] = [
     socialMediaLinks: [
       {
         name: 'twitter',
-        url: 'https://twitter.com/arminbodaghkh',
+        url: 'https://twitter.com/bodaghkhani',
         isActive: true,
         faIcon: faXTwitter,
       },
