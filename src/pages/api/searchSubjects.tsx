@@ -1,4 +1,3 @@
-// pages/api/searchSubjects.js
 const searchSubjects = async (req, res) => {
   const query = req.query.description;
 

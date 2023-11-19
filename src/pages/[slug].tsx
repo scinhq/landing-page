@@ -283,17 +283,21 @@ const BlogPost = ({ blog }) => {
   return (
     <>
       <MainNavbar />
-      <div className="container mt-150">
+      <div className="container mt-20">
         <h1 className="mt-4 mb-4 display-6 font-weight-bold text-uppercase border-bottom pb-2 text-shadow">
           {blog.title}
         </h1>
         {blog.subTitle && (
-          <h2 className="mb-4 h3 font-weight-light">{blog.subTitle}</h2>
+          <h2 className="mb-2 h3 font-weight-light">{blog.subTitle}</h2>
         )}
         {blog.content?.map((blog, index) => {
           switch (blog.type) {
             case 'paragraph':
-              return <p key={index}>{blog.text}</p>;
+              return (
+                <div className="mb-3" key={index}>
+                  {blog.text}
+                </div>
+              );
             case 'orderedList':
               return (
                 <ol key={index}>
@@ -302,8 +306,7 @@ const BlogPost = ({ blog }) => {
                       <li className="font-weight-bold" key={idx}>
                         {item.title}
                       </li>
-                      <br />
-                      <p>{item.content}</p>
+                      <div className="mb-2">{item.content}</div>
                     </>
                   ))}
                 </ol>
