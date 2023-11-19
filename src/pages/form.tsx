@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect, useRef } from 'react';
+import { useRouter } from 'next/router';
 import MainNavbar from '../components/Navbar';
 import ScrollTopView from '../components/Scroller';
 import FooterView from '../components/Footer';
@@ -41,12 +42,12 @@ const Form = () => {
     general: null,
   });
 
-  const [submitSuccess, setSubmitSuccess] = useState<boolean>(false);
   const [showRoleDropdown, setShowRoleDropdown] = useState(false);
   const [showFieldDropdown, setShowFieldDropdown] = useState(false);
   const [searchValue, setSearchValue] = useState('');
   const [subjects, setSubjects] = useState([]);
   const searchRef = useRef(null);
+  const router = useRouter();
 
   useEffect(() => {
     const fetchSubjects = async () => {
@@ -109,7 +110,6 @@ const Form = () => {
       const data = await response.json();
 
       if (data.success) {
-        setSubmitSuccess(true);
         setFormData({
           firstName: '',
           lastName: '',
@@ -117,6 +117,7 @@ const Form = () => {
           role: [],
           fieldOfStudy: '',
         });
+        router.push('/thankYou');
       } else {
         setErrors((prev) => ({ ...prev, general: 'Error submitting data' }));
       }
@@ -329,11 +330,6 @@ const Form = () => {
         </div>
         {errors.general && (
           <p className="text-danger text-center mt-3">{errors.general}</p>
-        )}
-        {submitSuccess && (
-          <p className="text-success text-center mt-3">
-            Data successfully submitted!
-          </p>
         )}
       </div>
       {/* <!-- ========================= footer start ========================= --> */}

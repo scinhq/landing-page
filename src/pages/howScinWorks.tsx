@@ -29,16 +29,16 @@ export default function HowScinWorks() {
       {/* ... other sections above */}
 
       {/* <!-- ========================= income-distribution-section start ========================= --> */}
-      <section id="tracking" className="tracking-section pt-100">
+      <section id="tracking" className="tracking-section pt-60">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="tracking-content">
                 <div
-                  className="section-title mb-50"
+                  className="section-title mb-30"
                   style={{ marginRight: '2rem' }}
                 >
-                  <h1 className="mt-5">Income Distribution*</h1>
+                  <h1>Income Distribution*</h1>
                   <div className="text-styling mt-4">
                     At SCIN, we believe in fostering a collaborative and
                     equitable ecosystem for researchers, authors, institutions,
@@ -72,7 +72,7 @@ export default function HowScinWorks() {
           </div>
         </div>
       </section>
-      <section id="income-distribution" className="pt-200 pb-100">
+      <section id="income-distribution" className="pt-100 pb-100">
         <div className="container">
           <div className="row">
             {/* Authors */}
@@ -85,9 +85,9 @@ export default function HowScinWorks() {
                   >
                     <FontAwesomeIcon icon={faPen} />
                   </div>
-                  <h4 className="card-title mt-2">Authors (20%)</h4>
+                  <h4 className="card-title mt-2">Authors (28%)</h4>
                   <div className="text-styling pt-2">
-                    Authors receive 20% of the total income for their
+                    Authors receive 28% of the total income for their
                     significant contribution to research creation.
                   </div>
                 </div>
@@ -104,10 +104,10 @@ export default function HowScinWorks() {
                     <FontAwesomeIcon icon={faBuildingColumns} />
                   </div>
                   <h4 className="card-title mt-2">
-                    Affiliated Institutions (15%)
+                    Affiliated Institutions (18%)
                   </h4>
                   <div className="text-styling pt-2">
-                    15% of the total income is allocated to the affiliated
+                    18% of the total income is allocated to the affiliated
                     institutions of authors.
                   </div>
                 </div>
@@ -123,9 +123,9 @@ export default function HowScinWorks() {
                   >
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                   </div>
-                  <h4 className="card-title mt-2">Reviewers (9%)</h4>
+                  <h4 className="card-title mt-2">Reviewers (10%)</h4>
                   <div className="text-styling pt-2">
-                    Reviewers receive 9% of the total income for their role in
+                    Reviewers receive 10% of the total income for their role in
                     ensuring the quality and integrity of published works.
                   </div>
                 </div>
@@ -178,9 +178,9 @@ export default function HowScinWorks() {
                   >
                     <FontAwesomeIcon icon={faMoneyBillTrendUp} />
                   </div>
-                  <h4 className="card-title mt-2">SCIN (50%)</h4>
+                  <h4 className="card-title mt-2">SCIN (38%)</h4>
                   <div className="text-styling pt-2">
-                    SCIN allocates 50% of the total income to cover costs
+                    SCIN allocates 38% of the total income to cover costs
                     associated with platform administration, maintenance, and
                     other operational expenses.
                   </div>

@@ -73,20 +73,10 @@ export default function Home() {
       >
         <div className="container d-flex flex-column align-items-center justify-content-center">
           <div className="flex align-items-center justify-content-center">
-            <h1
-              className="text-center"
-              style={{
-                fontWeight: 'bold',
-                textShadow: '2px 2px 4px rgba(0,0,0,0.1)',
-                padding: '10px 0',
-                background: '-webkit-linear-gradient(45deg, #0F7AB6, #0d6efd)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-              }}
-            >
+            <h1 className="text-center">
               Unlocking the Future of Scientific Publishing
             </h1>
-            <div className="text-styling mt-4" style={{ fontSize: '22px' }}>
+            <div className="text-styling mt-4">
               At SCIN, we are rewriting the story of scientific publishing.
               We're not just a startup; we are the future of scholarly
               communication. SCIN, short for Scientific Independence, is the

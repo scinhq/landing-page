@@ -35,8 +35,8 @@ export default function FooterView() {
       <div className="row">
         <div className="col-12 col-md-5">
           <div>
-            <p className="stronger">Stay Connected</p>
-            <div className="lead pb-2">
+            <h5>Stay Connected</h5>
+            <div className="pb-2 text-muted">
               Follow us on social media to stay updated with the latest news,
               insights, and exciting developments as we embark on this
               transformative journey together.

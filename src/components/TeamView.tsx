@@ -124,23 +124,19 @@ export default function TeamView() {
   return (
     <div className="other-main-sections">
       <section id="tracking">
-        <div className="container d-flex justify-content-center align-items-center pb-150">
+        <div className="container d-flex justify-content-center align-items-center pb-80">
           <div className="d-flex flex-column justify-content-center align-items-center">
             <h1
               className="display-3 mb-40 wow fadeInUp text-center"
               data-wow-delay=".2s"
               style={{
-                fontWeight: 'bold', // Bold font-weight
-                textShadow: '2px 2px 4px rgba(0,0,0,0.1)', // Subtle text-shadow for depth
-                background: '-webkit-linear-gradient(45deg, #0F7AB6, #0d6efd)', // Gradient background
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
+                fontWeight: 'bold',
               }}
             >
               Revolutionizing Scholarly Publishing
             </h1>
 
-            <h3 className="display-4 mb-4">Our Vision</h3>
+            <h3 className="display-6 mb-4">Our Vision</h3>
             <div className="text-styling text-center px-4">
               SCIN is a technology company that builds a decentralized
               publishing system that enables researchers to publish their
