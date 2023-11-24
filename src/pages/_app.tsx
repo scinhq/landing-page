@@ -22,25 +22,21 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      {/* Global Site Tag (gtag.js) - Google Analytics */}
       <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-M1JB92JRYJ`}
       />
-      <Script
-        id="gtag-init"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${gtag.GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
-          `,
-        }}
-      />
+
+      <Script strategy="lazyOnload" id="google-analytics-script">
+        {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-M1JB92JRYJ', {
+                    page_path: window.location.pathname,
+                    });
+                `}
+      </Script>
       <Component {...pageProps} />
     </>
   );
