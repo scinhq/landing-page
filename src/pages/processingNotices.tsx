@@ -8,7 +8,7 @@ const ProcessingNotices = () => {
     <>
       <SEO
         title={'SCIN'}
-        siteTitle={'Decentralized Scientific Publishing'}
+        siteTitle={'Scientific Independence'}
         description={
           'SCIN is a decentralized scientific publishing platform, empowering researchers to retain the ownership of their work.'
         }
