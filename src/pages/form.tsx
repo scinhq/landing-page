@@ -152,7 +152,7 @@ const Form = () => {
     <>
       <SEO
         title={'SCIN'}
-        siteTitle={'SCIN Waitlist Form'}
+        siteTitle={'Invitation Form'}
         description={
           'SCIN is a decentralized scientific publishing platform, empowering researchers to retain the ownership of their work.'
         }
