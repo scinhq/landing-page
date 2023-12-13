@@ -6,6 +6,7 @@ import ScrollTopView from '../components/Scroller';
 import FooterView from '../components/Footer';
 import Dropdown from 'react-bootstrap/Dropdown';
 import FormCheck from 'react-bootstrap/FormCheck';
+import SEO from '../components/seo';
 
 interface FormData {
   firstName: string;
@@ -149,9 +150,16 @@ const Form = () => {
 
   return (
     <>
+      <SEO
+        title={'SCIN'}
+        siteTitle={'SCIN Waitlist Form'}
+        description={
+          'SCIN is a decentralized scientific publishing platform, empowering researchers to retain the ownership of their work.'
+        }
+      />
       <MainNavbar />
-      <div className="container mt-100">
-        <h2 className="mb-4 text-center">Join Our Waitlist</h2>
+      <div className="container mt-40 pb-40">
+        <h2 className="mb-4 text-center">Get Your Invitation</h2>
         <div className="row justify-content-center">
           <div className="col-md-6">
             <form onSubmit={handleSubmit}>

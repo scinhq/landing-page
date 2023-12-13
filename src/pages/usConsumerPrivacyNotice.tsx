@@ -9,7 +9,7 @@ const USConsumerPrivacyNotice = () => {
     <>
       <SEO
         title={'SCIN'}
-        siteTitle={'Scientific Independence'}
+        siteTitle={'US Consumer Privacy Notice'}
         description={
           'SCIN is a decentralized scientific publishing platform, empowering researchers to retain the ownership of their work.'
         }
@@ -17,8 +17,8 @@ const USConsumerPrivacyNotice = () => {
 
       <MainNavbar />
 
-      <div className="container mt-80">
-        <h1 className="mb-4">US Consumer Privacy Notice</h1>
+      <div className="container mt-40">
+        <h1 className="container mb-4">US Consumer Privacy Notice</h1>
         <ol className="mb-4">
           <li className="mb-2 list-items">
             About this Privacy Notice

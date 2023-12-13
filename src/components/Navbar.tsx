@@ -94,7 +94,7 @@ export default function MainNavbar() {
               className="btn btn-primary ml-auto custom-mb"
               data-wow-delay=".6s"
             >
-              Join Our Waitlist
+              Get Your Invitation
             </button>
           </Link>
         </Navbar.Collapse>

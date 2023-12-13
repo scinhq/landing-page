@@ -27,24 +27,27 @@ export default function Home() {
         }}
       >
         <div className="container d-flex align-items-center justify-content-center pt-100 pb-100">
-          <div className="row align-items-center">
-            <div className="hero-content">
+          <div className="row align-items-center container">
+            <div className="hero-content ">
               <h1
-                className="wow fadeInUp pb-70 hero-title"
+                className="wow fadeInUp pb-40 hero-title"
                 data-wow-delay=".2s"
               >
                 {`Welcome to SCIN:`} <br />{' '}
                 {`Revolutionizing Scientific Publishing`}
               </h1>
-              <h3 className="wow fadeInUp pt-70 pb-50" data-wow-delay=".4s">
+              <h3 className="wow fadeInUp pt-40 pb-40" data-wow-delay=".4s">
                 Empowering Authors and Reviewers with Copyright Ownership in
                 Peer-Reviewed Publishing!
               </h3>
-              <div className="hero-btns wow fadeInUp">
+              <div className="wow fadeInUp">
                 <div className="row g-3">
-                  <div className="col-auto">
+                  <div className="col-auto ">
                     <Link href="/form" passHref>
-                      <a className="btn btn-dark btn-lg" data-wow-delay=".6s">
+                      <a
+                        className="btn btn-dark btn-lg equal-width-btns"
+                        data-wow-delay=".6s"
+                      >
                         Publish With Us
                       </a>
                     </Link>
@@ -52,7 +55,7 @@ export default function Home() {
                   <div className="col-auto">
                     <Link href="/team" passHref>
                       <a
-                        className="btn btn-outline-light btn-lg"
+                        className="btn btn-outline-light btn-lg equal-width-btns"
                         data-wow-delay=".6s"
                       >
                         Learn More
@@ -69,14 +72,14 @@ export default function Home() {
       {/* <!-- ========================= hero-section start ========================= --> */}
       <section
         id="home"
-        className="d-flex flex-column align-items-center justify-content-center pt-150 pb-50"
+        className="d-flex flex-column align-items-center justify-content-center pt-80 pb-50"
       >
         <div className="container d-flex flex-column align-items-center justify-content-center">
-          <div className="flex align-items-center justify-content-center">
+          <div className="container flex align-items-center justify-content-center">
             <h1 className="text-center">
               Unlocking the Future of Scientific Publishing
             </h1>
-            <div className="text-styling mt-4">
+            <div className="text-styling pt-4">
               At SCIN, we are rewriting the story of scientific publishing.
               We're not just a startup; we are the future of scholarly
               communication. SCIN, short for Scientific Independence, is the
@@ -90,15 +93,12 @@ export default function Home() {
       </section>
       {/* <!-- ========================= hero-section end ========================= --> */}
       {/* <!-- ========================= tracking-section start ========================= --> */}
-      <section id="tracking" className="tracking-section pt-120">
+      <section id="tracking" className="tracking-section pt-40">
         <div className="container">
-          <div className="row align-items-center">
+          <div className="container row align-items-center">
             <div className="col-lg-6">
               <div className="tracking-content">
-                <div
-                  className="section-title mb-50"
-                  style={{ marginRight: '2rem' }}
-                >
+                <div className="section-title" style={{ marginRight: '2rem' }}>
                   <h1 className="mb-30 wow fadeInUp" data-wow-delay=".2s">
                     Our Mission: Empowering the Scientific Community
                   </h1>
@@ -108,7 +108,7 @@ export default function Home() {
                   >
                     Bringing Science to Life, One Discovery at a Time
                   </h5>
-                  <div className="text-styling">
+                  <div className="mb-40 text-styling">
                     Our mission is clear: to empower authors, reviewers,
                     editors, and institutions by transforming the way we
                     disseminate scientific knowledge. SCIN is the first platform
@@ -144,9 +144,9 @@ export default function Home() {
       {/* <!-- ========================= tracking-section end ========================= --> */}
 
       {/* <!-- ========================= search-section start ========================= --> */}
-      <section id="tracking" className="tracking-section pt-150 mt-70">
+      <section id="tracking" className="pt-80">
         <div
-          className="pt-80 pb-80"
+          className="pt-80 pb-60"
           style={{ backgroundColor: '#0F7AB6', color: 'white' }}
         >
           <div className="container d-flex align-items-center justify-content-center tracking-content">
@@ -190,15 +190,18 @@ export default function Home() {
                 <div className="row g-3">
                   <div className="col-auto">
                     <Link href="/form" passHref>
-                      <a className="btn btn-dark btn-lg" data-wow-delay=".6s">
-                        Join Our Waitlist
+                      <a
+                        className="btn btn-dark btn-lg equal-width-btns"
+                        data-wow-delay=".6s"
+                      >
+                        Get Your Invitation
                       </a>
                     </Link>
                   </div>
                   <div className="col-auto">
                     <Link href="/team" passHref>
                       <a
-                        className="btn btn-outline-light btn-lg"
+                        className="btn btn-outline-light btn-lg equal-width-btns"
                         data-wow-delay=".6s"
                       >
                         Learn More
@@ -212,9 +215,9 @@ export default function Home() {
         </div>
       </section>
       {/* <!-- ========================= search-section end ========================= --> */}
-      <section id="tracking1" className="tracking-section pt-150">
+      <section id="tracking1" className="tracking-section pt-80">
         <div className="container">
-          <div className="row align-items-center">
+          <div className="container row align-items-center">
             <div className="col-lg-6">
               <div className="tracking-content">
                 <div
@@ -263,9 +266,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="tracking2" className="tracking-section pt-150">
+      <section id="tracking2" className="tracking-section pt-80">
         <div className="container">
-          <div className="row align-items-center">
+          <div className="container row align-items-center">
             <div className="col-lg-6 custom-order-2">
               <div
                 className="hero-img wow fadeInUp"
@@ -314,9 +317,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="tracking" className="tracking-section pt-150">
+      <section id="tracking" className="tracking-section pt-80">
         <div className="container d-flex align-items-center justify-content-center">
-          <div className="tracking-content">
+          <div className="container tracking-content">
             <div className="section-title" style={{ maxWidth: '50rem' }}>
               <h1 className="mb-30 wow fadeInUp" data-wow-delay=".2s">
                 Transparency and Trust: The SCIN Way
@@ -340,7 +343,7 @@ export default function Home() {
       </section>
       <section id="tracking" className="tracking-section pt-40 mt-70">
         <div
-          className="pt-80 pb-80"
+          className="pt-80 pb-40"
           style={{ backgroundColor: '#0F7AB6', color: 'white' }}
         >
           <div className="tracking-content container d-flex align-items-center justify-content-center">
@@ -379,15 +382,18 @@ export default function Home() {
                 <div className="row g-3">
                   <div className="col-auto">
                     <Link href="/form" passHref>
-                      <a className="btn btn-dark btn-lg" data-wow-delay=".6s">
-                        Join Our Waitlist
+                      <a
+                        className="btn btn-dark btn-lg equal-width-btns"
+                        data-wow-delay=".6s"
+                      >
+                        Get Your Invitation
                       </a>
                     </Link>
                   </div>
                   <div className="col-auto">
                     <Link href="/team" passHref>
                       <a
-                        className="btn btn-outline-light btn-lg"
+                        className="btn btn-outline-light btn-lg equal-width-btns"
                         data-wow-delay=".6s"
                       >
                         Learn More
@@ -402,7 +408,7 @@ export default function Home() {
       </section>
 
       {/* <!-- ========================= testimonial-section start ========================= --> */}
-      <section id="signup-for-product" className="testimonial-section pt-150">
+      <section id="signup-for-product" className="testimonial-section pt-80">
         <div className="container text-center">
           <h1>Are you intesred in publishing your paper with us?</h1>
           <br />

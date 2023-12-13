@@ -42,7 +42,7 @@ const BlogPage = () => {
     <>
       <SEO
         title={'SCIN'}
-        siteTitle={'Scientific Independence'}
+        siteTitle={'SCIN Blog Page'}
         description={
           'SCIN is a decentralized scientific publishing platform, empowering researchers to retain the ownership of their work.'
         }

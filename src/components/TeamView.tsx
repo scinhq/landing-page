@@ -136,8 +136,8 @@ export default function TeamView() {
               Revolutionizing Scholarly Publishing
             </h1>
 
-            <h3 className="display-6 mb-4">Our Vision</h3>
-            <div className="text-styling text-center px-4">
+            <div className="display-6 mb-4">Our Vision</div>
+            <div className="text-styling px-4">
               SCIN is a technology company that builds a decentralized
               publishing system that enables researchers to publish their
               scientific articles while retaining the copyright ownership of
@@ -339,7 +339,7 @@ export default function TeamView() {
           </div>
           <Link href="/form" passHref>
             <a className="btn btn-primary btn-lg" data-wow-delay=".6s">
-              Join Our Waitlist
+              Get Your Invitation
             </a>
           </Link>
         </div>

@@ -10,7 +10,7 @@ const Pricing = () => {
     <>
       <SEO
         title={'SCIN'}
-        siteTitle={'Scientific Independence'}
+        siteTitle={'SCIN Pricing Model'}
         description={
           'SCIN is a decentralized scientific publishing platform, empowering researchers to retain the ownership of their work.'
         }
@@ -18,13 +18,9 @@ const Pricing = () => {
 
       <MainNavbar />
       <section id="tracking" className="tracking-section ">
-        <div className="container mt-5 pb-100">
-          <Head>
-            <title>SCIN Pricing Models</title>
-          </Head>
-
-          <h1 className="text-center mb-5">SCIN Pricing Models*</h1>
-          <div className="text-styling">
+        <div className="container mt-4 pb-80">
+          <h1 className="text-center mb-4">SCIN Pricing Models*</h1>
+          <div className="container text-styling">
             Welcome to SCIN, where we offer flexible pricing models to cater to
             the diverse needs of our users. Whether you are an individual
             author, an avid reader, or an institution looking to subscribe to
@@ -207,7 +203,7 @@ const Pricing = () => {
               </div>
             </div>
           </div>
-          <div className="pt-2">
+          <div className="pt-4">
             * Our pricing model aims to align with the numbers mentioned;
             however, as our startup evolves and gains momentum over time, the
             pricing structure may change. When you engage with our services, you
@@ -218,7 +214,7 @@ const Pricing = () => {
         </div>
 
         <section id="tracking" style={{ backgroundColor: '#f9f8ff' }}>
-          <div className="d-flex align-items-center justify-content-center pt-80 pb-80">
+          <div className="d-flex align-items-center justify-content-center pt-60 pb-60">
             <div className="container">
               <h2 className="display-6 fw-normal text-center mb-40">
                 Why Choose SCIN?
@@ -263,9 +259,9 @@ const Pricing = () => {
         </section>
 
         <section>
-          <div className="pt-80 pb-80 container d-flex flex-column align-items-center justify-content-center">
-            <h3 className="text-center">Join SCIN Today</h3>
-            <div className="text-styling">
+          <div className="pt-60 pb-60 container d-flex flex-column align-items-center justify-content-center">
+            <h3 className="text-center pb-4">Join SCIN Today</h3>
+            <div className="text-styling pb-4">
               Unlock the doors to a world of knowledge and rewards with SCIN.
               Choose the pricing model that aligns with your needs, and start
               your journey toward a brighter, more informed future. If you have
@@ -275,7 +271,7 @@ const Pricing = () => {
             </div>
             <Link href="/form" passHref>
               <a className="btn btn-primary btn-lg" data-wow-delay=".6s">
-                Join Our Waitlist
+                Get Your Invitation
               </a>
             </Link>
           </div>

@@ -11,14 +11,14 @@ const ThankYou = () => {
     <>
       <SEO
         title={'SCIN'}
-        siteTitle={'Scientific Independence'}
+        siteTitle={'Thank You Page'}
         description={
           'SCIN is a decentralized scientific publishing platform, empowering researchers to retain the ownership of their work.'
         }
       />
 
       <MainNavbar />
-      <section id="tracking" className="tracking-section mt-100 mb-100">
+      <section id="tracking" className="tracking-section mt-80 mb-40">
         <div className="container">
           <div className="d-flex flex-column align-items-center justify-content-center custom-thank-you-page">
             <FontAwesomeIcon

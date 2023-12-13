@@ -10,7 +10,7 @@ const Terms = () => {
     <>
       <SEO
         title={'SCIN'}
-        siteTitle={'Scientific Independence'}
+        siteTitle={'SCIN Terms & Conditions'}
         description={
           'SCIN is a decentralized scientific publishing platform, empowering researchers to retain the ownership of their work.'
         }

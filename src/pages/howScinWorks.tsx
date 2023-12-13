@@ -18,7 +18,7 @@ export default function HowScinWorks() {
     <>
       <SEO
         title={'SCIN'}
-        siteTitle={'Scientific Independence'}
+        siteTitle={'How SCIN Works'}
         description={
           'SCIN is a decentralized scientific publishing platform, empowering researchers to retain the ownership of their work.'
         }
@@ -29,13 +29,13 @@ export default function HowScinWorks() {
       {/* ... other sections above */}
 
       {/* <!-- ========================= income-distribution-section start ========================= --> */}
-      <section id="tracking" className="tracking-section pt-60">
+      <section id="tracking" className="tracking-section pt-20">
         <div className="container">
-          <div className="row align-items-center">
+          <div className="container row align-items-center">
             <div className="col-lg-6">
               <div className="tracking-content">
                 <div
-                  className="section-title mb-30"
+                  className="section-title mb-40"
                   style={{ marginRight: '2rem' }}
                 >
                   <h1>Income Distribution*</h1>
@@ -72,7 +72,7 @@ export default function HowScinWorks() {
           </div>
         </div>
       </section>
-      <section id="income-distribution" className="pt-100 pb-100">
+      <section id="income-distribution" className="pt-80 pb-40">
         <div className="container">
           <div className="row">
             {/* Authors */}
@@ -188,7 +188,7 @@ export default function HowScinWorks() {
               </div>
             </div>
           </div>
-          <div className="pt-2">
+          <div className="container pt-4">
             * SCIN's goal is to achieve the mentioned numbers, but as a startup
             grows and evolves, these figures may change. When you publish with
             SCIN, you agree to the revenue distribution model in place at that

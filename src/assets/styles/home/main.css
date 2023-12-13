@@ -197,6 +197,7 @@ p {
   }
   .custom-mb {
     margin-bottom: 1.5rem !important;
+    margin-left: 2rem;
   }
 }
 
@@ -1339,7 +1340,7 @@ p {
 .custom-thank-you-page {
   border-radius: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 30px 30px;
+  padding: 0px 10px 0 10px;
   background-color: #f6f8fb;
 }
 
@@ -1353,7 +1354,7 @@ p {
   .custom-thank-you-page {
     border-radius: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px 30px;
+    padding: 0px 10px 0 10px;
     background-color: #f6f8fb;
   }
   .check-icon-style {
@@ -1544,7 +1545,7 @@ ul {
 .other-main-sections {
   position: relative;
   z-index: 1;
-  padding: 100px 0 50px;
+  padding: 40px 0 50px;
   background-repeat: no-repeat;
   background-position: left;
   /* width: 100% !important; */
@@ -1739,6 +1740,10 @@ ul {
 .tracking-section {
   position: relative;
   z-index: 1;
+}
+
+.equal-width-btns {
+  width: 200px;
 }
 
 .tracking-section .tracking-shape .shape {
