@@ -48,7 +48,7 @@ export default function Home() {
                         className="btn btn-dark btn-lg equal-width-btns"
                         data-wow-delay=".6s"
                       >
-                        Publish With Us
+                        Get Your Invitation
                       </a>
                     </Link>
                   </div>
@@ -413,7 +413,7 @@ export default function Home() {
           <h1>Are you intesred in publishing your paper with us?</h1>
           <br />
           <p className="text-center">
-            Please sign up and we will get back to you soon.
+            Please fill the invitation form and we will get back to you soon.
           </p>
           <div className="row justify-content-center my-4">
             <div className="col-auto">
@@ -429,7 +429,7 @@ export default function Home() {
                       type="button"
                       id="subscribe-btn"
                     >
-                      Sign Up
+                      Get Your Invitation
                     </button>
                   </Link>
                 </div>
