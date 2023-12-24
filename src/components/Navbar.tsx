@@ -77,6 +77,17 @@ export default function MainNavbar() {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link href="/journals" passHref>
+                  <a
+                    className={`nav-link ${
+                      router.pathname === '/journals' ? 'active' : ''
+                    }`}
+                  >
+                    Journals
+                  </a>
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link href="/blog" passHref>
                   <a
                     className={`nav-link ${
