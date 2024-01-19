@@ -65,8 +65,13 @@ const FOUNDERS: FounderInfoCardProps[] = [
   },
   {
     fullName: 'Masoud Zare',
-    description: `Masoud is a computer science student at Memorial University, complemented by a bachelor's degree in business and seven years of marketing experience. Recently, he spent two years as a Full Stack Developer, creating web applications and responsive websites. His unique blend of technical expertise and business insights positions him as an invaluable asset in both tech and multidisciplinary roles.
-      Having worked in diverse capacities ranging from marketing roles to pivotal tech positions, Masoud has cultivated a holistic view of projects, ensuring both the functional and aesthetic aspects are in harmony.`,
+    description: `
+      Masoud, a graduate in Computer Science from Memorial University, 
+      brings a unique blend of technical and business acumen to the table. 
+      With a background that includes a Bachelor's degree in business and over seven years in marketing, 
+      he has recently leveraged these skills in technology, spending two years as a Full Stack Developer. 
+      His diverse experience, covering both marketing and pivotal tech positions, 
+      gives him a holistic view of projects, ensuring a harmonious balance between functionality and design.`,
     position: 'Co-founder and CTO',
     imagePath: '/img/team/Masoud-B&W.jpg',
     socialMediaLinks: [
