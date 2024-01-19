@@ -32,7 +32,7 @@ const USConsumerPrivacyNotice = () => {
               <Link href="/privacy" passHref>
                 <a
                   className="text-primary"
-                  style={{ marginLeft: '0.5rem' }}
+                  style={{ marginLeft: '0.6rem' }}
                   data-wow-delay=".6s"
                 >
                   Privacy Policy
